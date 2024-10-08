@@ -32,7 +32,7 @@ type InventoryItemRole struct {
 	CustomFields         map[string]interface{} `json:"custom_fields,omitempty"`
 	Created              NullableTime           `json:"created"`
 	LastUpdated          NullableTime           `json:"last_updated"`
-	InventoryitemCount   int64                  `json:"inventoryitem_count"`
+	InventoryitemCount   *int64                 `json:"inventoryitem_count,omitempty"`
 	AdditionalProperties map[string]interface{}
 }
 
@@ -42,7 +42,7 @@ type _InventoryItemRole InventoryItemRole
 // This constructor will assign default values to properties that have it defined,
 // and makes sure properties required by API are set, but the set of arguments
 // will change when the set of required properties is changed
-func NewInventoryItemRole(id int32, url string, display string, name string, slug string, created NullableTime, lastUpdated NullableTime, inventoryitemCount int64) *InventoryItemRole {
+func NewInventoryItemRole(id int32, url string, display string, name string, slug string, created NullableTime, lastUpdated NullableTime) *InventoryItemRole {
 	this := InventoryItemRole{}
 	this.Id = id
 	this.Url = url
@@ -51,7 +51,6 @@ func NewInventoryItemRole(id int32, url string, display string, name string, slu
 	this.Slug = slug
 	this.Created = created
 	this.LastUpdated = lastUpdated
-	this.InventoryitemCount = inventoryitemCount
 	return &this
 }
 
@@ -363,28 +362,36 @@ func (o *InventoryItemRole) SetLastUpdated(v time.Time) {
 	o.LastUpdated.Set(&v)
 }
 
-// GetInventoryitemCount returns the InventoryitemCount field value
+// GetInventoryitemCount returns the InventoryitemCount field value if set, zero value otherwise.
 func (o *InventoryItemRole) GetInventoryitemCount() int64 {
-	if o == nil {
+	if o == nil || IsNil(o.InventoryitemCount) {
 		var ret int64
 		return ret
 	}
-
-	return o.InventoryitemCount
+	return *o.InventoryitemCount
 }
 
-// GetInventoryitemCountOk returns a tuple with the InventoryitemCount field value
+// GetInventoryitemCountOk returns a tuple with the InventoryitemCount field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *InventoryItemRole) GetInventoryitemCountOk() (*int64, bool) {
-	if o == nil {
+	if o == nil || IsNil(o.InventoryitemCount) {
 		return nil, false
 	}
-	return &o.InventoryitemCount, true
+	return o.InventoryitemCount, true
 }
 
-// SetInventoryitemCount sets field value
+// HasInventoryitemCount returns a boolean if a field has been set.
+func (o *InventoryItemRole) HasInventoryitemCount() bool {
+	if o != nil && !IsNil(o.InventoryitemCount) {
+		return true
+	}
+
+	return false
+}
+
+// SetInventoryitemCount gets a reference to the given int64 and assigns it to the InventoryitemCount field.
 func (o *InventoryItemRole) SetInventoryitemCount(v int64) {
-	o.InventoryitemCount = v
+	o.InventoryitemCount = &v
 }
 
 func (o InventoryItemRole) MarshalJSON() ([]byte, error) {
@@ -416,7 +423,9 @@ func (o InventoryItemRole) ToMap() (map[string]interface{}, error) {
 	}
 	toSerialize["created"] = o.Created.Get()
 	toSerialize["last_updated"] = o.LastUpdated.Get()
-	toSerialize["inventoryitem_count"] = o.InventoryitemCount
+	if !IsNil(o.InventoryitemCount) {
+		toSerialize["inventoryitem_count"] = o.InventoryitemCount
+	}
 
 	for key, value := range o.AdditionalProperties {
 		toSerialize[key] = value
@@ -437,7 +446,6 @@ func (o *InventoryItemRole) UnmarshalJSON(data []byte) (err error) {
 		"slug",
 		"created",
 		"last_updated",
-		"inventoryitem_count",
 	}
 
 	allProperties := make(map[string]interface{})

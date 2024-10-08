@@ -9,13 +9,13 @@ Name | Type | Description | Notes
 **Display** | **string** |  | [readonly] 
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
-**PowerfeedCount** | **int64** |  | [readonly] 
+**PowerfeedCount** | Pointer to **int64** |  | [optional] [readonly] 
 
 ## Methods
 
 ### NewPowerPanel
 
-`func NewPowerPanel(id int32, url string, display string, name string, powerfeedCount int64, ) *PowerPanel`
+`func NewPowerPanel(id int32, url string, display string, name string, ) *PowerPanel`
 
 NewPowerPanel instantiates a new PowerPanel object
 This constructor will assign default values to properties that have it defined,
@@ -154,6 +154,11 @@ and a boolean to check if the value has been set.
 
 SetPowerfeedCount sets PowerfeedCount field to given value.
 
+### HasPowerfeedCount
+
+`func (o *PowerPanel) HasPowerfeedCount() bool`
+
+HasPowerfeedCount returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

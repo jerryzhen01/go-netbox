@@ -10,13 +10,13 @@ Name | Type | Description | Notes
 **Name** | **string** | Full name of the provider | 
 **Slug** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
-**CircuitCount** | **int64** |  | [readonly] 
+**CircuitCount** | Pointer to **int64** |  | [optional] [readonly] 
 
 ## Methods
 
 ### NewProvider
 
-`func NewProvider(id int32, url string, display string, name string, slug string, circuitCount int64, ) *Provider`
+`func NewProvider(id int32, url string, display string, name string, slug string, ) *Provider`
 
 NewProvider instantiates a new Provider object
 This constructor will assign default values to properties that have it defined,
@@ -175,6 +175,11 @@ and a boolean to check if the value has been set.
 
 SetCircuitCount sets CircuitCount field to given value.
 
+### HasCircuitCount
+
+`func (o *Provider) HasCircuitCount() bool`
+
+HasCircuitCount returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
