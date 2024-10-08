@@ -1511,10 +1511,10 @@ func main() {
 	tagN := []string{"Inner_example"} // []string |  (optional)
 	tenant := []string{"Inner_example"} // []string | Tenant (slug) (optional)
 	tenantN := []string{"Inner_example"} // []string | Tenant (slug) (optional)
-	tenantGroup := []int32{int32(123)} // []int32 | Tenant Group (slug) (optional)
-	tenantGroupN := []int32{int32(123)} // []int32 | Tenant Group (slug) (optional)
-	tenantGroupId := []int32{int32(123)} // []int32 | Tenant Group (ID) (optional)
-	tenantGroupIdN := []int32{int32(123)} // []int32 | Tenant Group (ID) (optional)
+	tenantGroup := []string{"Inner_example"} // []string |  (optional)
+	tenantGroupN := []string{"Inner_example"} // []string |  (optional)
+	tenantGroupId := []string{"Inner_example"} // []string |  (optional)
+	tenantGroupIdN := []string{"Inner_example"} // []string |  (optional)
 	tenantId := []*int32{int32(123)} // []*int32 | Tenant (ID) (optional)
 	tenantIdN := []*int32{int32(123)} // []*int32 | Tenant (ID) (optional)
 	terminationAId := []int32{int32(123)} // []int32 |  (optional)
@@ -1634,10 +1634,10 @@ Name | Type | Description  | Notes
  **tagN** | **[]string** |  | 
  **tenant** | **[]string** | Tenant (slug) | 
  **tenantN** | **[]string** | Tenant (slug) | 
- **tenantGroup** | **[]int32** | Tenant Group (slug) | 
- **tenantGroupN** | **[]int32** | Tenant Group (slug) | 
- **tenantGroupId** | **[]int32** | Tenant Group (ID) | 
- **tenantGroupIdN** | **[]int32** | Tenant Group (ID) | 
+ **tenantGroup** | **[]string** |  | 
+ **tenantGroupN** | **[]string** |  | 
+ **tenantGroupId** | **[]string** |  | 
+ **tenantGroupIdN** | **[]string** |  | 
  **tenantId** | **[]int32** | Tenant (ID) | 
  **tenantIdN** | **[]int32** | Tenant (ID) | 
  **terminationAId** | **[]int32** |  | 
@@ -3034,7 +3034,7 @@ Name | Type | Description  | Notes
 
 ## DcimConsolePortsList
 
-> PaginatedConsolePortList DcimConsolePortsList(ctx).CableEnd(cableEnd).CableEndN(cableEndN).CableId(cableId).CableIdN(cableIdN).Cabled(cabled).Connected(connected).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).MarkConnected(markConnected).ModifiedByRequest(modifiedByRequest).ModuleId(moduleId).ModuleIdN(moduleIdN).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Occupied(occupied).Offset(offset).Ordering(ordering).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Role(role).RoleN(roleN).RoleId(roleId).RoleIdN(roleIdN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Speed(speed).SpeedN(speedN).Tag(tag).TagN(tagN).Type_(type_).TypeN(typeN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
+> PaginatedConsolePortList DcimConsolePortsList(ctx).CableEnd(cableEnd).CableEndN(cableEndN).CableId(cableId).CableIdN(cableIdN).Cabled(cabled).Connected(connected).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceRole(deviceRole).DeviceRoleN(deviceRoleN).DeviceRoleId(deviceRoleId).DeviceRoleIdN(deviceRoleIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).MarkConnected(markConnected).ModifiedByRequest(modifiedByRequest).ModuleId(moduleId).ModuleIdN(moduleIdN).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Occupied(occupied).Offset(offset).Ordering(ordering).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Speed(speed).SpeedN(speedN).Tag(tag).TagN(tagN).Type_(type_).TypeN(typeN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
 
 
 
@@ -3083,6 +3083,10 @@ func main() {
 	deviceN := []*string{"Inner_example"} // []*string | Device (name) (optional)
 	deviceId := []int32{int32(123)} // []int32 | Device (ID) (optional)
 	deviceIdN := []int32{int32(123)} // []int32 | Device (ID) (optional)
+	deviceRole := []string{"Inner_example"} // []string | Device role (slug) (optional)
+	deviceRoleN := []string{"Inner_example"} // []string | Device role (slug) (optional)
+	deviceRoleId := []int32{int32(123)} // []int32 | Device role (ID) (optional)
+	deviceRoleIdN := []int32{int32(123)} // []int32 | Device role (ID) (optional)
 	deviceType := []string{"Inner_example"} // []string | Device type (model) (optional)
 	deviceTypeN := []string{"Inner_example"} // []string | Device type (model) (optional)
 	deviceTypeId := []int32{int32(123)} // []int32 | Device type (ID) (optional)
@@ -3140,20 +3144,16 @@ func main() {
 	rackN := []string{"Inner_example"} // []string | Rack (name) (optional)
 	rackId := []int32{int32(123)} // []int32 | Rack (ID) (optional)
 	rackIdN := []int32{int32(123)} // []int32 | Rack (ID) (optional)
-	region := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionN := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionId := []int32{int32(123)} // []int32 | Region (ID) (optional)
-	regionIdN := []int32{int32(123)} // []int32 | Region (ID) (optional)
-	role := []string{"Inner_example"} // []string | Device role (slug) (optional)
-	roleN := []string{"Inner_example"} // []string | Device role (slug) (optional)
-	roleId := []int32{int32(123)} // []int32 | Device role (ID) (optional)
-	roleIdN := []int32{int32(123)} // []int32 | Device role (ID) (optional)
+	region := []string{"Inner_example"} // []string |  (optional)
+	regionN := []string{"Inner_example"} // []string |  (optional)
+	regionId := []string{"Inner_example"} // []string |  (optional)
+	regionIdN := []string{"Inner_example"} // []string |  (optional)
 	site := []string{"Inner_example"} // []string | Site name (slug) (optional)
 	siteN := []string{"Inner_example"} // []string | Site name (slug) (optional)
-	siteGroup := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	siteGroupN := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	siteGroupId := []int32{int32(123)} // []int32 | Site group (ID) (optional)
-	siteGroupIdN := []int32{int32(123)} // []int32 | Site group (ID) (optional)
+	siteGroup := []string{"Inner_example"} // []string |  (optional)
+	siteGroupN := []string{"Inner_example"} // []string |  (optional)
+	siteGroupId := []string{"Inner_example"} // []string |  (optional)
+	siteGroupIdN := []string{"Inner_example"} // []string |  (optional)
 	siteId := []int32{int32(123)} // []int32 | Site (ID) (optional)
 	siteIdN := []int32{int32(123)} // []int32 | Site (ID) (optional)
 	speed := openapiclient.dcim_console_ports_list_speed_parameter(115200) // DcimConsolePortsListSpeedParameter | Port speed in bits per second  * `1200` - 1200 bps * `2400` - 2400 bps * `4800` - 4800 bps * `9600` - 9600 bps * `19200` - 19.2 kbps * `38400` - 38.4 kbps * `57600` - 57.6 kbps * `115200` - 115.2 kbps (optional)
@@ -3170,7 +3170,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimConsolePortsList(context.Background()).CableEnd(cableEnd).CableEndN(cableEndN).CableId(cableId).CableIdN(cableIdN).Cabled(cabled).Connected(connected).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).MarkConnected(markConnected).ModifiedByRequest(modifiedByRequest).ModuleId(moduleId).ModuleIdN(moduleIdN).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Occupied(occupied).Offset(offset).Ordering(ordering).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Role(role).RoleN(roleN).RoleId(roleId).RoleIdN(roleIdN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Speed(speed).SpeedN(speedN).Tag(tag).TagN(tagN).Type_(type_).TypeN(typeN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimConsolePortsList(context.Background()).CableEnd(cableEnd).CableEndN(cableEndN).CableId(cableId).CableIdN(cableIdN).Cabled(cabled).Connected(connected).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceRole(deviceRole).DeviceRoleN(deviceRoleN).DeviceRoleId(deviceRoleId).DeviceRoleIdN(deviceRoleIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).MarkConnected(markConnected).ModifiedByRequest(modifiedByRequest).ModuleId(moduleId).ModuleIdN(moduleIdN).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Occupied(occupied).Offset(offset).Ordering(ordering).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Speed(speed).SpeedN(speedN).Tag(tag).TagN(tagN).Type_(type_).TypeN(typeN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimConsolePortsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -3220,6 +3220,10 @@ Name | Type | Description  | Notes
  **deviceN** | **[]string** | Device (name) | 
  **deviceId** | **[]int32** | Device (ID) | 
  **deviceIdN** | **[]int32** | Device (ID) | 
+ **deviceRole** | **[]string** | Device role (slug) | 
+ **deviceRoleN** | **[]string** | Device role (slug) | 
+ **deviceRoleId** | **[]int32** | Device role (ID) | 
+ **deviceRoleIdN** | **[]int32** | Device role (ID) | 
  **deviceType** | **[]string** | Device type (model) | 
  **deviceTypeN** | **[]string** | Device type (model) | 
  **deviceTypeId** | **[]int32** | Device type (ID) | 
@@ -3277,20 +3281,16 @@ Name | Type | Description  | Notes
  **rackN** | **[]string** | Rack (name) | 
  **rackId** | **[]int32** | Rack (ID) | 
  **rackIdN** | **[]int32** | Rack (ID) | 
- **region** | **[]int32** | Region (slug) | 
- **regionN** | **[]int32** | Region (slug) | 
- **regionId** | **[]int32** | Region (ID) | 
- **regionIdN** | **[]int32** | Region (ID) | 
- **role** | **[]string** | Device role (slug) | 
- **roleN** | **[]string** | Device role (slug) | 
- **roleId** | **[]int32** | Device role (ID) | 
- **roleIdN** | **[]int32** | Device role (ID) | 
+ **region** | **[]string** |  | 
+ **regionN** | **[]string** |  | 
+ **regionId** | **[]string** |  | 
+ **regionIdN** | **[]string** |  | 
  **site** | **[]string** | Site name (slug) | 
  **siteN** | **[]string** | Site name (slug) | 
- **siteGroup** | **[]int32** | Site group (slug) | 
- **siteGroupN** | **[]int32** | Site group (slug) | 
- **siteGroupId** | **[]int32** | Site group (ID) | 
- **siteGroupIdN** | **[]int32** | Site group (ID) | 
+ **siteGroup** | **[]string** |  | 
+ **siteGroupN** | **[]string** |  | 
+ **siteGroupId** | **[]string** |  | 
+ **siteGroupIdN** | **[]string** |  | 
  **siteId** | **[]int32** | Site (ID) | 
  **siteIdN** | **[]int32** | Site (ID) | 
  **speed** | [**DcimConsolePortsListSpeedParameter**](DcimConsolePortsListSpeedParameter.md) | Port speed in bits per second  * &#x60;1200&#x60; - 1200 bps * &#x60;2400&#x60; - 2400 bps * &#x60;4800&#x60; - 4800 bps * &#x60;9600&#x60; - 9600 bps * &#x60;19200&#x60; - 19.2 kbps * &#x60;38400&#x60; - 38.4 kbps * &#x60;57600&#x60; - 57.6 kbps * &#x60;115200&#x60; - 115.2 kbps | 
@@ -4690,7 +4690,7 @@ Name | Type | Description  | Notes
 
 ## DcimConsoleServerPortsList
 
-> PaginatedConsoleServerPortList DcimConsoleServerPortsList(ctx).CableEnd(cableEnd).CableEndN(cableEndN).CableId(cableId).CableIdN(cableIdN).Cabled(cabled).Connected(connected).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).MarkConnected(markConnected).ModifiedByRequest(modifiedByRequest).ModuleId(moduleId).ModuleIdN(moduleIdN).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Occupied(occupied).Offset(offset).Ordering(ordering).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Role(role).RoleN(roleN).RoleId(roleId).RoleIdN(roleIdN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Speed(speed).SpeedN(speedN).Tag(tag).TagN(tagN).Type_(type_).TypeN(typeN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
+> PaginatedConsoleServerPortList DcimConsoleServerPortsList(ctx).CableEnd(cableEnd).CableEndN(cableEndN).CableId(cableId).CableIdN(cableIdN).Cabled(cabled).Connected(connected).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceRole(deviceRole).DeviceRoleN(deviceRoleN).DeviceRoleId(deviceRoleId).DeviceRoleIdN(deviceRoleIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).MarkConnected(markConnected).ModifiedByRequest(modifiedByRequest).ModuleId(moduleId).ModuleIdN(moduleIdN).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Occupied(occupied).Offset(offset).Ordering(ordering).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Speed(speed).SpeedN(speedN).Tag(tag).TagN(tagN).Type_(type_).TypeN(typeN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
 
 
 
@@ -4739,6 +4739,10 @@ func main() {
 	deviceN := []*string{"Inner_example"} // []*string | Device (name) (optional)
 	deviceId := []int32{int32(123)} // []int32 | Device (ID) (optional)
 	deviceIdN := []int32{int32(123)} // []int32 | Device (ID) (optional)
+	deviceRole := []string{"Inner_example"} // []string | Device role (slug) (optional)
+	deviceRoleN := []string{"Inner_example"} // []string | Device role (slug) (optional)
+	deviceRoleId := []int32{int32(123)} // []int32 | Device role (ID) (optional)
+	deviceRoleIdN := []int32{int32(123)} // []int32 | Device role (ID) (optional)
 	deviceType := []string{"Inner_example"} // []string | Device type (model) (optional)
 	deviceTypeN := []string{"Inner_example"} // []string | Device type (model) (optional)
 	deviceTypeId := []int32{int32(123)} // []int32 | Device type (ID) (optional)
@@ -4796,20 +4800,16 @@ func main() {
 	rackN := []string{"Inner_example"} // []string | Rack (name) (optional)
 	rackId := []int32{int32(123)} // []int32 | Rack (ID) (optional)
 	rackIdN := []int32{int32(123)} // []int32 | Rack (ID) (optional)
-	region := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionN := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionId := []int32{int32(123)} // []int32 | Region (ID) (optional)
-	regionIdN := []int32{int32(123)} // []int32 | Region (ID) (optional)
-	role := []string{"Inner_example"} // []string | Device role (slug) (optional)
-	roleN := []string{"Inner_example"} // []string | Device role (slug) (optional)
-	roleId := []int32{int32(123)} // []int32 | Device role (ID) (optional)
-	roleIdN := []int32{int32(123)} // []int32 | Device role (ID) (optional)
+	region := []string{"Inner_example"} // []string |  (optional)
+	regionN := []string{"Inner_example"} // []string |  (optional)
+	regionId := []string{"Inner_example"} // []string |  (optional)
+	regionIdN := []string{"Inner_example"} // []string |  (optional)
 	site := []string{"Inner_example"} // []string | Site name (slug) (optional)
 	siteN := []string{"Inner_example"} // []string | Site name (slug) (optional)
-	siteGroup := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	siteGroupN := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	siteGroupId := []int32{int32(123)} // []int32 | Site group (ID) (optional)
-	siteGroupIdN := []int32{int32(123)} // []int32 | Site group (ID) (optional)
+	siteGroup := []string{"Inner_example"} // []string |  (optional)
+	siteGroupN := []string{"Inner_example"} // []string |  (optional)
+	siteGroupId := []string{"Inner_example"} // []string |  (optional)
+	siteGroupIdN := []string{"Inner_example"} // []string |  (optional)
 	siteId := []int32{int32(123)} // []int32 | Site (ID) (optional)
 	siteIdN := []int32{int32(123)} // []int32 | Site (ID) (optional)
 	speed := openapiclient.dcim_console_ports_list_speed_parameter(115200) // DcimConsolePortsListSpeedParameter | Port speed in bits per second  * `1200` - 1200 bps * `2400` - 2400 bps * `4800` - 4800 bps * `9600` - 9600 bps * `19200` - 19.2 kbps * `38400` - 38.4 kbps * `57600` - 57.6 kbps * `115200` - 115.2 kbps (optional)
@@ -4826,7 +4826,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimConsoleServerPortsList(context.Background()).CableEnd(cableEnd).CableEndN(cableEndN).CableId(cableId).CableIdN(cableIdN).Cabled(cabled).Connected(connected).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).MarkConnected(markConnected).ModifiedByRequest(modifiedByRequest).ModuleId(moduleId).ModuleIdN(moduleIdN).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Occupied(occupied).Offset(offset).Ordering(ordering).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Role(role).RoleN(roleN).RoleId(roleId).RoleIdN(roleIdN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Speed(speed).SpeedN(speedN).Tag(tag).TagN(tagN).Type_(type_).TypeN(typeN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimConsoleServerPortsList(context.Background()).CableEnd(cableEnd).CableEndN(cableEndN).CableId(cableId).CableIdN(cableIdN).Cabled(cabled).Connected(connected).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceRole(deviceRole).DeviceRoleN(deviceRoleN).DeviceRoleId(deviceRoleId).DeviceRoleIdN(deviceRoleIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).MarkConnected(markConnected).ModifiedByRequest(modifiedByRequest).ModuleId(moduleId).ModuleIdN(moduleIdN).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Occupied(occupied).Offset(offset).Ordering(ordering).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Speed(speed).SpeedN(speedN).Tag(tag).TagN(tagN).Type_(type_).TypeN(typeN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimConsoleServerPortsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -4876,6 +4876,10 @@ Name | Type | Description  | Notes
  **deviceN** | **[]string** | Device (name) | 
  **deviceId** | **[]int32** | Device (ID) | 
  **deviceIdN** | **[]int32** | Device (ID) | 
+ **deviceRole** | **[]string** | Device role (slug) | 
+ **deviceRoleN** | **[]string** | Device role (slug) | 
+ **deviceRoleId** | **[]int32** | Device role (ID) | 
+ **deviceRoleIdN** | **[]int32** | Device role (ID) | 
  **deviceType** | **[]string** | Device type (model) | 
  **deviceTypeN** | **[]string** | Device type (model) | 
  **deviceTypeId** | **[]int32** | Device type (ID) | 
@@ -4933,20 +4937,16 @@ Name | Type | Description  | Notes
  **rackN** | **[]string** | Rack (name) | 
  **rackId** | **[]int32** | Rack (ID) | 
  **rackIdN** | **[]int32** | Rack (ID) | 
- **region** | **[]int32** | Region (slug) | 
- **regionN** | **[]int32** | Region (slug) | 
- **regionId** | **[]int32** | Region (ID) | 
- **regionIdN** | **[]int32** | Region (ID) | 
- **role** | **[]string** | Device role (slug) | 
- **roleN** | **[]string** | Device role (slug) | 
- **roleId** | **[]int32** | Device role (ID) | 
- **roleIdN** | **[]int32** | Device role (ID) | 
+ **region** | **[]string** |  | 
+ **regionN** | **[]string** |  | 
+ **regionId** | **[]string** |  | 
+ **regionIdN** | **[]string** |  | 
  **site** | **[]string** | Site name (slug) | 
  **siteN** | **[]string** | Site name (slug) | 
- **siteGroup** | **[]int32** | Site group (slug) | 
- **siteGroupN** | **[]int32** | Site group (slug) | 
- **siteGroupId** | **[]int32** | Site group (ID) | 
- **siteGroupIdN** | **[]int32** | Site group (ID) | 
+ **siteGroup** | **[]string** |  | 
+ **siteGroupN** | **[]string** |  | 
+ **siteGroupId** | **[]string** |  | 
+ **siteGroupIdN** | **[]string** |  | 
  **siteId** | **[]int32** | Site (ID) | 
  **siteIdN** | **[]int32** | Site (ID) | 
  **speed** | [**DcimConsolePortsListSpeedParameter**](DcimConsolePortsListSpeedParameter.md) | Port speed in bits per second  * &#x60;1200&#x60; - 1200 bps * &#x60;2400&#x60; - 2400 bps * &#x60;4800&#x60; - 4800 bps * &#x60;9600&#x60; - 9600 bps * &#x60;19200&#x60; - 19.2 kbps * &#x60;38400&#x60; - 38.4 kbps * &#x60;57600&#x60; - 57.6 kbps * &#x60;115200&#x60; - 115.2 kbps | 
@@ -6334,7 +6334,7 @@ Name | Type | Description  | Notes
 
 ## DcimDeviceBaysList
 
-> PaginatedDeviceBayList DcimDeviceBaysList(ctx).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).InstalledDevice(installedDevice).InstalledDeviceN(installedDeviceN).InstalledDeviceId(installedDeviceId).InstalledDeviceIdN(installedDeviceIdN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).ModifiedByRequest(modifiedByRequest).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Offset(offset).Ordering(ordering).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Role(role).RoleN(roleN).RoleId(roleId).RoleIdN(roleIdN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Tag(tag).TagN(tagN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
+> PaginatedDeviceBayList DcimDeviceBaysList(ctx).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceRole(deviceRole).DeviceRoleN(deviceRoleN).DeviceRoleId(deviceRoleId).DeviceRoleIdN(deviceRoleIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).InstalledDevice(installedDevice).InstalledDeviceN(installedDeviceN).InstalledDeviceId(installedDeviceId).InstalledDeviceIdN(installedDeviceIdN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).ModifiedByRequest(modifiedByRequest).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Offset(offset).Ordering(ordering).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Tag(tag).TagN(tagN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
 
 
 
@@ -6377,6 +6377,10 @@ func main() {
 	deviceN := []*string{"Inner_example"} // []*string | Device (name) (optional)
 	deviceId := []int32{int32(123)} // []int32 | Device (ID) (optional)
 	deviceIdN := []int32{int32(123)} // []int32 | Device (ID) (optional)
+	deviceRole := []string{"Inner_example"} // []string | Device role (slug) (optional)
+	deviceRoleN := []string{"Inner_example"} // []string | Device role (slug) (optional)
+	deviceRoleId := []int32{int32(123)} // []int32 | Device role (ID) (optional)
+	deviceRoleIdN := []int32{int32(123)} // []int32 | Device role (ID) (optional)
 	deviceType := []string{"Inner_example"} // []string | Device type (model) (optional)
 	deviceTypeN := []string{"Inner_example"} // []string | Device type (model) (optional)
 	deviceTypeId := []int32{int32(123)} // []int32 | Device type (ID) (optional)
@@ -6434,20 +6438,16 @@ func main() {
 	rackN := []string{"Inner_example"} // []string | Rack (name) (optional)
 	rackId := []int32{int32(123)} // []int32 | Rack (ID) (optional)
 	rackIdN := []int32{int32(123)} // []int32 | Rack (ID) (optional)
-	region := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionN := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionId := []int32{int32(123)} // []int32 | Region (ID) (optional)
-	regionIdN := []int32{int32(123)} // []int32 | Region (ID) (optional)
-	role := []string{"Inner_example"} // []string | Device role (slug) (optional)
-	roleN := []string{"Inner_example"} // []string | Device role (slug) (optional)
-	roleId := []int32{int32(123)} // []int32 | Device role (ID) (optional)
-	roleIdN := []int32{int32(123)} // []int32 | Device role (ID) (optional)
+	region := []string{"Inner_example"} // []string |  (optional)
+	regionN := []string{"Inner_example"} // []string |  (optional)
+	regionId := []string{"Inner_example"} // []string |  (optional)
+	regionIdN := []string{"Inner_example"} // []string |  (optional)
 	site := []string{"Inner_example"} // []string | Site name (slug) (optional)
 	siteN := []string{"Inner_example"} // []string | Site name (slug) (optional)
-	siteGroup := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	siteGroupN := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	siteGroupId := []int32{int32(123)} // []int32 | Site group (ID) (optional)
-	siteGroupIdN := []int32{int32(123)} // []int32 | Site group (ID) (optional)
+	siteGroup := []string{"Inner_example"} // []string |  (optional)
+	siteGroupN := []string{"Inner_example"} // []string |  (optional)
+	siteGroupId := []string{"Inner_example"} // []string |  (optional)
+	siteGroupIdN := []string{"Inner_example"} // []string |  (optional)
 	siteId := []int32{int32(123)} // []int32 | Site (ID) (optional)
 	siteIdN := []int32{int32(123)} // []int32 | Site (ID) (optional)
 	tag := []string{"Inner_example"} // []string |  (optional)
@@ -6460,7 +6460,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimDeviceBaysList(context.Background()).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).InstalledDevice(installedDevice).InstalledDeviceN(installedDeviceN).InstalledDeviceId(installedDeviceId).InstalledDeviceIdN(installedDeviceIdN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).ModifiedByRequest(modifiedByRequest).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Offset(offset).Ordering(ordering).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Role(role).RoleN(roleN).RoleId(roleId).RoleIdN(roleIdN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Tag(tag).TagN(tagN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimDeviceBaysList(context.Background()).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceRole(deviceRole).DeviceRoleN(deviceRoleN).DeviceRoleId(deviceRoleId).DeviceRoleIdN(deviceRoleIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).InstalledDevice(installedDevice).InstalledDeviceN(installedDeviceN).InstalledDeviceId(installedDeviceId).InstalledDeviceIdN(installedDeviceIdN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).ModifiedByRequest(modifiedByRequest).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Offset(offset).Ordering(ordering).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Tag(tag).TagN(tagN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimDeviceBaysList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -6504,6 +6504,10 @@ Name | Type | Description  | Notes
  **deviceN** | **[]string** | Device (name) | 
  **deviceId** | **[]int32** | Device (ID) | 
  **deviceIdN** | **[]int32** | Device (ID) | 
+ **deviceRole** | **[]string** | Device role (slug) | 
+ **deviceRoleN** | **[]string** | Device role (slug) | 
+ **deviceRoleId** | **[]int32** | Device role (ID) | 
+ **deviceRoleIdN** | **[]int32** | Device role (ID) | 
  **deviceType** | **[]string** | Device type (model) | 
  **deviceTypeN** | **[]string** | Device type (model) | 
  **deviceTypeId** | **[]int32** | Device type (ID) | 
@@ -6561,20 +6565,16 @@ Name | Type | Description  | Notes
  **rackN** | **[]string** | Rack (name) | 
  **rackId** | **[]int32** | Rack (ID) | 
  **rackIdN** | **[]int32** | Rack (ID) | 
- **region** | **[]int32** | Region (slug) | 
- **regionN** | **[]int32** | Region (slug) | 
- **regionId** | **[]int32** | Region (ID) | 
- **regionIdN** | **[]int32** | Region (ID) | 
- **role** | **[]string** | Device role (slug) | 
- **roleN** | **[]string** | Device role (slug) | 
- **roleId** | **[]int32** | Device role (ID) | 
- **roleIdN** | **[]int32** | Device role (ID) | 
+ **region** | **[]string** |  | 
+ **regionN** | **[]string** |  | 
+ **regionId** | **[]string** |  | 
+ **regionIdN** | **[]string** |  | 
  **site** | **[]string** | Site name (slug) | 
  **siteN** | **[]string** | Site name (slug) | 
- **siteGroup** | **[]int32** | Site group (slug) | 
- **siteGroupN** | **[]int32** | Site group (slug) | 
- **siteGroupId** | **[]int32** | Site group (ID) | 
- **siteGroupIdN** | **[]int32** | Site group (ID) | 
+ **siteGroup** | **[]string** |  | 
+ **siteGroupN** | **[]string** |  | 
+ **siteGroupId** | **[]string** |  | 
+ **siteGroupIdN** | **[]string** |  | 
  **siteId** | **[]int32** | Site (ID) | 
  **siteIdN** | **[]int32** | Site (ID) | 
  **tag** | **[]string** |  | 
@@ -8891,7 +8891,7 @@ Name | Type | Description  | Notes
 
 ## DcimDevicesList
 
-> PaginatedDeviceWithConfigContextList DcimDevicesList(ctx).Airflow(airflow).AirflowN(airflowN).AssetTag(assetTag).AssetTagEmpty(assetTagEmpty).AssetTagIc(assetTagIc).AssetTagIe(assetTagIe).AssetTagIew(assetTagIew).AssetTagIsw(assetTagIsw).AssetTagN(assetTagN).AssetTagNic(assetTagNic).AssetTagNie(assetTagNie).AssetTagNiew(assetTagNiew).AssetTagNisw(assetTagNisw).ClusterId(clusterId).ClusterIdN(clusterIdN).ConfigTemplateId(configTemplateId).ConfigTemplateIdN(configTemplateIdN).ConsolePortCount(consolePortCount).ConsolePortCountEmpty(consolePortCountEmpty).ConsolePortCountGt(consolePortCountGt).ConsolePortCountGte(consolePortCountGte).ConsolePortCountLt(consolePortCountLt).ConsolePortCountLte(consolePortCountLte).ConsolePortCountN(consolePortCountN).ConsolePorts(consolePorts).ConsoleServerPortCount(consoleServerPortCount).ConsoleServerPortCountEmpty(consoleServerPortCountEmpty).ConsoleServerPortCountGt(consoleServerPortCountGt).ConsoleServerPortCountGte(consoleServerPortCountGte).ConsoleServerPortCountLt(consoleServerPortCountLt).ConsoleServerPortCountLte(consoleServerPortCountLte).ConsoleServerPortCountN(consoleServerPortCountN).ConsoleServerPorts(consoleServerPorts).Contact(contact).ContactN(contactN).ContactGroup(contactGroup).ContactGroupN(contactGroupN).ContactRole(contactRole).ContactRoleN(contactRoleN).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).DeviceBayCount(deviceBayCount).DeviceBayCountEmpty(deviceBayCountEmpty).DeviceBayCountGt(deviceBayCountGt).DeviceBayCountGte(deviceBayCountGte).DeviceBayCountLt(deviceBayCountLt).DeviceBayCountLte(deviceBayCountLte).DeviceBayCountN(deviceBayCountN).DeviceBays(deviceBays).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Face(face).FaceN(faceN).FrontPortCount(frontPortCount).FrontPortCountEmpty(frontPortCountEmpty).FrontPortCountGt(frontPortCountGt).FrontPortCountGte(frontPortCountGte).FrontPortCountLt(frontPortCountLt).FrontPortCountLte(frontPortCountLte).FrontPortCountN(frontPortCountN).HasOobIp(hasOobIp).HasPrimaryIp(hasPrimaryIp).HasVirtualDeviceContext(hasVirtualDeviceContext).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).InterfaceCount(interfaceCount).InterfaceCountEmpty(interfaceCountEmpty).InterfaceCountGt(interfaceCountGt).InterfaceCountGte(interfaceCountGte).InterfaceCountLt(interfaceCountLt).InterfaceCountLte(interfaceCountLte).InterfaceCountN(interfaceCountN).Interfaces(interfaces).InventoryItemCount(inventoryItemCount).InventoryItemCountEmpty(inventoryItemCountEmpty).InventoryItemCountGt(inventoryItemCountGt).InventoryItemCountGte(inventoryItemCountGte).InventoryItemCountLt(inventoryItemCountLt).InventoryItemCountLte(inventoryItemCountLte).InventoryItemCountN(inventoryItemCountN).IsFullDepth(isFullDepth).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Latitude(latitude).LatitudeEmpty(latitudeEmpty).LatitudeGt(latitudeGt).LatitudeGte(latitudeGte).LatitudeLt(latitudeLt).LatitudeLte(latitudeLte).LatitudeN(latitudeN).Limit(limit).LocalContextData(localContextData).LocationId(locationId).LocationIdN(locationIdN).Longitude(longitude).LongitudeEmpty(longitudeEmpty).LongitudeGt(longitudeGt).LongitudeGte(longitudeGte).LongitudeLt(longitudeLt).LongitudeLte(longitudeLte).LongitudeN(longitudeN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNisw(macAddressNisw).Manufacturer(manufacturer).ManufacturerN(manufacturerN).ManufacturerId(manufacturerId).ManufacturerIdN(manufacturerIdN).Model(model).ModelN(modelN).ModifiedByRequest(modifiedByRequest).ModuleBayCount(moduleBayCount).ModuleBayCountEmpty(moduleBayCountEmpty).ModuleBayCountGt(moduleBayCountGt).ModuleBayCountGte(moduleBayCountGte).ModuleBayCountLt(moduleBayCountLt).ModuleBayCountLte(moduleBayCountLte).ModuleBayCountN(moduleBayCountN).ModuleBays(moduleBays).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Offset(offset).OobIpId(oobIpId).OobIpIdN(oobIpIdN).Ordering(ordering).ParentBayId(parentBayId).ParentBayIdN(parentBayIdN).ParentDeviceId(parentDeviceId).ParentDeviceIdN(parentDeviceIdN).PassThroughPorts(passThroughPorts).Platform(platform).PlatformN(platformN).PlatformId(platformId).PlatformIdN(platformIdN).Position(position).PositionEmpty(positionEmpty).PositionGt(positionGt).PositionGte(positionGte).PositionLt(positionLt).PositionLte(positionLte).PositionN(positionN).PowerOutletCount(powerOutletCount).PowerOutletCountEmpty(powerOutletCountEmpty).PowerOutletCountGt(powerOutletCountGt).PowerOutletCountGte(powerOutletCountGte).PowerOutletCountLt(powerOutletCountLt).PowerOutletCountLte(powerOutletCountLte).PowerOutletCountN(powerOutletCountN).PowerOutlets(powerOutlets).PowerPortCount(powerPortCount).PowerPortCountEmpty(powerPortCountEmpty).PowerPortCountGt(powerPortCountGt).PowerPortCountGte(powerPortCountGte).PowerPortCountLt(powerPortCountLt).PowerPortCountLte(powerPortCountLte).PowerPortCountN(powerPortCountN).PowerPorts(powerPorts).PrimaryIp4Id(primaryIp4Id).PrimaryIp4IdN(primaryIp4IdN).PrimaryIp6Id(primaryIp6Id).PrimaryIp6IdN(primaryIp6IdN).Q(q).RackId(rackId).RackIdN(rackIdN).RearPortCount(rearPortCount).RearPortCountEmpty(rearPortCountEmpty).RearPortCountGt(rearPortCountGt).RearPortCountGte(rearPortCountGte).RearPortCountLt(rearPortCountLt).RearPortCountLte(rearPortCountLte).RearPortCountN(rearPortCountN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Role(role).RoleN(roleN).RoleId(roleId).RoleIdN(roleIdN).Serial(serial).SerialEmpty(serialEmpty).SerialIc(serialIc).SerialIe(serialIe).SerialIew(serialIew).SerialIsw(serialIsw).SerialN(serialN).SerialNic(serialNic).SerialNie(serialNie).SerialNiew(serialNiew).SerialNisw(serialNisw).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Status(status).StatusN(statusN).Tag(tag).TagN(tagN).Tenant(tenant).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupN(tenantGroupN).TenantGroupId(tenantGroupId).TenantGroupIdN(tenantGroupIdN).TenantId(tenantId).TenantIdN(tenantIdN).UpdatedByRequest(updatedByRequest).VcPosition(vcPosition).VcPositionEmpty(vcPositionEmpty).VcPositionGt(vcPositionGt).VcPositionGte(vcPositionGte).VcPositionLt(vcPositionLt).VcPositionLte(vcPositionLte).VcPositionN(vcPositionN).VcPriority(vcPriority).VcPriorityEmpty(vcPriorityEmpty).VcPriorityGt(vcPriorityGt).VcPriorityGte(vcPriorityGte).VcPriorityLt(vcPriorityLt).VcPriorityLte(vcPriorityLte).VcPriorityN(vcPriorityN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).VirtualChassisMember(virtualChassisMember).Execute()
+> PaginatedDeviceWithConfigContextList DcimDevicesList(ctx).Airflow(airflow).AirflowN(airflowN).AssetTag(assetTag).AssetTagEmpty(assetTagEmpty).AssetTagIc(assetTagIc).AssetTagIe(assetTagIe).AssetTagIew(assetTagIew).AssetTagIsw(assetTagIsw).AssetTagN(assetTagN).AssetTagNic(assetTagNic).AssetTagNie(assetTagNie).AssetTagNiew(assetTagNiew).AssetTagNisw(assetTagNisw).ClusterGroup(clusterGroup).ClusterGroupN(clusterGroupN).ClusterGroupId(clusterGroupId).ClusterGroupIdN(clusterGroupIdN).ClusterId(clusterId).ClusterIdN(clusterIdN).ConfigTemplateId(configTemplateId).ConfigTemplateIdN(configTemplateIdN).ConsolePortCount(consolePortCount).ConsolePortCountEmpty(consolePortCountEmpty).ConsolePortCountGt(consolePortCountGt).ConsolePortCountGte(consolePortCountGte).ConsolePortCountLt(consolePortCountLt).ConsolePortCountLte(consolePortCountLte).ConsolePortCountN(consolePortCountN).ConsolePorts(consolePorts).ConsoleServerPortCount(consoleServerPortCount).ConsoleServerPortCountEmpty(consoleServerPortCountEmpty).ConsoleServerPortCountGt(consoleServerPortCountGt).ConsoleServerPortCountGte(consoleServerPortCountGte).ConsoleServerPortCountLt(consoleServerPortCountLt).ConsoleServerPortCountLte(consoleServerPortCountLte).ConsoleServerPortCountN(consoleServerPortCountN).ConsoleServerPorts(consoleServerPorts).Contact(contact).ContactN(contactN).ContactGroup(contactGroup).ContactGroupN(contactGroupN).ContactRole(contactRole).ContactRoleN(contactRoleN).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).DeviceBayCount(deviceBayCount).DeviceBayCountEmpty(deviceBayCountEmpty).DeviceBayCountGt(deviceBayCountGt).DeviceBayCountGte(deviceBayCountGte).DeviceBayCountLt(deviceBayCountLt).DeviceBayCountLte(deviceBayCountLte).DeviceBayCountN(deviceBayCountN).DeviceBays(deviceBays).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Face(face).FaceN(faceN).FrontPortCount(frontPortCount).FrontPortCountEmpty(frontPortCountEmpty).FrontPortCountGt(frontPortCountGt).FrontPortCountGte(frontPortCountGte).FrontPortCountLt(frontPortCountLt).FrontPortCountLte(frontPortCountLte).FrontPortCountN(frontPortCountN).HasOobIp(hasOobIp).HasPrimaryIp(hasPrimaryIp).HasVirtualDeviceContext(hasVirtualDeviceContext).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).InterfaceCount(interfaceCount).InterfaceCountEmpty(interfaceCountEmpty).InterfaceCountGt(interfaceCountGt).InterfaceCountGte(interfaceCountGte).InterfaceCountLt(interfaceCountLt).InterfaceCountLte(interfaceCountLte).InterfaceCountN(interfaceCountN).Interfaces(interfaces).InventoryItemCount(inventoryItemCount).InventoryItemCountEmpty(inventoryItemCountEmpty).InventoryItemCountGt(inventoryItemCountGt).InventoryItemCountGte(inventoryItemCountGte).InventoryItemCountLt(inventoryItemCountLt).InventoryItemCountLte(inventoryItemCountLte).InventoryItemCountN(inventoryItemCountN).IsFullDepth(isFullDepth).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Latitude(latitude).LatitudeEmpty(latitudeEmpty).LatitudeGt(latitudeGt).LatitudeGte(latitudeGte).LatitudeLt(latitudeLt).LatitudeLte(latitudeLte).LatitudeN(latitudeN).Limit(limit).LocalContextData(localContextData).LocationId(locationId).LocationIdN(locationIdN).Longitude(longitude).LongitudeEmpty(longitudeEmpty).LongitudeGt(longitudeGt).LongitudeGte(longitudeGte).LongitudeLt(longitudeLt).LongitudeLte(longitudeLte).LongitudeN(longitudeN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNisw(macAddressNisw).Manufacturer(manufacturer).ManufacturerN(manufacturerN).ManufacturerId(manufacturerId).ManufacturerIdN(manufacturerIdN).Model(model).ModelN(modelN).ModifiedByRequest(modifiedByRequest).ModuleBayCount(moduleBayCount).ModuleBayCountEmpty(moduleBayCountEmpty).ModuleBayCountGt(moduleBayCountGt).ModuleBayCountGte(moduleBayCountGte).ModuleBayCountLt(moduleBayCountLt).ModuleBayCountLte(moduleBayCountLte).ModuleBayCountN(moduleBayCountN).ModuleBays(moduleBays).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Offset(offset).OobIpId(oobIpId).OobIpIdN(oobIpIdN).Ordering(ordering).ParentBayId(parentBayId).ParentBayIdN(parentBayIdN).ParentDeviceId(parentDeviceId).ParentDeviceIdN(parentDeviceIdN).PassThroughPorts(passThroughPorts).Platform(platform).PlatformN(platformN).PlatformId(platformId).PlatformIdN(platformIdN).Position(position).PositionEmpty(positionEmpty).PositionGt(positionGt).PositionGte(positionGte).PositionLt(positionLt).PositionLte(positionLte).PositionN(positionN).PowerOutletCount(powerOutletCount).PowerOutletCountEmpty(powerOutletCountEmpty).PowerOutletCountGt(powerOutletCountGt).PowerOutletCountGte(powerOutletCountGte).PowerOutletCountLt(powerOutletCountLt).PowerOutletCountLte(powerOutletCountLte).PowerOutletCountN(powerOutletCountN).PowerOutlets(powerOutlets).PowerPortCount(powerPortCount).PowerPortCountEmpty(powerPortCountEmpty).PowerPortCountGt(powerPortCountGt).PowerPortCountGte(powerPortCountGte).PowerPortCountLt(powerPortCountLt).PowerPortCountLte(powerPortCountLte).PowerPortCountN(powerPortCountN).PowerPorts(powerPorts).PrimaryIp4Id(primaryIp4Id).PrimaryIp4IdN(primaryIp4IdN).PrimaryIp6Id(primaryIp6Id).PrimaryIp6IdN(primaryIp6IdN).Q(q).RackId(rackId).RackIdN(rackIdN).RearPortCount(rearPortCount).RearPortCountEmpty(rearPortCountEmpty).RearPortCountGt(rearPortCountGt).RearPortCountGte(rearPortCountGte).RearPortCountLt(rearPortCountLt).RearPortCountLte(rearPortCountLte).RearPortCountN(rearPortCountN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Role(role).RoleN(roleN).RoleId(roleId).RoleIdN(roleIdN).Serial(serial).SerialEmpty(serialEmpty).SerialIc(serialIc).SerialIe(serialIe).SerialIew(serialIew).SerialIsw(serialIsw).SerialN(serialN).SerialNic(serialNic).SerialNie(serialNie).SerialNiew(serialNiew).SerialNisw(serialNisw).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Status(status).StatusN(statusN).Tag(tag).TagN(tagN).Tenant(tenant).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupN(tenantGroupN).TenantGroupId(tenantGroupId).TenantGroupIdN(tenantGroupIdN).TenantId(tenantId).TenantIdN(tenantIdN).UpdatedByRequest(updatedByRequest).VcPosition(vcPosition).VcPositionEmpty(vcPositionEmpty).VcPositionGt(vcPositionGt).VcPositionGte(vcPositionGte).VcPositionLt(vcPositionLt).VcPositionLte(vcPositionLte).VcPositionN(vcPositionN).VcPriority(vcPriority).VcPriorityEmpty(vcPriorityEmpty).VcPriorityGt(vcPriorityGt).VcPriorityGte(vcPriorityGte).VcPriorityLt(vcPriorityLt).VcPriorityLte(vcPriorityLte).VcPriorityN(vcPriorityN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).VirtualChassisMember(virtualChassisMember).Execute()
 
 
 
@@ -8924,6 +8924,10 @@ func main() {
 	assetTagNie := []string{"Inner_example"} // []string |  (optional)
 	assetTagNiew := []string{"Inner_example"} // []string |  (optional)
 	assetTagNisw := []string{"Inner_example"} // []string |  (optional)
+	clusterGroup := []string{"Inner_example"} // []string | Cluster group (slug) (optional)
+	clusterGroupN := []string{"Inner_example"} // []string | Cluster group (slug) (optional)
+	clusterGroupId := []int32{int32(123)} // []int32 | Cluster group (ID) (optional)
+	clusterGroupIdN := []int32{int32(123)} // []int32 | Cluster group (ID) (optional)
 	clusterId := []*int32{int32(123)} // []*int32 | VM cluster (ID) (optional)
 	clusterIdN := []*int32{int32(123)} // []*int32 | VM cluster (ID) (optional)
 	configTemplateId := []*int32{int32(123)} // []*int32 | Config template (ID) (optional)
@@ -8946,8 +8950,8 @@ func main() {
 	consoleServerPorts := true // bool | Has console server ports (optional)
 	contact := []int32{int32(123)} // []int32 | Contact (optional)
 	contactN := []int32{int32(123)} // []int32 | Contact (optional)
-	contactGroup := []int32{int32(123)} // []int32 | Contact group (optional)
-	contactGroupN := []int32{int32(123)} // []int32 | Contact group (optional)
+	contactGroup := []string{"Inner_example"} // []string |  (optional)
+	contactGroupN := []string{"Inner_example"} // []string |  (optional)
 	contactRole := []int32{int32(123)} // []int32 | Contact Role (optional)
 	contactRoleN := []int32{int32(123)} // []int32 | Contact Role (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -9032,8 +9036,8 @@ func main() {
 	latitudeN := []float64{float64(123)} // []float64 |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	localContextData := true // bool | Has local config context data (optional)
-	locationId := []int32{int32(123)} // []int32 | Location (ID) (optional)
-	locationIdN := []int32{int32(123)} // []int32 | Location (ID) (optional)
+	locationId := []string{"Inner_example"} // []string |  (optional)
+	locationIdN := []string{"Inner_example"} // []string |  (optional)
 	longitude := []float64{float64(123)} // []float64 |  (optional)
 	longitudeEmpty := true // bool |  (optional)
 	longitudeGt := []float64{float64(123)} // []float64 |  (optional)
@@ -9127,10 +9131,10 @@ func main() {
 	rearPortCountLt := []int32{int32(123)} // []int32 |  (optional)
 	rearPortCountLte := []int32{int32(123)} // []int32 |  (optional)
 	rearPortCountN := []int32{int32(123)} // []int32 |  (optional)
-	region := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionN := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionId := []int32{int32(123)} // []int32 | Region (ID) (optional)
-	regionIdN := []int32{int32(123)} // []int32 | Region (ID) (optional)
+	region := []string{"Inner_example"} // []string |  (optional)
+	regionN := []string{"Inner_example"} // []string |  (optional)
+	regionId := []string{"Inner_example"} // []string |  (optional)
+	regionIdN := []string{"Inner_example"} // []string |  (optional)
 	role := []string{"Inner_example"} // []string | Role (slug) (optional)
 	roleN := []string{"Inner_example"} // []string | Role (slug) (optional)
 	roleId := []int32{int32(123)} // []int32 | Role (ID) (optional)
@@ -9148,10 +9152,10 @@ func main() {
 	serialNisw := []string{"Inner_example"} // []string |  (optional)
 	site := []string{"Inner_example"} // []string | Site name (slug) (optional)
 	siteN := []string{"Inner_example"} // []string | Site name (slug) (optional)
-	siteGroup := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	siteGroupN := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	siteGroupId := []int32{int32(123)} // []int32 | Site group (ID) (optional)
-	siteGroupIdN := []int32{int32(123)} // []int32 | Site group (ID) (optional)
+	siteGroup := []string{"Inner_example"} // []string |  (optional)
+	siteGroupN := []string{"Inner_example"} // []string |  (optional)
+	siteGroupId := []string{"Inner_example"} // []string |  (optional)
+	siteGroupIdN := []string{"Inner_example"} // []string |  (optional)
 	siteId := []int32{int32(123)} // []int32 | Site (ID) (optional)
 	siteIdN := []int32{int32(123)} // []int32 | Site (ID) (optional)
 	status := []string{"Inner_example"} // []string |  (optional)
@@ -9160,10 +9164,10 @@ func main() {
 	tagN := []string{"Inner_example"} // []string |  (optional)
 	tenant := []string{"Inner_example"} // []string | Tenant (slug) (optional)
 	tenantN := []string{"Inner_example"} // []string | Tenant (slug) (optional)
-	tenantGroup := []int32{int32(123)} // []int32 | Tenant Group (slug) (optional)
-	tenantGroupN := []int32{int32(123)} // []int32 | Tenant Group (slug) (optional)
-	tenantGroupId := []int32{int32(123)} // []int32 | Tenant Group (ID) (optional)
-	tenantGroupIdN := []int32{int32(123)} // []int32 | Tenant Group (ID) (optional)
+	tenantGroup := []string{"Inner_example"} // []string |  (optional)
+	tenantGroupN := []string{"Inner_example"} // []string |  (optional)
+	tenantGroupId := []string{"Inner_example"} // []string |  (optional)
+	tenantGroupIdN := []string{"Inner_example"} // []string |  (optional)
 	tenantId := []*int32{int32(123)} // []*int32 | Tenant (ID) (optional)
 	tenantIdN := []*int32{int32(123)} // []*int32 | Tenant (ID) (optional)
 	updatedByRequest := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string |  (optional)
@@ -9187,7 +9191,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimDevicesList(context.Background()).Airflow(airflow).AirflowN(airflowN).AssetTag(assetTag).AssetTagEmpty(assetTagEmpty).AssetTagIc(assetTagIc).AssetTagIe(assetTagIe).AssetTagIew(assetTagIew).AssetTagIsw(assetTagIsw).AssetTagN(assetTagN).AssetTagNic(assetTagNic).AssetTagNie(assetTagNie).AssetTagNiew(assetTagNiew).AssetTagNisw(assetTagNisw).ClusterId(clusterId).ClusterIdN(clusterIdN).ConfigTemplateId(configTemplateId).ConfigTemplateIdN(configTemplateIdN).ConsolePortCount(consolePortCount).ConsolePortCountEmpty(consolePortCountEmpty).ConsolePortCountGt(consolePortCountGt).ConsolePortCountGte(consolePortCountGte).ConsolePortCountLt(consolePortCountLt).ConsolePortCountLte(consolePortCountLte).ConsolePortCountN(consolePortCountN).ConsolePorts(consolePorts).ConsoleServerPortCount(consoleServerPortCount).ConsoleServerPortCountEmpty(consoleServerPortCountEmpty).ConsoleServerPortCountGt(consoleServerPortCountGt).ConsoleServerPortCountGte(consoleServerPortCountGte).ConsoleServerPortCountLt(consoleServerPortCountLt).ConsoleServerPortCountLte(consoleServerPortCountLte).ConsoleServerPortCountN(consoleServerPortCountN).ConsoleServerPorts(consoleServerPorts).Contact(contact).ContactN(contactN).ContactGroup(contactGroup).ContactGroupN(contactGroupN).ContactRole(contactRole).ContactRoleN(contactRoleN).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).DeviceBayCount(deviceBayCount).DeviceBayCountEmpty(deviceBayCountEmpty).DeviceBayCountGt(deviceBayCountGt).DeviceBayCountGte(deviceBayCountGte).DeviceBayCountLt(deviceBayCountLt).DeviceBayCountLte(deviceBayCountLte).DeviceBayCountN(deviceBayCountN).DeviceBays(deviceBays).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Face(face).FaceN(faceN).FrontPortCount(frontPortCount).FrontPortCountEmpty(frontPortCountEmpty).FrontPortCountGt(frontPortCountGt).FrontPortCountGte(frontPortCountGte).FrontPortCountLt(frontPortCountLt).FrontPortCountLte(frontPortCountLte).FrontPortCountN(frontPortCountN).HasOobIp(hasOobIp).HasPrimaryIp(hasPrimaryIp).HasVirtualDeviceContext(hasVirtualDeviceContext).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).InterfaceCount(interfaceCount).InterfaceCountEmpty(interfaceCountEmpty).InterfaceCountGt(interfaceCountGt).InterfaceCountGte(interfaceCountGte).InterfaceCountLt(interfaceCountLt).InterfaceCountLte(interfaceCountLte).InterfaceCountN(interfaceCountN).Interfaces(interfaces).InventoryItemCount(inventoryItemCount).InventoryItemCountEmpty(inventoryItemCountEmpty).InventoryItemCountGt(inventoryItemCountGt).InventoryItemCountGte(inventoryItemCountGte).InventoryItemCountLt(inventoryItemCountLt).InventoryItemCountLte(inventoryItemCountLte).InventoryItemCountN(inventoryItemCountN).IsFullDepth(isFullDepth).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Latitude(latitude).LatitudeEmpty(latitudeEmpty).LatitudeGt(latitudeGt).LatitudeGte(latitudeGte).LatitudeLt(latitudeLt).LatitudeLte(latitudeLte).LatitudeN(latitudeN).Limit(limit).LocalContextData(localContextData).LocationId(locationId).LocationIdN(locationIdN).Longitude(longitude).LongitudeEmpty(longitudeEmpty).LongitudeGt(longitudeGt).LongitudeGte(longitudeGte).LongitudeLt(longitudeLt).LongitudeLte(longitudeLte).LongitudeN(longitudeN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNisw(macAddressNisw).Manufacturer(manufacturer).ManufacturerN(manufacturerN).ManufacturerId(manufacturerId).ManufacturerIdN(manufacturerIdN).Model(model).ModelN(modelN).ModifiedByRequest(modifiedByRequest).ModuleBayCount(moduleBayCount).ModuleBayCountEmpty(moduleBayCountEmpty).ModuleBayCountGt(moduleBayCountGt).ModuleBayCountGte(moduleBayCountGte).ModuleBayCountLt(moduleBayCountLt).ModuleBayCountLte(moduleBayCountLte).ModuleBayCountN(moduleBayCountN).ModuleBays(moduleBays).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Offset(offset).OobIpId(oobIpId).OobIpIdN(oobIpIdN).Ordering(ordering).ParentBayId(parentBayId).ParentBayIdN(parentBayIdN).ParentDeviceId(parentDeviceId).ParentDeviceIdN(parentDeviceIdN).PassThroughPorts(passThroughPorts).Platform(platform).PlatformN(platformN).PlatformId(platformId).PlatformIdN(platformIdN).Position(position).PositionEmpty(positionEmpty).PositionGt(positionGt).PositionGte(positionGte).PositionLt(positionLt).PositionLte(positionLte).PositionN(positionN).PowerOutletCount(powerOutletCount).PowerOutletCountEmpty(powerOutletCountEmpty).PowerOutletCountGt(powerOutletCountGt).PowerOutletCountGte(powerOutletCountGte).PowerOutletCountLt(powerOutletCountLt).PowerOutletCountLte(powerOutletCountLte).PowerOutletCountN(powerOutletCountN).PowerOutlets(powerOutlets).PowerPortCount(powerPortCount).PowerPortCountEmpty(powerPortCountEmpty).PowerPortCountGt(powerPortCountGt).PowerPortCountGte(powerPortCountGte).PowerPortCountLt(powerPortCountLt).PowerPortCountLte(powerPortCountLte).PowerPortCountN(powerPortCountN).PowerPorts(powerPorts).PrimaryIp4Id(primaryIp4Id).PrimaryIp4IdN(primaryIp4IdN).PrimaryIp6Id(primaryIp6Id).PrimaryIp6IdN(primaryIp6IdN).Q(q).RackId(rackId).RackIdN(rackIdN).RearPortCount(rearPortCount).RearPortCountEmpty(rearPortCountEmpty).RearPortCountGt(rearPortCountGt).RearPortCountGte(rearPortCountGte).RearPortCountLt(rearPortCountLt).RearPortCountLte(rearPortCountLte).RearPortCountN(rearPortCountN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Role(role).RoleN(roleN).RoleId(roleId).RoleIdN(roleIdN).Serial(serial).SerialEmpty(serialEmpty).SerialIc(serialIc).SerialIe(serialIe).SerialIew(serialIew).SerialIsw(serialIsw).SerialN(serialN).SerialNic(serialNic).SerialNie(serialNie).SerialNiew(serialNiew).SerialNisw(serialNisw).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Status(status).StatusN(statusN).Tag(tag).TagN(tagN).Tenant(tenant).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupN(tenantGroupN).TenantGroupId(tenantGroupId).TenantGroupIdN(tenantGroupIdN).TenantId(tenantId).TenantIdN(tenantIdN).UpdatedByRequest(updatedByRequest).VcPosition(vcPosition).VcPositionEmpty(vcPositionEmpty).VcPositionGt(vcPositionGt).VcPositionGte(vcPositionGte).VcPositionLt(vcPositionLt).VcPositionLte(vcPositionLte).VcPositionN(vcPositionN).VcPriority(vcPriority).VcPriorityEmpty(vcPriorityEmpty).VcPriorityGt(vcPriorityGt).VcPriorityGte(vcPriorityGte).VcPriorityLt(vcPriorityLt).VcPriorityLte(vcPriorityLte).VcPriorityN(vcPriorityN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).VirtualChassisMember(virtualChassisMember).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimDevicesList(context.Background()).Airflow(airflow).AirflowN(airflowN).AssetTag(assetTag).AssetTagEmpty(assetTagEmpty).AssetTagIc(assetTagIc).AssetTagIe(assetTagIe).AssetTagIew(assetTagIew).AssetTagIsw(assetTagIsw).AssetTagN(assetTagN).AssetTagNic(assetTagNic).AssetTagNie(assetTagNie).AssetTagNiew(assetTagNiew).AssetTagNisw(assetTagNisw).ClusterGroup(clusterGroup).ClusterGroupN(clusterGroupN).ClusterGroupId(clusterGroupId).ClusterGroupIdN(clusterGroupIdN).ClusterId(clusterId).ClusterIdN(clusterIdN).ConfigTemplateId(configTemplateId).ConfigTemplateIdN(configTemplateIdN).ConsolePortCount(consolePortCount).ConsolePortCountEmpty(consolePortCountEmpty).ConsolePortCountGt(consolePortCountGt).ConsolePortCountGte(consolePortCountGte).ConsolePortCountLt(consolePortCountLt).ConsolePortCountLte(consolePortCountLte).ConsolePortCountN(consolePortCountN).ConsolePorts(consolePorts).ConsoleServerPortCount(consoleServerPortCount).ConsoleServerPortCountEmpty(consoleServerPortCountEmpty).ConsoleServerPortCountGt(consoleServerPortCountGt).ConsoleServerPortCountGte(consoleServerPortCountGte).ConsoleServerPortCountLt(consoleServerPortCountLt).ConsoleServerPortCountLte(consoleServerPortCountLte).ConsoleServerPortCountN(consoleServerPortCountN).ConsoleServerPorts(consoleServerPorts).Contact(contact).ContactN(contactN).ContactGroup(contactGroup).ContactGroupN(contactGroupN).ContactRole(contactRole).ContactRoleN(contactRoleN).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).DeviceBayCount(deviceBayCount).DeviceBayCountEmpty(deviceBayCountEmpty).DeviceBayCountGt(deviceBayCountGt).DeviceBayCountGte(deviceBayCountGte).DeviceBayCountLt(deviceBayCountLt).DeviceBayCountLte(deviceBayCountLte).DeviceBayCountN(deviceBayCountN).DeviceBays(deviceBays).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Face(face).FaceN(faceN).FrontPortCount(frontPortCount).FrontPortCountEmpty(frontPortCountEmpty).FrontPortCountGt(frontPortCountGt).FrontPortCountGte(frontPortCountGte).FrontPortCountLt(frontPortCountLt).FrontPortCountLte(frontPortCountLte).FrontPortCountN(frontPortCountN).HasOobIp(hasOobIp).HasPrimaryIp(hasPrimaryIp).HasVirtualDeviceContext(hasVirtualDeviceContext).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).InterfaceCount(interfaceCount).InterfaceCountEmpty(interfaceCountEmpty).InterfaceCountGt(interfaceCountGt).InterfaceCountGte(interfaceCountGte).InterfaceCountLt(interfaceCountLt).InterfaceCountLte(interfaceCountLte).InterfaceCountN(interfaceCountN).Interfaces(interfaces).InventoryItemCount(inventoryItemCount).InventoryItemCountEmpty(inventoryItemCountEmpty).InventoryItemCountGt(inventoryItemCountGt).InventoryItemCountGte(inventoryItemCountGte).InventoryItemCountLt(inventoryItemCountLt).InventoryItemCountLte(inventoryItemCountLte).InventoryItemCountN(inventoryItemCountN).IsFullDepth(isFullDepth).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Latitude(latitude).LatitudeEmpty(latitudeEmpty).LatitudeGt(latitudeGt).LatitudeGte(latitudeGte).LatitudeLt(latitudeLt).LatitudeLte(latitudeLte).LatitudeN(latitudeN).Limit(limit).LocalContextData(localContextData).LocationId(locationId).LocationIdN(locationIdN).Longitude(longitude).LongitudeEmpty(longitudeEmpty).LongitudeGt(longitudeGt).LongitudeGte(longitudeGte).LongitudeLt(longitudeLt).LongitudeLte(longitudeLte).LongitudeN(longitudeN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNisw(macAddressNisw).Manufacturer(manufacturer).ManufacturerN(manufacturerN).ManufacturerId(manufacturerId).ManufacturerIdN(manufacturerIdN).Model(model).ModelN(modelN).ModifiedByRequest(modifiedByRequest).ModuleBayCount(moduleBayCount).ModuleBayCountEmpty(moduleBayCountEmpty).ModuleBayCountGt(moduleBayCountGt).ModuleBayCountGte(moduleBayCountGte).ModuleBayCountLt(moduleBayCountLt).ModuleBayCountLte(moduleBayCountLte).ModuleBayCountN(moduleBayCountN).ModuleBays(moduleBays).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Offset(offset).OobIpId(oobIpId).OobIpIdN(oobIpIdN).Ordering(ordering).ParentBayId(parentBayId).ParentBayIdN(parentBayIdN).ParentDeviceId(parentDeviceId).ParentDeviceIdN(parentDeviceIdN).PassThroughPorts(passThroughPorts).Platform(platform).PlatformN(platformN).PlatformId(platformId).PlatformIdN(platformIdN).Position(position).PositionEmpty(positionEmpty).PositionGt(positionGt).PositionGte(positionGte).PositionLt(positionLt).PositionLte(positionLte).PositionN(positionN).PowerOutletCount(powerOutletCount).PowerOutletCountEmpty(powerOutletCountEmpty).PowerOutletCountGt(powerOutletCountGt).PowerOutletCountGte(powerOutletCountGte).PowerOutletCountLt(powerOutletCountLt).PowerOutletCountLte(powerOutletCountLte).PowerOutletCountN(powerOutletCountN).PowerOutlets(powerOutlets).PowerPortCount(powerPortCount).PowerPortCountEmpty(powerPortCountEmpty).PowerPortCountGt(powerPortCountGt).PowerPortCountGte(powerPortCountGte).PowerPortCountLt(powerPortCountLt).PowerPortCountLte(powerPortCountLte).PowerPortCountN(powerPortCountN).PowerPorts(powerPorts).PrimaryIp4Id(primaryIp4Id).PrimaryIp4IdN(primaryIp4IdN).PrimaryIp6Id(primaryIp6Id).PrimaryIp6IdN(primaryIp6IdN).Q(q).RackId(rackId).RackIdN(rackIdN).RearPortCount(rearPortCount).RearPortCountEmpty(rearPortCountEmpty).RearPortCountGt(rearPortCountGt).RearPortCountGte(rearPortCountGte).RearPortCountLt(rearPortCountLt).RearPortCountLte(rearPortCountLte).RearPortCountN(rearPortCountN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Role(role).RoleN(roleN).RoleId(roleId).RoleIdN(roleIdN).Serial(serial).SerialEmpty(serialEmpty).SerialIc(serialIc).SerialIe(serialIe).SerialIew(serialIew).SerialIsw(serialIsw).SerialN(serialN).SerialNic(serialNic).SerialNie(serialNie).SerialNiew(serialNiew).SerialNisw(serialNisw).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Status(status).StatusN(statusN).Tag(tag).TagN(tagN).Tenant(tenant).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupN(tenantGroupN).TenantGroupId(tenantGroupId).TenantGroupIdN(tenantGroupIdN).TenantId(tenantId).TenantIdN(tenantIdN).UpdatedByRequest(updatedByRequest).VcPosition(vcPosition).VcPositionEmpty(vcPositionEmpty).VcPositionGt(vcPositionGt).VcPositionGte(vcPositionGte).VcPositionLt(vcPositionLt).VcPositionLte(vcPositionLte).VcPositionN(vcPositionN).VcPriority(vcPriority).VcPriorityEmpty(vcPriorityEmpty).VcPriorityGt(vcPriorityGt).VcPriorityGte(vcPriorityGte).VcPriorityLt(vcPriorityLt).VcPriorityLte(vcPriorityLte).VcPriorityN(vcPriorityN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).VirtualChassisMember(virtualChassisMember).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimDevicesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -9221,6 +9225,10 @@ Name | Type | Description  | Notes
  **assetTagNie** | **[]string** |  | 
  **assetTagNiew** | **[]string** |  | 
  **assetTagNisw** | **[]string** |  | 
+ **clusterGroup** | **[]string** | Cluster group (slug) | 
+ **clusterGroupN** | **[]string** | Cluster group (slug) | 
+ **clusterGroupId** | **[]int32** | Cluster group (ID) | 
+ **clusterGroupIdN** | **[]int32** | Cluster group (ID) | 
  **clusterId** | **[]int32** | VM cluster (ID) | 
  **clusterIdN** | **[]int32** | VM cluster (ID) | 
  **configTemplateId** | **[]int32** | Config template (ID) | 
@@ -9243,8 +9251,8 @@ Name | Type | Description  | Notes
  **consoleServerPorts** | **bool** | Has console server ports | 
  **contact** | **[]int32** | Contact | 
  **contactN** | **[]int32** | Contact | 
- **contactGroup** | **[]int32** | Contact group | 
- **contactGroupN** | **[]int32** | Contact group | 
+ **contactGroup** | **[]string** |  | 
+ **contactGroupN** | **[]string** |  | 
  **contactRole** | **[]int32** | Contact Role | 
  **contactRoleN** | **[]int32** | Contact Role | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
@@ -9329,8 +9337,8 @@ Name | Type | Description  | Notes
  **latitudeN** | **[]float64** |  | 
  **limit** | **int32** | Number of results to return per page. | 
  **localContextData** | **bool** | Has local config context data | 
- **locationId** | **[]int32** | Location (ID) | 
- **locationIdN** | **[]int32** | Location (ID) | 
+ **locationId** | **[]string** |  | 
+ **locationIdN** | **[]string** |  | 
  **longitude** | **[]float64** |  | 
  **longitudeEmpty** | **bool** |  | 
  **longitudeGt** | **[]float64** |  | 
@@ -9424,10 +9432,10 @@ Name | Type | Description  | Notes
  **rearPortCountLt** | **[]int32** |  | 
  **rearPortCountLte** | **[]int32** |  | 
  **rearPortCountN** | **[]int32** |  | 
- **region** | **[]int32** | Region (slug) | 
- **regionN** | **[]int32** | Region (slug) | 
- **regionId** | **[]int32** | Region (ID) | 
- **regionIdN** | **[]int32** | Region (ID) | 
+ **region** | **[]string** |  | 
+ **regionN** | **[]string** |  | 
+ **regionId** | **[]string** |  | 
+ **regionIdN** | **[]string** |  | 
  **role** | **[]string** | Role (slug) | 
  **roleN** | **[]string** | Role (slug) | 
  **roleId** | **[]int32** | Role (ID) | 
@@ -9445,10 +9453,10 @@ Name | Type | Description  | Notes
  **serialNisw** | **[]string** |  | 
  **site** | **[]string** | Site name (slug) | 
  **siteN** | **[]string** | Site name (slug) | 
- **siteGroup** | **[]int32** | Site group (slug) | 
- **siteGroupN** | **[]int32** | Site group (slug) | 
- **siteGroupId** | **[]int32** | Site group (ID) | 
- **siteGroupIdN** | **[]int32** | Site group (ID) | 
+ **siteGroup** | **[]string** |  | 
+ **siteGroupN** | **[]string** |  | 
+ **siteGroupId** | **[]string** |  | 
+ **siteGroupIdN** | **[]string** |  | 
  **siteId** | **[]int32** | Site (ID) | 
  **siteIdN** | **[]int32** | Site (ID) | 
  **status** | **[]string** |  | 
@@ -9457,10 +9465,10 @@ Name | Type | Description  | Notes
  **tagN** | **[]string** |  | 
  **tenant** | **[]string** | Tenant (slug) | 
  **tenantN** | **[]string** | Tenant (slug) | 
- **tenantGroup** | **[]int32** | Tenant Group (slug) | 
- **tenantGroupN** | **[]int32** | Tenant Group (slug) | 
- **tenantGroupId** | **[]int32** | Tenant Group (ID) | 
- **tenantGroupIdN** | **[]int32** | Tenant Group (ID) | 
+ **tenantGroup** | **[]string** |  | 
+ **tenantGroupN** | **[]string** |  | 
+ **tenantGroupId** | **[]string** |  | 
+ **tenantGroupIdN** | **[]string** |  | 
  **tenantId** | **[]int32** | Tenant (ID) | 
  **tenantIdN** | **[]int32** | Tenant (ID) | 
  **updatedByRequest** | **string** |  | 
@@ -10911,7 +10919,7 @@ Name | Type | Description  | Notes
 
 ## DcimFrontPortsList
 
-> PaginatedFrontPortList DcimFrontPortsList(ctx).CableEnd(cableEnd).CableEndN(cableEndN).CableId(cableId).CableIdN(cableIdN).Cabled(cabled).Color(color).ColorEmpty(colorEmpty).ColorIc(colorIc).ColorIe(colorIe).ColorIew(colorIew).ColorIsw(colorIsw).ColorN(colorN).ColorNic(colorNic).ColorNie(colorNie).ColorNiew(colorNiew).ColorNisw(colorNisw).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).MarkConnected(markConnected).ModifiedByRequest(modifiedByRequest).ModuleId(moduleId).ModuleIdN(moduleIdN).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Occupied(occupied).Offset(offset).Ordering(ordering).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).RearPortId(rearPortId).RearPortIdN(rearPortIdN).RearPortPosition(rearPortPosition).RearPortPositionEmpty(rearPortPositionEmpty).RearPortPositionGt(rearPortPositionGt).RearPortPositionGte(rearPortPositionGte).RearPortPositionLt(rearPortPositionLt).RearPortPositionLte(rearPortPositionLte).RearPortPositionN(rearPortPositionN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Role(role).RoleN(roleN).RoleId(roleId).RoleIdN(roleIdN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Tag(tag).TagN(tagN).Type_(type_).TypeN(typeN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
+> PaginatedFrontPortList DcimFrontPortsList(ctx).CableEnd(cableEnd).CableEndN(cableEndN).CableId(cableId).CableIdN(cableIdN).Cabled(cabled).Color(color).ColorEmpty(colorEmpty).ColorIc(colorIc).ColorIe(colorIe).ColorIew(colorIew).ColorIsw(colorIsw).ColorN(colorN).ColorNic(colorNic).ColorNie(colorNie).ColorNiew(colorNiew).ColorNisw(colorNisw).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceRole(deviceRole).DeviceRoleN(deviceRoleN).DeviceRoleId(deviceRoleId).DeviceRoleIdN(deviceRoleIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).MarkConnected(markConnected).ModifiedByRequest(modifiedByRequest).ModuleId(moduleId).ModuleIdN(moduleIdN).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Occupied(occupied).Offset(offset).Ordering(ordering).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).RearPortId(rearPortId).RearPortIdN(rearPortIdN).RearPortPosition(rearPortPosition).RearPortPositionEmpty(rearPortPositionEmpty).RearPortPositionGt(rearPortPositionGt).RearPortPositionGte(rearPortPositionGte).RearPortPositionLt(rearPortPositionLt).RearPortPositionLte(rearPortPositionLte).RearPortPositionN(rearPortPositionN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Tag(tag).TagN(tagN).Type_(type_).TypeN(typeN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
 
 
 
@@ -10970,6 +10978,10 @@ func main() {
 	deviceN := []*string{"Inner_example"} // []*string | Device (name) (optional)
 	deviceId := []int32{int32(123)} // []int32 | Device (ID) (optional)
 	deviceIdN := []int32{int32(123)} // []int32 | Device (ID) (optional)
+	deviceRole := []string{"Inner_example"} // []string | Device role (slug) (optional)
+	deviceRoleN := []string{"Inner_example"} // []string | Device role (slug) (optional)
+	deviceRoleId := []int32{int32(123)} // []int32 | Device role (ID) (optional)
+	deviceRoleIdN := []int32{int32(123)} // []int32 | Device role (ID) (optional)
 	deviceType := []string{"Inner_example"} // []string | Device type (model) (optional)
 	deviceTypeN := []string{"Inner_example"} // []string | Device type (model) (optional)
 	deviceTypeId := []int32{int32(123)} // []int32 | Device type (ID) (optional)
@@ -11036,20 +11048,16 @@ func main() {
 	rearPortPositionLt := []int32{int32(123)} // []int32 |  (optional)
 	rearPortPositionLte := []int32{int32(123)} // []int32 |  (optional)
 	rearPortPositionN := []int32{int32(123)} // []int32 |  (optional)
-	region := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionN := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionId := []int32{int32(123)} // []int32 | Region (ID) (optional)
-	regionIdN := []int32{int32(123)} // []int32 | Region (ID) (optional)
-	role := []string{"Inner_example"} // []string | Device role (slug) (optional)
-	roleN := []string{"Inner_example"} // []string | Device role (slug) (optional)
-	roleId := []int32{int32(123)} // []int32 | Device role (ID) (optional)
-	roleIdN := []int32{int32(123)} // []int32 | Device role (ID) (optional)
+	region := []string{"Inner_example"} // []string |  (optional)
+	regionN := []string{"Inner_example"} // []string |  (optional)
+	regionId := []string{"Inner_example"} // []string |  (optional)
+	regionIdN := []string{"Inner_example"} // []string |  (optional)
 	site := []string{"Inner_example"} // []string | Site name (slug) (optional)
 	siteN := []string{"Inner_example"} // []string | Site name (slug) (optional)
-	siteGroup := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	siteGroupN := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	siteGroupId := []int32{int32(123)} // []int32 | Site group (ID) (optional)
-	siteGroupIdN := []int32{int32(123)} // []int32 | Site group (ID) (optional)
+	siteGroup := []string{"Inner_example"} // []string |  (optional)
+	siteGroupN := []string{"Inner_example"} // []string |  (optional)
+	siteGroupId := []string{"Inner_example"} // []string |  (optional)
+	siteGroupIdN := []string{"Inner_example"} // []string |  (optional)
 	siteId := []int32{int32(123)} // []int32 | Site (ID) (optional)
 	siteIdN := []int32{int32(123)} // []int32 | Site (ID) (optional)
 	tag := []string{"Inner_example"} // []string |  (optional)
@@ -11064,7 +11072,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimFrontPortsList(context.Background()).CableEnd(cableEnd).CableEndN(cableEndN).CableId(cableId).CableIdN(cableIdN).Cabled(cabled).Color(color).ColorEmpty(colorEmpty).ColorIc(colorIc).ColorIe(colorIe).ColorIew(colorIew).ColorIsw(colorIsw).ColorN(colorN).ColorNic(colorNic).ColorNie(colorNie).ColorNiew(colorNiew).ColorNisw(colorNisw).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).MarkConnected(markConnected).ModifiedByRequest(modifiedByRequest).ModuleId(moduleId).ModuleIdN(moduleIdN).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Occupied(occupied).Offset(offset).Ordering(ordering).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).RearPortId(rearPortId).RearPortIdN(rearPortIdN).RearPortPosition(rearPortPosition).RearPortPositionEmpty(rearPortPositionEmpty).RearPortPositionGt(rearPortPositionGt).RearPortPositionGte(rearPortPositionGte).RearPortPositionLt(rearPortPositionLt).RearPortPositionLte(rearPortPositionLte).RearPortPositionN(rearPortPositionN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Role(role).RoleN(roleN).RoleId(roleId).RoleIdN(roleIdN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Tag(tag).TagN(tagN).Type_(type_).TypeN(typeN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimFrontPortsList(context.Background()).CableEnd(cableEnd).CableEndN(cableEndN).CableId(cableId).CableIdN(cableIdN).Cabled(cabled).Color(color).ColorEmpty(colorEmpty).ColorIc(colorIc).ColorIe(colorIe).ColorIew(colorIew).ColorIsw(colorIsw).ColorN(colorN).ColorNic(colorNic).ColorNie(colorNie).ColorNiew(colorNiew).ColorNisw(colorNisw).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceRole(deviceRole).DeviceRoleN(deviceRoleN).DeviceRoleId(deviceRoleId).DeviceRoleIdN(deviceRoleIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).MarkConnected(markConnected).ModifiedByRequest(modifiedByRequest).ModuleId(moduleId).ModuleIdN(moduleIdN).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Occupied(occupied).Offset(offset).Ordering(ordering).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).RearPortId(rearPortId).RearPortIdN(rearPortIdN).RearPortPosition(rearPortPosition).RearPortPositionEmpty(rearPortPositionEmpty).RearPortPositionGt(rearPortPositionGt).RearPortPositionGte(rearPortPositionGte).RearPortPositionLt(rearPortPositionLt).RearPortPositionLte(rearPortPositionLte).RearPortPositionN(rearPortPositionN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Tag(tag).TagN(tagN).Type_(type_).TypeN(typeN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimFrontPortsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -11124,6 +11132,10 @@ Name | Type | Description  | Notes
  **deviceN** | **[]string** | Device (name) | 
  **deviceId** | **[]int32** | Device (ID) | 
  **deviceIdN** | **[]int32** | Device (ID) | 
+ **deviceRole** | **[]string** | Device role (slug) | 
+ **deviceRoleN** | **[]string** | Device role (slug) | 
+ **deviceRoleId** | **[]int32** | Device role (ID) | 
+ **deviceRoleIdN** | **[]int32** | Device role (ID) | 
  **deviceType** | **[]string** | Device type (model) | 
  **deviceTypeN** | **[]string** | Device type (model) | 
  **deviceTypeId** | **[]int32** | Device type (ID) | 
@@ -11190,20 +11202,16 @@ Name | Type | Description  | Notes
  **rearPortPositionLt** | **[]int32** |  | 
  **rearPortPositionLte** | **[]int32** |  | 
  **rearPortPositionN** | **[]int32** |  | 
- **region** | **[]int32** | Region (slug) | 
- **regionN** | **[]int32** | Region (slug) | 
- **regionId** | **[]int32** | Region (ID) | 
- **regionIdN** | **[]int32** | Region (ID) | 
- **role** | **[]string** | Device role (slug) | 
- **roleN** | **[]string** | Device role (slug) | 
- **roleId** | **[]int32** | Device role (ID) | 
- **roleIdN** | **[]int32** | Device role (ID) | 
+ **region** | **[]string** |  | 
+ **regionN** | **[]string** |  | 
+ **regionId** | **[]string** |  | 
+ **regionIdN** | **[]string** |  | 
  **site** | **[]string** | Site name (slug) | 
  **siteN** | **[]string** | Site name (slug) | 
- **siteGroup** | **[]int32** | Site group (slug) | 
- **siteGroupN** | **[]int32** | Site group (slug) | 
- **siteGroupId** | **[]int32** | Site group (ID) | 
- **siteGroupIdN** | **[]int32** | Site group (ID) | 
+ **siteGroup** | **[]string** |  | 
+ **siteGroupN** | **[]string** |  | 
+ **siteGroupId** | **[]string** |  | 
+ **siteGroupIdN** | **[]string** |  | 
  **siteId** | **[]int32** | Site (ID) | 
  **siteIdN** | **[]int32** | Site (ID) | 
  **tag** | **[]string** |  | 
@@ -12621,7 +12629,7 @@ Name | Type | Description  | Notes
 
 ## DcimInterfacesList
 
-> PaginatedInterfaceList DcimInterfacesList(ctx).BridgeId(bridgeId).BridgeIdN(bridgeIdN).CableEnd(cableEnd).CableEndN(cableEndN).CableId(cableId).CableIdN(cableIdN).Cabled(cabled).Connected(connected).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Duplex(duplex).DuplexN(duplexN).Enabled(enabled).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Kind(kind).L2vpn(l2vpn).L2vpnN(l2vpnN).L2vpnId(l2vpnId).L2vpnIdN(l2vpnIdN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LagId(lagId).LagIdN(lagIdN).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNisw(macAddressNisw).MarkConnected(markConnected).MgmtOnly(mgmtOnly).Mode(mode).ModeN(modeN).ModifiedByRequest(modifiedByRequest).ModuleId(moduleId).ModuleIdN(moduleIdN).Mtu(mtu).MtuEmpty(mtuEmpty).MtuGt(mtuGt).MtuGte(mtuGte).MtuLt(mtuLt).MtuLte(mtuLte).MtuN(mtuN).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Occupied(occupied).Offset(offset).Ordering(ordering).ParentId(parentId).ParentIdN(parentIdN).PoeMode(poeMode).PoeModeN(poeModeN).PoeType(poeType).PoeTypeN(poeTypeN).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).RfChannel(rfChannel).RfChannelN(rfChannelN).RfChannelFrequency(rfChannelFrequency).RfChannelFrequencyEmpty(rfChannelFrequencyEmpty).RfChannelFrequencyGt(rfChannelFrequencyGt).RfChannelFrequencyGte(rfChannelFrequencyGte).RfChannelFrequencyLt(rfChannelFrequencyLt).RfChannelFrequencyLte(rfChannelFrequencyLte).RfChannelFrequencyN(rfChannelFrequencyN).RfChannelWidth(rfChannelWidth).RfChannelWidthEmpty(rfChannelWidthEmpty).RfChannelWidthGt(rfChannelWidthGt).RfChannelWidthGte(rfChannelWidthGte).RfChannelWidthLt(rfChannelWidthLt).RfChannelWidthLte(rfChannelWidthLte).RfChannelWidthN(rfChannelWidthN).RfRole(rfRole).RfRoleN(rfRoleN).Role(role).RoleN(roleN).RoleId(roleId).RoleIdN(roleIdN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Speed(speed).SpeedEmpty(speedEmpty).SpeedGt(speedGt).SpeedGte(speedGte).SpeedLt(speedLt).SpeedLte(speedLte).SpeedN(speedN).Tag(tag).TagN(tagN).TxPower(txPower).TxPowerEmpty(txPowerEmpty).TxPowerGt(txPowerGt).TxPowerGte(txPowerGte).TxPowerLt(txPowerLt).TxPowerLte(txPowerLte).TxPowerN(txPowerN).Type_(type_).TypeN(typeN).UpdatedByRequest(updatedByRequest).Vdc(vdc).VdcN(vdcN).VdcId(vdcId).VdcIdN(vdcIdN).VdcIdentifier(vdcIdentifier).VdcIdentifierN(vdcIdentifierN).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).VirtualChassisMember(virtualChassisMember).VirtualChassisMemberId(virtualChassisMemberId).Vlan(vlan).VlanId(vlanId).Vrf(vrf).VrfN(vrfN).VrfId(vrfId).VrfIdN(vrfIdN).WirelessLanId(wirelessLanId).WirelessLanIdN(wirelessLanIdN).WirelessLinkId(wirelessLinkId).WirelessLinkIdN(wirelessLinkIdN).Wwn(wwn).WwnIc(wwnIc).WwnIe(wwnIe).WwnIew(wwnIew).WwnIsw(wwnIsw).WwnN(wwnN).WwnNic(wwnNic).WwnNie(wwnNie).WwnNiew(wwnNiew).WwnNisw(wwnNisw).Execute()
+> PaginatedInterfaceList DcimInterfacesList(ctx).BridgeId(bridgeId).BridgeIdN(bridgeIdN).CableEnd(cableEnd).CableEndN(cableEndN).CableId(cableId).CableIdN(cableIdN).Cabled(cabled).Connected(connected).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceRole(deviceRole).DeviceRoleN(deviceRoleN).DeviceRoleId(deviceRoleId).DeviceRoleIdN(deviceRoleIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Duplex(duplex).DuplexN(duplexN).Enabled(enabled).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Kind(kind).L2vpn(l2vpn).L2vpnN(l2vpnN).L2vpnId(l2vpnId).L2vpnIdN(l2vpnIdN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LagId(lagId).LagIdN(lagIdN).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNisw(macAddressNisw).MarkConnected(markConnected).MgmtOnly(mgmtOnly).Mode(mode).ModeN(modeN).ModifiedByRequest(modifiedByRequest).ModuleId(moduleId).ModuleIdN(moduleIdN).Mtu(mtu).MtuEmpty(mtuEmpty).MtuGt(mtuGt).MtuGte(mtuGte).MtuLt(mtuLt).MtuLte(mtuLte).MtuN(mtuN).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Occupied(occupied).Offset(offset).Ordering(ordering).ParentId(parentId).ParentIdN(parentIdN).PoeMode(poeMode).PoeModeN(poeModeN).PoeType(poeType).PoeTypeN(poeTypeN).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).RfChannel(rfChannel).RfChannelN(rfChannelN).RfChannelFrequency(rfChannelFrequency).RfChannelFrequencyEmpty(rfChannelFrequencyEmpty).RfChannelFrequencyGt(rfChannelFrequencyGt).RfChannelFrequencyGte(rfChannelFrequencyGte).RfChannelFrequencyLt(rfChannelFrequencyLt).RfChannelFrequencyLte(rfChannelFrequencyLte).RfChannelFrequencyN(rfChannelFrequencyN).RfChannelWidth(rfChannelWidth).RfChannelWidthEmpty(rfChannelWidthEmpty).RfChannelWidthGt(rfChannelWidthGt).RfChannelWidthGte(rfChannelWidthGte).RfChannelWidthLt(rfChannelWidthLt).RfChannelWidthLte(rfChannelWidthLte).RfChannelWidthN(rfChannelWidthN).RfRole(rfRole).RfRoleN(rfRoleN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Speed(speed).SpeedEmpty(speedEmpty).SpeedGt(speedGt).SpeedGte(speedGte).SpeedLt(speedLt).SpeedLte(speedLte).SpeedN(speedN).Tag(tag).TagN(tagN).TxPower(txPower).TxPowerEmpty(txPowerEmpty).TxPowerGt(txPowerGt).TxPowerGte(txPowerGte).TxPowerLt(txPowerLt).TxPowerLte(txPowerLte).TxPowerN(txPowerN).Type_(type_).TypeN(typeN).UpdatedByRequest(updatedByRequest).Vdc(vdc).VdcN(vdcN).VdcId(vdcId).VdcIdN(vdcIdN).VdcIdentifier(vdcIdentifier).VdcIdentifierN(vdcIdentifierN).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).VirtualChassisMember(virtualChassisMember).VirtualChassisMemberId(virtualChassisMemberId).Vlan(vlan).VlanId(vlanId).Vrf(vrf).VrfN(vrfN).VrfId(vrfId).VrfIdN(vrfIdN).WirelessLanId(wirelessLanId).WirelessLanIdN(wirelessLanIdN).WirelessLinkId(wirelessLinkId).WirelessLinkIdN(wirelessLinkIdN).Wwn(wwn).WwnIc(wwnIc).WwnIe(wwnIe).WwnIew(wwnIew).WwnIsw(wwnIsw).WwnN(wwnN).WwnNic(wwnNic).WwnNie(wwnNie).WwnNiew(wwnNiew).WwnNisw(wwnNisw).Execute()
 
 
 
@@ -12672,6 +12680,10 @@ func main() {
 	deviceN := []*string{"Inner_example"} // []*string | Device (name) (optional)
 	deviceId := []int32{int32(123)} // []int32 | Device (ID) (optional)
 	deviceIdN := []int32{int32(123)} // []int32 | Device (ID) (optional)
+	deviceRole := []string{"Inner_example"} // []string | Device role (slug) (optional)
+	deviceRoleN := []string{"Inner_example"} // []string | Device role (slug) (optional)
+	deviceRoleId := []int32{int32(123)} // []int32 | Device role (ID) (optional)
+	deviceRoleIdN := []int32{int32(123)} // []int32 | Device role (ID) (optional)
 	deviceType := []string{"Inner_example"} // []string | Device type (model) (optional)
 	deviceTypeN := []string{"Inner_example"} // []string | Device type (model) (optional)
 	deviceTypeId := []int32{int32(123)} // []int32 | Device type (ID) (optional)
@@ -12765,10 +12777,10 @@ func main() {
 	rackN := []string{"Inner_example"} // []string | Rack (name) (optional)
 	rackId := []int32{int32(123)} // []int32 | Rack (ID) (optional)
 	rackIdN := []int32{int32(123)} // []int32 | Rack (ID) (optional)
-	region := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionN := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionId := []int32{int32(123)} // []int32 | Region (ID) (optional)
-	regionIdN := []int32{int32(123)} // []int32 | Region (ID) (optional)
+	region := []string{"Inner_example"} // []string |  (optional)
+	regionN := []string{"Inner_example"} // []string |  (optional)
+	regionId := []string{"Inner_example"} // []string |  (optional)
+	regionIdN := []string{"Inner_example"} // []string |  (optional)
 	rfChannel := []string{"Inner_example"} // []string |  (optional)
 	rfChannelN := []string{"Inner_example"} // []string |  (optional)
 	rfChannelFrequency := []float64{float64(123)} // []float64 |  (optional)
@@ -12787,16 +12799,12 @@ func main() {
 	rfChannelWidthN := []float64{float64(123)} // []float64 |  (optional)
 	rfRole := []string{"Inner_example"} // []string |  (optional)
 	rfRoleN := []string{"Inner_example"} // []string |  (optional)
-	role := []string{"Inner_example"} // []string | Device role (slug) (optional)
-	roleN := []string{"Inner_example"} // []string | Device role (slug) (optional)
-	roleId := []int32{int32(123)} // []int32 | Device role (ID) (optional)
-	roleIdN := []int32{int32(123)} // []int32 | Device role (ID) (optional)
 	site := []string{"Inner_example"} // []string | Site name (slug) (optional)
 	siteN := []string{"Inner_example"} // []string | Site name (slug) (optional)
-	siteGroup := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	siteGroupN := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	siteGroupId := []int32{int32(123)} // []int32 | Site group (ID) (optional)
-	siteGroupIdN := []int32{int32(123)} // []int32 | Site group (ID) (optional)
+	siteGroup := []string{"Inner_example"} // []string |  (optional)
+	siteGroupN := []string{"Inner_example"} // []string |  (optional)
+	siteGroupId := []string{"Inner_example"} // []string |  (optional)
+	siteGroupIdN := []string{"Inner_example"} // []string |  (optional)
 	siteId := []int32{int32(123)} // []int32 | Site (ID) (optional)
 	siteIdN := []int32{int32(123)} // []int32 | Site (ID) (optional)
 	speed := []int32{int32(123)} // []int32 |  (optional)
@@ -12853,7 +12861,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimInterfacesList(context.Background()).BridgeId(bridgeId).BridgeIdN(bridgeIdN).CableEnd(cableEnd).CableEndN(cableEndN).CableId(cableId).CableIdN(cableIdN).Cabled(cabled).Connected(connected).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Duplex(duplex).DuplexN(duplexN).Enabled(enabled).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Kind(kind).L2vpn(l2vpn).L2vpnN(l2vpnN).L2vpnId(l2vpnId).L2vpnIdN(l2vpnIdN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LagId(lagId).LagIdN(lagIdN).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNisw(macAddressNisw).MarkConnected(markConnected).MgmtOnly(mgmtOnly).Mode(mode).ModeN(modeN).ModifiedByRequest(modifiedByRequest).ModuleId(moduleId).ModuleIdN(moduleIdN).Mtu(mtu).MtuEmpty(mtuEmpty).MtuGt(mtuGt).MtuGte(mtuGte).MtuLt(mtuLt).MtuLte(mtuLte).MtuN(mtuN).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Occupied(occupied).Offset(offset).Ordering(ordering).ParentId(parentId).ParentIdN(parentIdN).PoeMode(poeMode).PoeModeN(poeModeN).PoeType(poeType).PoeTypeN(poeTypeN).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).RfChannel(rfChannel).RfChannelN(rfChannelN).RfChannelFrequency(rfChannelFrequency).RfChannelFrequencyEmpty(rfChannelFrequencyEmpty).RfChannelFrequencyGt(rfChannelFrequencyGt).RfChannelFrequencyGte(rfChannelFrequencyGte).RfChannelFrequencyLt(rfChannelFrequencyLt).RfChannelFrequencyLte(rfChannelFrequencyLte).RfChannelFrequencyN(rfChannelFrequencyN).RfChannelWidth(rfChannelWidth).RfChannelWidthEmpty(rfChannelWidthEmpty).RfChannelWidthGt(rfChannelWidthGt).RfChannelWidthGte(rfChannelWidthGte).RfChannelWidthLt(rfChannelWidthLt).RfChannelWidthLte(rfChannelWidthLte).RfChannelWidthN(rfChannelWidthN).RfRole(rfRole).RfRoleN(rfRoleN).Role(role).RoleN(roleN).RoleId(roleId).RoleIdN(roleIdN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Speed(speed).SpeedEmpty(speedEmpty).SpeedGt(speedGt).SpeedGte(speedGte).SpeedLt(speedLt).SpeedLte(speedLte).SpeedN(speedN).Tag(tag).TagN(tagN).TxPower(txPower).TxPowerEmpty(txPowerEmpty).TxPowerGt(txPowerGt).TxPowerGte(txPowerGte).TxPowerLt(txPowerLt).TxPowerLte(txPowerLte).TxPowerN(txPowerN).Type_(type_).TypeN(typeN).UpdatedByRequest(updatedByRequest).Vdc(vdc).VdcN(vdcN).VdcId(vdcId).VdcIdN(vdcIdN).VdcIdentifier(vdcIdentifier).VdcIdentifierN(vdcIdentifierN).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).VirtualChassisMember(virtualChassisMember).VirtualChassisMemberId(virtualChassisMemberId).Vlan(vlan).VlanId(vlanId).Vrf(vrf).VrfN(vrfN).VrfId(vrfId).VrfIdN(vrfIdN).WirelessLanId(wirelessLanId).WirelessLanIdN(wirelessLanIdN).WirelessLinkId(wirelessLinkId).WirelessLinkIdN(wirelessLinkIdN).Wwn(wwn).WwnIc(wwnIc).WwnIe(wwnIe).WwnIew(wwnIew).WwnIsw(wwnIsw).WwnN(wwnN).WwnNic(wwnNic).WwnNie(wwnNie).WwnNiew(wwnNiew).WwnNisw(wwnNisw).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimInterfacesList(context.Background()).BridgeId(bridgeId).BridgeIdN(bridgeIdN).CableEnd(cableEnd).CableEndN(cableEndN).CableId(cableId).CableIdN(cableIdN).Cabled(cabled).Connected(connected).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceRole(deviceRole).DeviceRoleN(deviceRoleN).DeviceRoleId(deviceRoleId).DeviceRoleIdN(deviceRoleIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Duplex(duplex).DuplexN(duplexN).Enabled(enabled).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Kind(kind).L2vpn(l2vpn).L2vpnN(l2vpnN).L2vpnId(l2vpnId).L2vpnIdN(l2vpnIdN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LagId(lagId).LagIdN(lagIdN).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNisw(macAddressNisw).MarkConnected(markConnected).MgmtOnly(mgmtOnly).Mode(mode).ModeN(modeN).ModifiedByRequest(modifiedByRequest).ModuleId(moduleId).ModuleIdN(moduleIdN).Mtu(mtu).MtuEmpty(mtuEmpty).MtuGt(mtuGt).MtuGte(mtuGte).MtuLt(mtuLt).MtuLte(mtuLte).MtuN(mtuN).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Occupied(occupied).Offset(offset).Ordering(ordering).ParentId(parentId).ParentIdN(parentIdN).PoeMode(poeMode).PoeModeN(poeModeN).PoeType(poeType).PoeTypeN(poeTypeN).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).RfChannel(rfChannel).RfChannelN(rfChannelN).RfChannelFrequency(rfChannelFrequency).RfChannelFrequencyEmpty(rfChannelFrequencyEmpty).RfChannelFrequencyGt(rfChannelFrequencyGt).RfChannelFrequencyGte(rfChannelFrequencyGte).RfChannelFrequencyLt(rfChannelFrequencyLt).RfChannelFrequencyLte(rfChannelFrequencyLte).RfChannelFrequencyN(rfChannelFrequencyN).RfChannelWidth(rfChannelWidth).RfChannelWidthEmpty(rfChannelWidthEmpty).RfChannelWidthGt(rfChannelWidthGt).RfChannelWidthGte(rfChannelWidthGte).RfChannelWidthLt(rfChannelWidthLt).RfChannelWidthLte(rfChannelWidthLte).RfChannelWidthN(rfChannelWidthN).RfRole(rfRole).RfRoleN(rfRoleN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Speed(speed).SpeedEmpty(speedEmpty).SpeedGt(speedGt).SpeedGte(speedGte).SpeedLt(speedLt).SpeedLte(speedLte).SpeedN(speedN).Tag(tag).TagN(tagN).TxPower(txPower).TxPowerEmpty(txPowerEmpty).TxPowerGt(txPowerGt).TxPowerGte(txPowerGte).TxPowerLt(txPowerLt).TxPowerLte(txPowerLte).TxPowerN(txPowerN).Type_(type_).TypeN(typeN).UpdatedByRequest(updatedByRequest).Vdc(vdc).VdcN(vdcN).VdcId(vdcId).VdcIdN(vdcIdN).VdcIdentifier(vdcIdentifier).VdcIdentifierN(vdcIdentifierN).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).VirtualChassisMember(virtualChassisMember).VirtualChassisMemberId(virtualChassisMemberId).Vlan(vlan).VlanId(vlanId).Vrf(vrf).VrfN(vrfN).VrfId(vrfId).VrfIdN(vrfIdN).WirelessLanId(wirelessLanId).WirelessLanIdN(wirelessLanIdN).WirelessLinkId(wirelessLinkId).WirelessLinkIdN(wirelessLinkIdN).Wwn(wwn).WwnIc(wwnIc).WwnIe(wwnIe).WwnIew(wwnIew).WwnIsw(wwnIsw).WwnN(wwnN).WwnNic(wwnNic).WwnNie(wwnNie).WwnNiew(wwnNiew).WwnNisw(wwnNisw).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimInterfacesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -12905,6 +12913,10 @@ Name | Type | Description  | Notes
  **deviceN** | **[]string** | Device (name) | 
  **deviceId** | **[]int32** | Device (ID) | 
  **deviceIdN** | **[]int32** | Device (ID) | 
+ **deviceRole** | **[]string** | Device role (slug) | 
+ **deviceRoleN** | **[]string** | Device role (slug) | 
+ **deviceRoleId** | **[]int32** | Device role (ID) | 
+ **deviceRoleIdN** | **[]int32** | Device role (ID) | 
  **deviceType** | **[]string** | Device type (model) | 
  **deviceTypeN** | **[]string** | Device type (model) | 
  **deviceTypeId** | **[]int32** | Device type (ID) | 
@@ -12998,10 +13010,10 @@ Name | Type | Description  | Notes
  **rackN** | **[]string** | Rack (name) | 
  **rackId** | **[]int32** | Rack (ID) | 
  **rackIdN** | **[]int32** | Rack (ID) | 
- **region** | **[]int32** | Region (slug) | 
- **regionN** | **[]int32** | Region (slug) | 
- **regionId** | **[]int32** | Region (ID) | 
- **regionIdN** | **[]int32** | Region (ID) | 
+ **region** | **[]string** |  | 
+ **regionN** | **[]string** |  | 
+ **regionId** | **[]string** |  | 
+ **regionIdN** | **[]string** |  | 
  **rfChannel** | **[]string** |  | 
  **rfChannelN** | **[]string** |  | 
  **rfChannelFrequency** | **[]float64** |  | 
@@ -13020,16 +13032,12 @@ Name | Type | Description  | Notes
  **rfChannelWidthN** | **[]float64** |  | 
  **rfRole** | **[]string** |  | 
  **rfRoleN** | **[]string** |  | 
- **role** | **[]string** | Device role (slug) | 
- **roleN** | **[]string** | Device role (slug) | 
- **roleId** | **[]int32** | Device role (ID) | 
- **roleIdN** | **[]int32** | Device role (ID) | 
  **site** | **[]string** | Site name (slug) | 
  **siteN** | **[]string** | Site name (slug) | 
- **siteGroup** | **[]int32** | Site group (slug) | 
- **siteGroupN** | **[]int32** | Site group (slug) | 
- **siteGroupId** | **[]int32** | Site group (ID) | 
- **siteGroupIdN** | **[]int32** | Site group (ID) | 
+ **siteGroup** | **[]string** |  | 
+ **siteGroupN** | **[]string** |  | 
+ **siteGroupId** | **[]string** |  | 
+ **siteGroupIdN** | **[]string** |  | 
  **siteId** | **[]int32** | Site (ID) | 
  **siteIdN** | **[]int32** | Site (ID) | 
  **speed** | **[]int32** |  | 
@@ -15274,7 +15282,7 @@ Name | Type | Description  | Notes
 
 ## DcimInventoryItemsList
 
-> PaginatedInventoryItemList DcimInventoryItemsList(ctx).AssetTag(assetTag).AssetTagEmpty(assetTagEmpty).AssetTagIc(assetTagIc).AssetTagIe(assetTagIe).AssetTagIew(assetTagIew).AssetTagIsw(assetTagIsw).AssetTagN(assetTagN).AssetTagNic(assetTagNic).AssetTagNie(assetTagNie).AssetTagNiew(assetTagNiew).AssetTagNisw(assetTagNisw).ComponentId(componentId).ComponentIdEmpty(componentIdEmpty).ComponentIdGt(componentIdGt).ComponentIdGte(componentIdGte).ComponentIdLt(componentIdLt).ComponentIdLte(componentIdLte).ComponentIdN(componentIdN).ComponentType(componentType).ComponentTypeN(componentTypeN).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Discovered(discovered).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).Manufacturer(manufacturer).ManufacturerN(manufacturerN).ManufacturerId(manufacturerId).ManufacturerIdN(manufacturerIdN).ModifiedByRequest(modifiedByRequest).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Offset(offset).Ordering(ordering).ParentId(parentId).ParentIdN(parentIdN).PartId(partId).PartIdEmpty(partIdEmpty).PartIdIc(partIdIc).PartIdIe(partIdIe).PartIdIew(partIdIew).PartIdIsw(partIdIsw).PartIdN(partIdN).PartIdNic(partIdNic).PartIdNie(partIdNie).PartIdNiew(partIdNiew).PartIdNisw(partIdNisw).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Role(role).RoleN(roleN).RoleId(roleId).RoleIdN(roleIdN).Serial(serial).SerialEmpty(serialEmpty).SerialIc(serialIc).SerialIe(serialIe).SerialIew(serialIew).SerialIsw(serialIsw).SerialN(serialN).SerialNic(serialNic).SerialNie(serialNie).SerialNiew(serialNiew).SerialNisw(serialNisw).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Tag(tag).TagN(tagN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
+> PaginatedInventoryItemList DcimInventoryItemsList(ctx).AssetTag(assetTag).AssetTagEmpty(assetTagEmpty).AssetTagIc(assetTagIc).AssetTagIe(assetTagIe).AssetTagIew(assetTagIew).AssetTagIsw(assetTagIsw).AssetTagN(assetTagN).AssetTagNic(assetTagNic).AssetTagNie(assetTagNie).AssetTagNiew(assetTagNiew).AssetTagNisw(assetTagNisw).ComponentId(componentId).ComponentIdEmpty(componentIdEmpty).ComponentIdGt(componentIdGt).ComponentIdGte(componentIdGte).ComponentIdLt(componentIdLt).ComponentIdLte(componentIdLte).ComponentIdN(componentIdN).ComponentType(componentType).ComponentTypeN(componentTypeN).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceRole(deviceRole).DeviceRoleN(deviceRoleN).DeviceRoleId(deviceRoleId).DeviceRoleIdN(deviceRoleIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Discovered(discovered).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).Manufacturer(manufacturer).ManufacturerN(manufacturerN).ManufacturerId(manufacturerId).ManufacturerIdN(manufacturerIdN).ModifiedByRequest(modifiedByRequest).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Offset(offset).Ordering(ordering).ParentId(parentId).ParentIdN(parentIdN).PartId(partId).PartIdEmpty(partIdEmpty).PartIdIc(partIdIc).PartIdIe(partIdIe).PartIdIew(partIdIew).PartIdIsw(partIdIsw).PartIdN(partIdN).PartIdNic(partIdNic).PartIdNie(partIdNie).PartIdNiew(partIdNiew).PartIdNisw(partIdNisw).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Role(role).RoleN(roleN).RoleId(roleId).RoleIdN(roleIdN).Serial(serial).SerialEmpty(serialEmpty).SerialIc(serialIc).SerialIe(serialIe).SerialIew(serialIew).SerialIsw(serialIsw).SerialN(serialN).SerialNic(serialNic).SerialNie(serialNie).SerialNiew(serialNiew).SerialNisw(serialNisw).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Tag(tag).TagN(tagN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
 
 
 
@@ -15337,6 +15345,10 @@ func main() {
 	deviceN := []*string{"Inner_example"} // []*string | Device (name) (optional)
 	deviceId := []int32{int32(123)} // []int32 | Device (ID) (optional)
 	deviceIdN := []int32{int32(123)} // []int32 | Device (ID) (optional)
+	deviceRole := []string{"Inner_example"} // []string | Device role (slug) (optional)
+	deviceRoleN := []string{"Inner_example"} // []string | Device role (slug) (optional)
+	deviceRoleId := []int32{int32(123)} // []int32 | Device role (ID) (optional)
+	deviceRoleIdN := []int32{int32(123)} // []int32 | Device role (ID) (optional)
 	deviceType := []string{"Inner_example"} // []string | Device type (model) (optional)
 	deviceTypeN := []string{"Inner_example"} // []string | Device type (model) (optional)
 	deviceTypeId := []int32{int32(123)} // []int32 | Device type (ID) (optional)
@@ -15408,10 +15420,10 @@ func main() {
 	rackN := []string{"Inner_example"} // []string | Rack (name) (optional)
 	rackId := []int32{int32(123)} // []int32 | Rack (ID) (optional)
 	rackIdN := []int32{int32(123)} // []int32 | Rack (ID) (optional)
-	region := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionN := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionId := []int32{int32(123)} // []int32 | Region (ID) (optional)
-	regionIdN := []int32{int32(123)} // []int32 | Region (ID) (optional)
+	region := []string{"Inner_example"} // []string |  (optional)
+	regionN := []string{"Inner_example"} // []string |  (optional)
+	regionId := []string{"Inner_example"} // []string |  (optional)
+	regionIdN := []string{"Inner_example"} // []string |  (optional)
 	role := []string{"Inner_example"} // []string | Role (slug) (optional)
 	roleN := []string{"Inner_example"} // []string | Role (slug) (optional)
 	roleId := []*int32{int32(123)} // []*int32 | Role (ID) (optional)
@@ -15429,10 +15441,10 @@ func main() {
 	serialNisw := []string{"Inner_example"} // []string |  (optional)
 	site := []string{"Inner_example"} // []string | Site name (slug) (optional)
 	siteN := []string{"Inner_example"} // []string | Site name (slug) (optional)
-	siteGroup := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	siteGroupN := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	siteGroupId := []int32{int32(123)} // []int32 | Site group (ID) (optional)
-	siteGroupIdN := []int32{int32(123)} // []int32 | Site group (ID) (optional)
+	siteGroup := []string{"Inner_example"} // []string |  (optional)
+	siteGroupN := []string{"Inner_example"} // []string |  (optional)
+	siteGroupId := []string{"Inner_example"} // []string |  (optional)
+	siteGroupIdN := []string{"Inner_example"} // []string |  (optional)
 	siteId := []int32{int32(123)} // []int32 | Site (ID) (optional)
 	siteIdN := []int32{int32(123)} // []int32 | Site (ID) (optional)
 	tag := []string{"Inner_example"} // []string |  (optional)
@@ -15445,7 +15457,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimInventoryItemsList(context.Background()).AssetTag(assetTag).AssetTagEmpty(assetTagEmpty).AssetTagIc(assetTagIc).AssetTagIe(assetTagIe).AssetTagIew(assetTagIew).AssetTagIsw(assetTagIsw).AssetTagN(assetTagN).AssetTagNic(assetTagNic).AssetTagNie(assetTagNie).AssetTagNiew(assetTagNiew).AssetTagNisw(assetTagNisw).ComponentId(componentId).ComponentIdEmpty(componentIdEmpty).ComponentIdGt(componentIdGt).ComponentIdGte(componentIdGte).ComponentIdLt(componentIdLt).ComponentIdLte(componentIdLte).ComponentIdN(componentIdN).ComponentType(componentType).ComponentTypeN(componentTypeN).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Discovered(discovered).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).Manufacturer(manufacturer).ManufacturerN(manufacturerN).ManufacturerId(manufacturerId).ManufacturerIdN(manufacturerIdN).ModifiedByRequest(modifiedByRequest).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Offset(offset).Ordering(ordering).ParentId(parentId).ParentIdN(parentIdN).PartId(partId).PartIdEmpty(partIdEmpty).PartIdIc(partIdIc).PartIdIe(partIdIe).PartIdIew(partIdIew).PartIdIsw(partIdIsw).PartIdN(partIdN).PartIdNic(partIdNic).PartIdNie(partIdNie).PartIdNiew(partIdNiew).PartIdNisw(partIdNisw).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Role(role).RoleN(roleN).RoleId(roleId).RoleIdN(roleIdN).Serial(serial).SerialEmpty(serialEmpty).SerialIc(serialIc).SerialIe(serialIe).SerialIew(serialIew).SerialIsw(serialIsw).SerialN(serialN).SerialNic(serialNic).SerialNie(serialNie).SerialNiew(serialNiew).SerialNisw(serialNisw).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Tag(tag).TagN(tagN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimInventoryItemsList(context.Background()).AssetTag(assetTag).AssetTagEmpty(assetTagEmpty).AssetTagIc(assetTagIc).AssetTagIe(assetTagIe).AssetTagIew(assetTagIew).AssetTagIsw(assetTagIsw).AssetTagN(assetTagN).AssetTagNic(assetTagNic).AssetTagNie(assetTagNie).AssetTagNiew(assetTagNiew).AssetTagNisw(assetTagNisw).ComponentId(componentId).ComponentIdEmpty(componentIdEmpty).ComponentIdGt(componentIdGt).ComponentIdGte(componentIdGte).ComponentIdLt(componentIdLt).ComponentIdLte(componentIdLte).ComponentIdN(componentIdN).ComponentType(componentType).ComponentTypeN(componentTypeN).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceRole(deviceRole).DeviceRoleN(deviceRoleN).DeviceRoleId(deviceRoleId).DeviceRoleIdN(deviceRoleIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Discovered(discovered).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).Manufacturer(manufacturer).ManufacturerN(manufacturerN).ManufacturerId(manufacturerId).ManufacturerIdN(manufacturerIdN).ModifiedByRequest(modifiedByRequest).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Offset(offset).Ordering(ordering).ParentId(parentId).ParentIdN(parentIdN).PartId(partId).PartIdEmpty(partIdEmpty).PartIdIc(partIdIc).PartIdIe(partIdIe).PartIdIew(partIdIew).PartIdIsw(partIdIsw).PartIdN(partIdN).PartIdNic(partIdNic).PartIdNie(partIdNie).PartIdNiew(partIdNiew).PartIdNisw(partIdNisw).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Role(role).RoleN(roleN).RoleId(roleId).RoleIdN(roleIdN).Serial(serial).SerialEmpty(serialEmpty).SerialIc(serialIc).SerialIe(serialIe).SerialIew(serialIew).SerialIsw(serialIsw).SerialN(serialN).SerialNic(serialNic).SerialNie(serialNie).SerialNiew(serialNiew).SerialNisw(serialNisw).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Tag(tag).TagN(tagN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimInventoryItemsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -15509,6 +15521,10 @@ Name | Type | Description  | Notes
  **deviceN** | **[]string** | Device (name) | 
  **deviceId** | **[]int32** | Device (ID) | 
  **deviceIdN** | **[]int32** | Device (ID) | 
+ **deviceRole** | **[]string** | Device role (slug) | 
+ **deviceRoleN** | **[]string** | Device role (slug) | 
+ **deviceRoleId** | **[]int32** | Device role (ID) | 
+ **deviceRoleIdN** | **[]int32** | Device role (ID) | 
  **deviceType** | **[]string** | Device type (model) | 
  **deviceTypeN** | **[]string** | Device type (model) | 
  **deviceTypeId** | **[]int32** | Device type (ID) | 
@@ -15580,10 +15596,10 @@ Name | Type | Description  | Notes
  **rackN** | **[]string** | Rack (name) | 
  **rackId** | **[]int32** | Rack (ID) | 
  **rackIdN** | **[]int32** | Rack (ID) | 
- **region** | **[]int32** | Region (slug) | 
- **regionN** | **[]int32** | Region (slug) | 
- **regionId** | **[]int32** | Region (ID) | 
- **regionIdN** | **[]int32** | Region (ID) | 
+ **region** | **[]string** |  | 
+ **regionN** | **[]string** |  | 
+ **regionId** | **[]string** |  | 
+ **regionIdN** | **[]string** |  | 
  **role** | **[]string** | Role (slug) | 
  **roleN** | **[]string** | Role (slug) | 
  **roleId** | **[]int32** | Role (ID) | 
@@ -15601,10 +15617,10 @@ Name | Type | Description  | Notes
  **serialNisw** | **[]string** |  | 
  **site** | **[]string** | Site name (slug) | 
  **siteN** | **[]string** | Site name (slug) | 
- **siteGroup** | **[]int32** | Site group (slug) | 
- **siteGroupN** | **[]int32** | Site group (slug) | 
- **siteGroupId** | **[]int32** | Site group (ID) | 
- **siteGroupIdN** | **[]int32** | Site group (ID) | 
+ **siteGroup** | **[]string** |  | 
+ **siteGroupN** | **[]string** |  | 
+ **siteGroupId** | **[]string** |  | 
+ **siteGroupIdN** | **[]string** |  | 
  **siteId** | **[]int32** | Site (ID) | 
  **siteIdN** | **[]int32** | Site (ID) | 
  **tag** | **[]string** |  | 
@@ -16199,14 +16215,14 @@ import (
 )
 
 func main() {
-	ancestor := []int32{int32(123)} // []int32 | Location (slug) (optional)
-	ancestorN := []int32{int32(123)} // []int32 | Location (slug) (optional)
-	ancestorId := []int32{int32(123)} // []int32 | Location (ID) (optional)
-	ancestorIdN := []int32{int32(123)} // []int32 | Location (ID) (optional)
+	ancestor := []string{"Inner_example"} // []string |  (optional)
+	ancestorN := []string{"Inner_example"} // []string |  (optional)
+	ancestorId := []string{"Inner_example"} // []string |  (optional)
+	ancestorIdN := []string{"Inner_example"} // []string |  (optional)
 	contact := []int32{int32(123)} // []int32 | Contact (optional)
 	contactN := []int32{int32(123)} // []int32 | Contact (optional)
-	contactGroup := []int32{int32(123)} // []int32 | Contact group (optional)
-	contactGroupN := []int32{int32(123)} // []int32 | Contact group (optional)
+	contactGroup := []string{"Inner_example"} // []string |  (optional)
+	contactGroupN := []string{"Inner_example"} // []string |  (optional)
 	contactRole := []int32{int32(123)} // []int32 | Contact Role (optional)
 	contactRoleN := []int32{int32(123)} // []int32 | Contact Role (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -16273,16 +16289,16 @@ func main() {
 	parentId := []*int32{int32(123)} // []*int32 | Parent location (ID) (optional)
 	parentIdN := []*int32{int32(123)} // []*int32 | Parent location (ID) (optional)
 	q := "q_example" // string | Search (optional)
-	region := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionN := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionId := []int32{int32(123)} // []int32 | Region (ID) (optional)
-	regionIdN := []int32{int32(123)} // []int32 | Region (ID) (optional)
+	region := []string{"Inner_example"} // []string |  (optional)
+	regionN := []string{"Inner_example"} // []string |  (optional)
+	regionId := []string{"Inner_example"} // []string |  (optional)
+	regionIdN := []string{"Inner_example"} // []string |  (optional)
 	site := []string{"Inner_example"} // []string | Site (slug) (optional)
 	siteN := []string{"Inner_example"} // []string | Site (slug) (optional)
-	siteGroup := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	siteGroupN := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	siteGroupId := []int32{int32(123)} // []int32 | Site group (ID) (optional)
-	siteGroupIdN := []int32{int32(123)} // []int32 | Site group (ID) (optional)
+	siteGroup := []string{"Inner_example"} // []string |  (optional)
+	siteGroupN := []string{"Inner_example"} // []string |  (optional)
+	siteGroupId := []string{"Inner_example"} // []string |  (optional)
+	siteGroupIdN := []string{"Inner_example"} // []string |  (optional)
 	siteId := []int32{int32(123)} // []int32 | Site (ID) (optional)
 	siteIdN := []int32{int32(123)} // []int32 | Site (ID) (optional)
 	slug := []string{"Inner_example"} // []string |  (optional)
@@ -16302,10 +16318,10 @@ func main() {
 	tagN := []string{"Inner_example"} // []string |  (optional)
 	tenant := []string{"Inner_example"} // []string | Tenant (slug) (optional)
 	tenantN := []string{"Inner_example"} // []string | Tenant (slug) (optional)
-	tenantGroup := []int32{int32(123)} // []int32 | Tenant Group (slug) (optional)
-	tenantGroupN := []int32{int32(123)} // []int32 | Tenant Group (slug) (optional)
-	tenantGroupId := []int32{int32(123)} // []int32 | Tenant Group (ID) (optional)
-	tenantGroupIdN := []int32{int32(123)} // []int32 | Tenant Group (ID) (optional)
+	tenantGroup := []string{"Inner_example"} // []string |  (optional)
+	tenantGroupN := []string{"Inner_example"} // []string |  (optional)
+	tenantGroupId := []string{"Inner_example"} // []string |  (optional)
+	tenantGroupIdN := []string{"Inner_example"} // []string |  (optional)
 	tenantId := []*int32{int32(123)} // []*int32 | Tenant (ID) (optional)
 	tenantIdN := []*int32{int32(123)} // []*int32 | Tenant (ID) (optional)
 	updatedByRequest := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string |  (optional)
@@ -16333,14 +16349,14 @@ Other parameters are passed through a pointer to a apiDcimLocationsListRequest s
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ancestor** | **[]int32** | Location (slug) | 
- **ancestorN** | **[]int32** | Location (slug) | 
- **ancestorId** | **[]int32** | Location (ID) | 
- **ancestorIdN** | **[]int32** | Location (ID) | 
+ **ancestor** | **[]string** |  | 
+ **ancestorN** | **[]string** |  | 
+ **ancestorId** | **[]string** |  | 
+ **ancestorIdN** | **[]string** |  | 
  **contact** | **[]int32** | Contact | 
  **contactN** | **[]int32** | Contact | 
- **contactGroup** | **[]int32** | Contact group | 
- **contactGroupN** | **[]int32** | Contact group | 
+ **contactGroup** | **[]string** |  | 
+ **contactGroupN** | **[]string** |  | 
  **contactRole** | **[]int32** | Contact Role | 
  **contactRoleN** | **[]int32** | Contact Role | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
@@ -16407,16 +16423,16 @@ Name | Type | Description  | Notes
  **parentId** | **[]int32** | Parent location (ID) | 
  **parentIdN** | **[]int32** | Parent location (ID) | 
  **q** | **string** | Search | 
- **region** | **[]int32** | Region (slug) | 
- **regionN** | **[]int32** | Region (slug) | 
- **regionId** | **[]int32** | Region (ID) | 
- **regionIdN** | **[]int32** | Region (ID) | 
+ **region** | **[]string** |  | 
+ **regionN** | **[]string** |  | 
+ **regionId** | **[]string** |  | 
+ **regionIdN** | **[]string** |  | 
  **site** | **[]string** | Site (slug) | 
  **siteN** | **[]string** | Site (slug) | 
- **siteGroup** | **[]int32** | Site group (slug) | 
- **siteGroupN** | **[]int32** | Site group (slug) | 
- **siteGroupId** | **[]int32** | Site group (ID) | 
- **siteGroupIdN** | **[]int32** | Site group (ID) | 
+ **siteGroup** | **[]string** |  | 
+ **siteGroupN** | **[]string** |  | 
+ **siteGroupId** | **[]string** |  | 
+ **siteGroupIdN** | **[]string** |  | 
  **siteId** | **[]int32** | Site (ID) | 
  **siteIdN** | **[]int32** | Site (ID) | 
  **slug** | **[]string** |  | 
@@ -16436,10 +16452,10 @@ Name | Type | Description  | Notes
  **tagN** | **[]string** |  | 
  **tenant** | **[]string** | Tenant (slug) | 
  **tenantN** | **[]string** | Tenant (slug) | 
- **tenantGroup** | **[]int32** | Tenant Group (slug) | 
- **tenantGroupN** | **[]int32** | Tenant Group (slug) | 
- **tenantGroupId** | **[]int32** | Tenant Group (ID) | 
- **tenantGroupIdN** | **[]int32** | Tenant Group (ID) | 
+ **tenantGroup** | **[]string** |  | 
+ **tenantGroupN** | **[]string** |  | 
+ **tenantGroupId** | **[]string** |  | 
+ **tenantGroupIdN** | **[]string** |  | 
  **tenantId** | **[]int32** | Tenant (ID) | 
  **tenantIdN** | **[]int32** | Tenant (ID) | 
  **updatedByRequest** | **string** |  | 
@@ -17030,8 +17046,8 @@ import (
 func main() {
 	contact := []int32{int32(123)} // []int32 | Contact (optional)
 	contactN := []int32{int32(123)} // []int32 | Contact (optional)
-	contactGroup := []int32{int32(123)} // []int32 | Contact group (optional)
-	contactGroupN := []int32{int32(123)} // []int32 | Contact group (optional)
+	contactGroup := []string{"Inner_example"} // []string |  (optional)
+	contactGroupN := []string{"Inner_example"} // []string |  (optional)
 	contactRole := []int32{int32(123)} // []int32 | Contact Role (optional)
 	contactRoleN := []int32{int32(123)} // []int32 | Contact Role (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -17123,8 +17139,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **contact** | **[]int32** | Contact | 
  **contactN** | **[]int32** | Contact | 
- **contactGroup** | **[]int32** | Contact group | 
- **contactGroupN** | **[]int32** | Contact group | 
+ **contactGroup** | **[]string** |  | 
+ **contactGroupN** | **[]string** |  | 
  **contactRole** | **[]int32** | Contact Role | 
  **contactRoleN** | **[]int32** | Contact Role | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
@@ -18516,7 +18532,7 @@ Name | Type | Description  | Notes
 
 ## DcimModuleBaysList
 
-> PaginatedModuleBayList DcimModuleBaysList(ctx).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).InstalledModuleId(installedModuleId).InstalledModuleIdN(installedModuleIdN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).ModifiedByRequest(modifiedByRequest).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Offset(offset).Ordering(ordering).Position(position).PositionEmpty(positionEmpty).PositionIc(positionIc).PositionIe(positionIe).PositionIew(positionIew).PositionIsw(positionIsw).PositionN(positionN).PositionNic(positionNic).PositionNie(positionNie).PositionNiew(positionNiew).PositionNisw(positionNisw).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Role(role).RoleN(roleN).RoleId(roleId).RoleIdN(roleIdN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Tag(tag).TagN(tagN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
+> PaginatedModuleBayList DcimModuleBaysList(ctx).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceRole(deviceRole).DeviceRoleN(deviceRoleN).DeviceRoleId(deviceRoleId).DeviceRoleIdN(deviceRoleIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).InstalledModuleId(installedModuleId).InstalledModuleIdN(installedModuleIdN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).ModifiedByRequest(modifiedByRequest).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Offset(offset).Ordering(ordering).Position(position).PositionEmpty(positionEmpty).PositionIc(positionIc).PositionIe(positionIe).PositionIew(positionIew).PositionIsw(positionIsw).PositionN(positionN).PositionNic(positionNic).PositionNie(positionNie).PositionNiew(positionNiew).PositionNisw(positionNisw).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Tag(tag).TagN(tagN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
 
 
 
@@ -18559,6 +18575,10 @@ func main() {
 	deviceN := []*string{"Inner_example"} // []*string | Device (name) (optional)
 	deviceId := []int32{int32(123)} // []int32 | Device (ID) (optional)
 	deviceIdN := []int32{int32(123)} // []int32 | Device (ID) (optional)
+	deviceRole := []string{"Inner_example"} // []string | Device role (slug) (optional)
+	deviceRoleN := []string{"Inner_example"} // []string | Device role (slug) (optional)
+	deviceRoleId := []int32{int32(123)} // []int32 | Device role (ID) (optional)
+	deviceRoleIdN := []int32{int32(123)} // []int32 | Device role (ID) (optional)
 	deviceType := []string{"Inner_example"} // []string | Device type (model) (optional)
 	deviceTypeN := []string{"Inner_example"} // []string | Device type (model) (optional)
 	deviceTypeId := []int32{int32(123)} // []int32 | Device type (ID) (optional)
@@ -18625,20 +18645,16 @@ func main() {
 	rackN := []string{"Inner_example"} // []string | Rack (name) (optional)
 	rackId := []int32{int32(123)} // []int32 | Rack (ID) (optional)
 	rackIdN := []int32{int32(123)} // []int32 | Rack (ID) (optional)
-	region := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionN := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionId := []int32{int32(123)} // []int32 | Region (ID) (optional)
-	regionIdN := []int32{int32(123)} // []int32 | Region (ID) (optional)
-	role := []string{"Inner_example"} // []string | Device role (slug) (optional)
-	roleN := []string{"Inner_example"} // []string | Device role (slug) (optional)
-	roleId := []int32{int32(123)} // []int32 | Device role (ID) (optional)
-	roleIdN := []int32{int32(123)} // []int32 | Device role (ID) (optional)
+	region := []string{"Inner_example"} // []string |  (optional)
+	regionN := []string{"Inner_example"} // []string |  (optional)
+	regionId := []string{"Inner_example"} // []string |  (optional)
+	regionIdN := []string{"Inner_example"} // []string |  (optional)
 	site := []string{"Inner_example"} // []string | Site name (slug) (optional)
 	siteN := []string{"Inner_example"} // []string | Site name (slug) (optional)
-	siteGroup := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	siteGroupN := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	siteGroupId := []int32{int32(123)} // []int32 | Site group (ID) (optional)
-	siteGroupIdN := []int32{int32(123)} // []int32 | Site group (ID) (optional)
+	siteGroup := []string{"Inner_example"} // []string |  (optional)
+	siteGroupN := []string{"Inner_example"} // []string |  (optional)
+	siteGroupId := []string{"Inner_example"} // []string |  (optional)
+	siteGroupIdN := []string{"Inner_example"} // []string |  (optional)
 	siteId := []int32{int32(123)} // []int32 | Site (ID) (optional)
 	siteIdN := []int32{int32(123)} // []int32 | Site (ID) (optional)
 	tag := []string{"Inner_example"} // []string |  (optional)
@@ -18651,7 +18667,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimModuleBaysList(context.Background()).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).InstalledModuleId(installedModuleId).InstalledModuleIdN(installedModuleIdN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).ModifiedByRequest(modifiedByRequest).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Offset(offset).Ordering(ordering).Position(position).PositionEmpty(positionEmpty).PositionIc(positionIc).PositionIe(positionIe).PositionIew(positionIew).PositionIsw(positionIsw).PositionN(positionN).PositionNic(positionNic).PositionNie(positionNie).PositionNiew(positionNiew).PositionNisw(positionNisw).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Role(role).RoleN(roleN).RoleId(roleId).RoleIdN(roleIdN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Tag(tag).TagN(tagN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimModuleBaysList(context.Background()).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceRole(deviceRole).DeviceRoleN(deviceRoleN).DeviceRoleId(deviceRoleId).DeviceRoleIdN(deviceRoleIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).InstalledModuleId(installedModuleId).InstalledModuleIdN(installedModuleIdN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).ModifiedByRequest(modifiedByRequest).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Offset(offset).Ordering(ordering).Position(position).PositionEmpty(positionEmpty).PositionIc(positionIc).PositionIe(positionIe).PositionIew(positionIew).PositionIsw(positionIsw).PositionN(positionN).PositionNic(positionNic).PositionNie(positionNie).PositionNiew(positionNiew).PositionNisw(positionNisw).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Tag(tag).TagN(tagN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModuleBaysList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -18695,6 +18711,10 @@ Name | Type | Description  | Notes
  **deviceN** | **[]string** | Device (name) | 
  **deviceId** | **[]int32** | Device (ID) | 
  **deviceIdN** | **[]int32** | Device (ID) | 
+ **deviceRole** | **[]string** | Device role (slug) | 
+ **deviceRoleN** | **[]string** | Device role (slug) | 
+ **deviceRoleId** | **[]int32** | Device role (ID) | 
+ **deviceRoleIdN** | **[]int32** | Device role (ID) | 
  **deviceType** | **[]string** | Device type (model) | 
  **deviceTypeN** | **[]string** | Device type (model) | 
  **deviceTypeId** | **[]int32** | Device type (ID) | 
@@ -18761,20 +18781,16 @@ Name | Type | Description  | Notes
  **rackN** | **[]string** | Rack (name) | 
  **rackId** | **[]int32** | Rack (ID) | 
  **rackIdN** | **[]int32** | Rack (ID) | 
- **region** | **[]int32** | Region (slug) | 
- **regionN** | **[]int32** | Region (slug) | 
- **regionId** | **[]int32** | Region (ID) | 
- **regionIdN** | **[]int32** | Region (ID) | 
- **role** | **[]string** | Device role (slug) | 
- **roleN** | **[]string** | Device role (slug) | 
- **roleId** | **[]int32** | Device role (ID) | 
- **roleIdN** | **[]int32** | Device role (ID) | 
+ **region** | **[]string** |  | 
+ **regionN** | **[]string** |  | 
+ **regionId** | **[]string** |  | 
+ **regionIdN** | **[]string** |  | 
  **site** | **[]string** | Site name (slug) | 
  **siteN** | **[]string** | Site name (slug) | 
- **siteGroup** | **[]int32** | Site group (slug) | 
- **siteGroupN** | **[]int32** | Site group (slug) | 
- **siteGroupId** | **[]int32** | Site group (ID) | 
- **siteGroupIdN** | **[]int32** | Site group (ID) | 
+ **siteGroup** | **[]string** |  | 
+ **siteGroupN** | **[]string** |  | 
+ **siteGroupId** | **[]string** |  | 
+ **siteGroupIdN** | **[]string** |  | 
  **siteId** | **[]int32** | Site (ID) | 
  **siteIdN** | **[]int32** | Site (ID) | 
  **tag** | **[]string** |  | 
@@ -21738,16 +21754,16 @@ func main() {
 	q := "q_example" // string | Search (optional)
 	rackId := []int32{int32(123)} // []int32 | Rack (ID) (optional)
 	rackIdN := []int32{int32(123)} // []int32 | Rack (ID) (optional)
-	region := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionN := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionId := []int32{int32(123)} // []int32 | Region (ID) (optional)
-	regionIdN := []int32{int32(123)} // []int32 | Region (ID) (optional)
+	region := []string{"Inner_example"} // []string |  (optional)
+	regionN := []string{"Inner_example"} // []string |  (optional)
+	regionId := []string{"Inner_example"} // []string |  (optional)
+	regionIdN := []string{"Inner_example"} // []string |  (optional)
 	site := []string{"Inner_example"} // []string | Site name (slug) (optional)
 	siteN := []string{"Inner_example"} // []string | Site name (slug) (optional)
-	siteGroup := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	siteGroupN := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	siteGroupId := []int32{int32(123)} // []int32 | Site group (ID) (optional)
-	siteGroupIdN := []int32{int32(123)} // []int32 | Site group (ID) (optional)
+	siteGroup := []string{"Inner_example"} // []string |  (optional)
+	siteGroupN := []string{"Inner_example"} // []string |  (optional)
+	siteGroupId := []string{"Inner_example"} // []string |  (optional)
+	siteGroupIdN := []string{"Inner_example"} // []string |  (optional)
 	siteId := []int32{int32(123)} // []int32 | Site (ID) (optional)
 	siteIdN := []int32{int32(123)} // []int32 | Site (ID) (optional)
 	status := []string{"Inner_example"} // []string |  (optional)
@@ -21758,10 +21774,10 @@ func main() {
 	tagN := []string{"Inner_example"} // []string |  (optional)
 	tenant := []string{"Inner_example"} // []string | Tenant (slug) (optional)
 	tenantN := []string{"Inner_example"} // []string | Tenant (slug) (optional)
-	tenantGroup := []int32{int32(123)} // []int32 | Tenant Group (slug) (optional)
-	tenantGroupN := []int32{int32(123)} // []int32 | Tenant Group (slug) (optional)
-	tenantGroupId := []int32{int32(123)} // []int32 | Tenant Group (ID) (optional)
-	tenantGroupIdN := []int32{int32(123)} // []int32 | Tenant Group (ID) (optional)
+	tenantGroup := []string{"Inner_example"} // []string |  (optional)
+	tenantGroupN := []string{"Inner_example"} // []string |  (optional)
+	tenantGroupId := []string{"Inner_example"} // []string |  (optional)
+	tenantGroupIdN := []string{"Inner_example"} // []string |  (optional)
 	tenantId := []*int32{int32(123)} // []*int32 | Tenant (ID) (optional)
 	tenantIdN := []*int32{int32(123)} // []*int32 | Tenant (ID) (optional)
 	type_ := openapiclient.dcim_power_feeds_list_type_parameter("primary") // DcimPowerFeedsListTypeParameter | * `primary` - Primary * `redundant` - Redundant (optional)
@@ -21882,16 +21898,16 @@ Name | Type | Description  | Notes
  **q** | **string** | Search | 
  **rackId** | **[]int32** | Rack (ID) | 
  **rackIdN** | **[]int32** | Rack (ID) | 
- **region** | **[]int32** | Region (slug) | 
- **regionN** | **[]int32** | Region (slug) | 
- **regionId** | **[]int32** | Region (ID) | 
- **regionIdN** | **[]int32** | Region (ID) | 
+ **region** | **[]string** |  | 
+ **regionN** | **[]string** |  | 
+ **regionId** | **[]string** |  | 
+ **regionIdN** | **[]string** |  | 
  **site** | **[]string** | Site name (slug) | 
  **siteN** | **[]string** | Site name (slug) | 
- **siteGroup** | **[]int32** | Site group (slug) | 
- **siteGroupN** | **[]int32** | Site group (slug) | 
- **siteGroupId** | **[]int32** | Site group (ID) | 
- **siteGroupIdN** | **[]int32** | Site group (ID) | 
+ **siteGroup** | **[]string** |  | 
+ **siteGroupN** | **[]string** |  | 
+ **siteGroupId** | **[]string** |  | 
+ **siteGroupIdN** | **[]string** |  | 
  **siteId** | **[]int32** | Site (ID) | 
  **siteIdN** | **[]int32** | Site (ID) | 
  **status** | **[]string** |  | 
@@ -21902,10 +21918,10 @@ Name | Type | Description  | Notes
  **tagN** | **[]string** |  | 
  **tenant** | **[]string** | Tenant (slug) | 
  **tenantN** | **[]string** | Tenant (slug) | 
- **tenantGroup** | **[]int32** | Tenant Group (slug) | 
- **tenantGroupN** | **[]int32** | Tenant Group (slug) | 
- **tenantGroupId** | **[]int32** | Tenant Group (ID) | 
- **tenantGroupIdN** | **[]int32** | Tenant Group (ID) | 
+ **tenantGroup** | **[]string** |  | 
+ **tenantGroupN** | **[]string** |  | 
+ **tenantGroupId** | **[]string** |  | 
+ **tenantGroupIdN** | **[]string** |  | 
  **tenantId** | **[]int32** | Tenant (ID) | 
  **tenantIdN** | **[]int32** | Tenant (ID) | 
  **type_** | [**DcimPowerFeedsListTypeParameter**](DcimPowerFeedsListTypeParameter.md) | * &#x60;primary&#x60; - Primary * &#x60;redundant&#x60; - Redundant | 
@@ -23312,7 +23328,7 @@ Name | Type | Description  | Notes
 
 ## DcimPowerOutletsList
 
-> PaginatedPowerOutletList DcimPowerOutletsList(ctx).CableEnd(cableEnd).CableEndN(cableEndN).CableId(cableId).CableIdN(cableIdN).Cabled(cabled).Connected(connected).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).FeedLeg(feedLeg).FeedLegN(feedLegN).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).MarkConnected(markConnected).ModifiedByRequest(modifiedByRequest).ModuleId(moduleId).ModuleIdN(moduleIdN).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Occupied(occupied).Offset(offset).Ordering(ordering).PowerPortId(powerPortId).PowerPortIdN(powerPortIdN).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Role(role).RoleN(roleN).RoleId(roleId).RoleIdN(roleIdN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Tag(tag).TagN(tagN).Type_(type_).TypeN(typeN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
+> PaginatedPowerOutletList DcimPowerOutletsList(ctx).CableEnd(cableEnd).CableEndN(cableEndN).CableId(cableId).CableIdN(cableIdN).Cabled(cabled).Connected(connected).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceRole(deviceRole).DeviceRoleN(deviceRoleN).DeviceRoleId(deviceRoleId).DeviceRoleIdN(deviceRoleIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).FeedLeg(feedLeg).FeedLegN(feedLegN).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).MarkConnected(markConnected).ModifiedByRequest(modifiedByRequest).ModuleId(moduleId).ModuleIdN(moduleIdN).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Occupied(occupied).Offset(offset).Ordering(ordering).PowerPortId(powerPortId).PowerPortIdN(powerPortIdN).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Tag(tag).TagN(tagN).Type_(type_).TypeN(typeN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
 
 
 
@@ -23361,6 +23377,10 @@ func main() {
 	deviceN := []*string{"Inner_example"} // []*string | Device (name) (optional)
 	deviceId := []int32{int32(123)} // []int32 | Device (ID) (optional)
 	deviceIdN := []int32{int32(123)} // []int32 | Device (ID) (optional)
+	deviceRole := []string{"Inner_example"} // []string | Device role (slug) (optional)
+	deviceRoleN := []string{"Inner_example"} // []string | Device role (slug) (optional)
+	deviceRoleId := []int32{int32(123)} // []int32 | Device role (ID) (optional)
+	deviceRoleIdN := []int32{int32(123)} // []int32 | Device role (ID) (optional)
 	deviceType := []string{"Inner_example"} // []string | Device type (model) (optional)
 	deviceTypeN := []string{"Inner_example"} // []string | Device type (model) (optional)
 	deviceTypeId := []int32{int32(123)} // []int32 | Device type (ID) (optional)
@@ -23422,20 +23442,16 @@ func main() {
 	rackN := []string{"Inner_example"} // []string | Rack (name) (optional)
 	rackId := []int32{int32(123)} // []int32 | Rack (ID) (optional)
 	rackIdN := []int32{int32(123)} // []int32 | Rack (ID) (optional)
-	region := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionN := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionId := []int32{int32(123)} // []int32 | Region (ID) (optional)
-	regionIdN := []int32{int32(123)} // []int32 | Region (ID) (optional)
-	role := []string{"Inner_example"} // []string | Device role (slug) (optional)
-	roleN := []string{"Inner_example"} // []string | Device role (slug) (optional)
-	roleId := []int32{int32(123)} // []int32 | Device role (ID) (optional)
-	roleIdN := []int32{int32(123)} // []int32 | Device role (ID) (optional)
+	region := []string{"Inner_example"} // []string |  (optional)
+	regionN := []string{"Inner_example"} // []string |  (optional)
+	regionId := []string{"Inner_example"} // []string |  (optional)
+	regionIdN := []string{"Inner_example"} // []string |  (optional)
 	site := []string{"Inner_example"} // []string | Site name (slug) (optional)
 	siteN := []string{"Inner_example"} // []string | Site name (slug) (optional)
-	siteGroup := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	siteGroupN := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	siteGroupId := []int32{int32(123)} // []int32 | Site group (ID) (optional)
-	siteGroupIdN := []int32{int32(123)} // []int32 | Site group (ID) (optional)
+	siteGroup := []string{"Inner_example"} // []string |  (optional)
+	siteGroupN := []string{"Inner_example"} // []string |  (optional)
+	siteGroupId := []string{"Inner_example"} // []string |  (optional)
+	siteGroupIdN := []string{"Inner_example"} // []string |  (optional)
 	siteId := []int32{int32(123)} // []int32 | Site (ID) (optional)
 	siteIdN := []int32{int32(123)} // []int32 | Site (ID) (optional)
 	tag := []string{"Inner_example"} // []string |  (optional)
@@ -23450,7 +23466,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimPowerOutletsList(context.Background()).CableEnd(cableEnd).CableEndN(cableEndN).CableId(cableId).CableIdN(cableIdN).Cabled(cabled).Connected(connected).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).FeedLeg(feedLeg).FeedLegN(feedLegN).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).MarkConnected(markConnected).ModifiedByRequest(modifiedByRequest).ModuleId(moduleId).ModuleIdN(moduleIdN).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Occupied(occupied).Offset(offset).Ordering(ordering).PowerPortId(powerPortId).PowerPortIdN(powerPortIdN).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Role(role).RoleN(roleN).RoleId(roleId).RoleIdN(roleIdN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Tag(tag).TagN(tagN).Type_(type_).TypeN(typeN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimPowerOutletsList(context.Background()).CableEnd(cableEnd).CableEndN(cableEndN).CableId(cableId).CableIdN(cableIdN).Cabled(cabled).Connected(connected).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceRole(deviceRole).DeviceRoleN(deviceRoleN).DeviceRoleId(deviceRoleId).DeviceRoleIdN(deviceRoleIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).FeedLeg(feedLeg).FeedLegN(feedLegN).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).MarkConnected(markConnected).ModifiedByRequest(modifiedByRequest).ModuleId(moduleId).ModuleIdN(moduleIdN).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Occupied(occupied).Offset(offset).Ordering(ordering).PowerPortId(powerPortId).PowerPortIdN(powerPortIdN).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Tag(tag).TagN(tagN).Type_(type_).TypeN(typeN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimPowerOutletsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -23500,6 +23516,10 @@ Name | Type | Description  | Notes
  **deviceN** | **[]string** | Device (name) | 
  **deviceId** | **[]int32** | Device (ID) | 
  **deviceIdN** | **[]int32** | Device (ID) | 
+ **deviceRole** | **[]string** | Device role (slug) | 
+ **deviceRoleN** | **[]string** | Device role (slug) | 
+ **deviceRoleId** | **[]int32** | Device role (ID) | 
+ **deviceRoleIdN** | **[]int32** | Device role (ID) | 
  **deviceType** | **[]string** | Device type (model) | 
  **deviceTypeN** | **[]string** | Device type (model) | 
  **deviceTypeId** | **[]int32** | Device type (ID) | 
@@ -23561,20 +23581,16 @@ Name | Type | Description  | Notes
  **rackN** | **[]string** | Rack (name) | 
  **rackId** | **[]int32** | Rack (ID) | 
  **rackIdN** | **[]int32** | Rack (ID) | 
- **region** | **[]int32** | Region (slug) | 
- **regionN** | **[]int32** | Region (slug) | 
- **regionId** | **[]int32** | Region (ID) | 
- **regionIdN** | **[]int32** | Region (ID) | 
- **role** | **[]string** | Device role (slug) | 
- **roleN** | **[]string** | Device role (slug) | 
- **roleId** | **[]int32** | Device role (ID) | 
- **roleIdN** | **[]int32** | Device role (ID) | 
+ **region** | **[]string** |  | 
+ **regionN** | **[]string** |  | 
+ **regionId** | **[]string** |  | 
+ **regionIdN** | **[]string** |  | 
  **site** | **[]string** | Site name (slug) | 
  **siteN** | **[]string** | Site name (slug) | 
- **siteGroup** | **[]int32** | Site group (slug) | 
- **siteGroupN** | **[]int32** | Site group (slug) | 
- **siteGroupId** | **[]int32** | Site group (ID) | 
- **siteGroupIdN** | **[]int32** | Site group (ID) | 
+ **siteGroup** | **[]string** |  | 
+ **siteGroupN** | **[]string** |  | 
+ **siteGroupId** | **[]string** |  | 
+ **siteGroupIdN** | **[]string** |  | 
  **siteId** | **[]int32** | Site (ID) | 
  **siteIdN** | **[]int32** | Site (ID) | 
  **tag** | **[]string** |  | 
@@ -24243,8 +24259,8 @@ import (
 func main() {
 	contact := []int32{int32(123)} // []int32 | Contact (optional)
 	contactN := []int32{int32(123)} // []int32 | Contact (optional)
-	contactGroup := []int32{int32(123)} // []int32 | Contact group (optional)
-	contactGroupN := []int32{int32(123)} // []int32 | Contact group (optional)
+	contactGroup := []string{"Inner_example"} // []string |  (optional)
+	contactGroupN := []string{"Inner_example"} // []string |  (optional)
 	contactRole := []int32{int32(123)} // []int32 | Contact Role (optional)
 	contactRoleN := []int32{int32(123)} // []int32 | Contact Role (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -24281,8 +24297,8 @@ func main() {
 	lastUpdatedLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	lastUpdatedN := []time.Time{time.Now()} // []time.Time |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
-	locationId := []int32{int32(123)} // []int32 | Location (ID) (optional)
-	locationIdN := []int32{int32(123)} // []int32 | Location (ID) (optional)
+	locationId := []string{"Inner_example"} // []string |  (optional)
+	locationIdN := []string{"Inner_example"} // []string |  (optional)
 	modifiedByRequest := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string |  (optional)
 	name := []string{"Inner_example"} // []string |  (optional)
 	nameEmpty := true // bool |  (optional)
@@ -24298,16 +24314,16 @@ func main() {
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	ordering := "ordering_example" // string | Which field to use when ordering the results. (optional)
 	q := "q_example" // string | Search (optional)
-	region := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionN := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionId := []int32{int32(123)} // []int32 | Region (ID) (optional)
-	regionIdN := []int32{int32(123)} // []int32 | Region (ID) (optional)
+	region := []string{"Inner_example"} // []string |  (optional)
+	regionN := []string{"Inner_example"} // []string |  (optional)
+	regionId := []string{"Inner_example"} // []string |  (optional)
+	regionIdN := []string{"Inner_example"} // []string |  (optional)
 	site := []string{"Inner_example"} // []string | Site name (slug) (optional)
 	siteN := []string{"Inner_example"} // []string | Site name (slug) (optional)
-	siteGroup := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	siteGroupN := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	siteGroupId := []int32{int32(123)} // []int32 | Site group (ID) (optional)
-	siteGroupIdN := []int32{int32(123)} // []int32 | Site group (ID) (optional)
+	siteGroup := []string{"Inner_example"} // []string |  (optional)
+	siteGroupN := []string{"Inner_example"} // []string |  (optional)
+	siteGroupId := []string{"Inner_example"} // []string |  (optional)
+	siteGroupIdN := []string{"Inner_example"} // []string |  (optional)
 	siteId := []int32{int32(123)} // []int32 | Site (ID) (optional)
 	siteIdN := []int32{int32(123)} // []int32 | Site (ID) (optional)
 	tag := []string{"Inner_example"} // []string |  (optional)
@@ -24339,8 +24355,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **contact** | **[]int32** | Contact | 
  **contactN** | **[]int32** | Contact | 
- **contactGroup** | **[]int32** | Contact group | 
- **contactGroupN** | **[]int32** | Contact group | 
+ **contactGroup** | **[]string** |  | 
+ **contactGroupN** | **[]string** |  | 
  **contactRole** | **[]int32** | Contact Role | 
  **contactRoleN** | **[]int32** | Contact Role | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
@@ -24377,8 +24393,8 @@ Name | Type | Description  | Notes
  **lastUpdatedLte** | [**[]time.Time**](time.Time.md) |  | 
  **lastUpdatedN** | [**[]time.Time**](time.Time.md) |  | 
  **limit** | **int32** | Number of results to return per page. | 
- **locationId** | **[]int32** | Location (ID) | 
- **locationIdN** | **[]int32** | Location (ID) | 
+ **locationId** | **[]string** |  | 
+ **locationIdN** | **[]string** |  | 
  **modifiedByRequest** | **string** |  | 
  **name** | **[]string** |  | 
  **nameEmpty** | **bool** |  | 
@@ -24394,16 +24410,16 @@ Name | Type | Description  | Notes
  **offset** | **int32** | The initial index from which to return the results. | 
  **ordering** | **string** | Which field to use when ordering the results. | 
  **q** | **string** | Search | 
- **region** | **[]int32** | Region (slug) | 
- **regionN** | **[]int32** | Region (slug) | 
- **regionId** | **[]int32** | Region (ID) | 
- **regionIdN** | **[]int32** | Region (ID) | 
+ **region** | **[]string** |  | 
+ **regionN** | **[]string** |  | 
+ **regionId** | **[]string** |  | 
+ **regionIdN** | **[]string** |  | 
  **site** | **[]string** | Site name (slug) | 
  **siteN** | **[]string** | Site name (slug) | 
- **siteGroup** | **[]int32** | Site group (slug) | 
- **siteGroupN** | **[]int32** | Site group (slug) | 
- **siteGroupId** | **[]int32** | Site group (ID) | 
- **siteGroupIdN** | **[]int32** | Site group (ID) | 
+ **siteGroup** | **[]string** |  | 
+ **siteGroupN** | **[]string** |  | 
+ **siteGroupId** | **[]string** |  | 
+ **siteGroupIdN** | **[]string** |  | 
  **siteId** | **[]int32** | Site (ID) | 
  **siteIdN** | **[]int32** | Site (ID) | 
  **tag** | **[]string** |  | 
@@ -25753,7 +25769,7 @@ Name | Type | Description  | Notes
 
 ## DcimPowerPortsList
 
-> PaginatedPowerPortList DcimPowerPortsList(ctx).AllocatedDraw(allocatedDraw).AllocatedDrawEmpty(allocatedDrawEmpty).AllocatedDrawGt(allocatedDrawGt).AllocatedDrawGte(allocatedDrawGte).AllocatedDrawLt(allocatedDrawLt).AllocatedDrawLte(allocatedDrawLte).AllocatedDrawN(allocatedDrawN).CableEnd(cableEnd).CableEndN(cableEndN).CableId(cableId).CableIdN(cableIdN).Cabled(cabled).Connected(connected).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).MarkConnected(markConnected).MaximumDraw(maximumDraw).MaximumDrawEmpty(maximumDrawEmpty).MaximumDrawGt(maximumDrawGt).MaximumDrawGte(maximumDrawGte).MaximumDrawLt(maximumDrawLt).MaximumDrawLte(maximumDrawLte).MaximumDrawN(maximumDrawN).ModifiedByRequest(modifiedByRequest).ModuleId(moduleId).ModuleIdN(moduleIdN).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Occupied(occupied).Offset(offset).Ordering(ordering).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Role(role).RoleN(roleN).RoleId(roleId).RoleIdN(roleIdN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Tag(tag).TagN(tagN).Type_(type_).TypeN(typeN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
+> PaginatedPowerPortList DcimPowerPortsList(ctx).AllocatedDraw(allocatedDraw).AllocatedDrawEmpty(allocatedDrawEmpty).AllocatedDrawGt(allocatedDrawGt).AllocatedDrawGte(allocatedDrawGte).AllocatedDrawLt(allocatedDrawLt).AllocatedDrawLte(allocatedDrawLte).AllocatedDrawN(allocatedDrawN).CableEnd(cableEnd).CableEndN(cableEndN).CableId(cableId).CableIdN(cableIdN).Cabled(cabled).Connected(connected).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceRole(deviceRole).DeviceRoleN(deviceRoleN).DeviceRoleId(deviceRoleId).DeviceRoleIdN(deviceRoleIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).MarkConnected(markConnected).MaximumDraw(maximumDraw).MaximumDrawEmpty(maximumDrawEmpty).MaximumDrawGt(maximumDrawGt).MaximumDrawGte(maximumDrawGte).MaximumDrawLt(maximumDrawLt).MaximumDrawLte(maximumDrawLte).MaximumDrawN(maximumDrawN).ModifiedByRequest(modifiedByRequest).ModuleId(moduleId).ModuleIdN(moduleIdN).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Occupied(occupied).Offset(offset).Ordering(ordering).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Tag(tag).TagN(tagN).Type_(type_).TypeN(typeN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
 
 
 
@@ -25809,6 +25825,10 @@ func main() {
 	deviceN := []*string{"Inner_example"} // []*string | Device (name) (optional)
 	deviceId := []int32{int32(123)} // []int32 | Device (ID) (optional)
 	deviceIdN := []int32{int32(123)} // []int32 | Device (ID) (optional)
+	deviceRole := []string{"Inner_example"} // []string | Device role (slug) (optional)
+	deviceRoleN := []string{"Inner_example"} // []string | Device role (slug) (optional)
+	deviceRoleId := []int32{int32(123)} // []int32 | Device role (ID) (optional)
+	deviceRoleIdN := []int32{int32(123)} // []int32 | Device role (ID) (optional)
 	deviceType := []string{"Inner_example"} // []string | Device type (model) (optional)
 	deviceTypeN := []string{"Inner_example"} // []string | Device type (model) (optional)
 	deviceTypeId := []int32{int32(123)} // []int32 | Device type (ID) (optional)
@@ -25873,20 +25893,16 @@ func main() {
 	rackN := []string{"Inner_example"} // []string | Rack (name) (optional)
 	rackId := []int32{int32(123)} // []int32 | Rack (ID) (optional)
 	rackIdN := []int32{int32(123)} // []int32 | Rack (ID) (optional)
-	region := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionN := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionId := []int32{int32(123)} // []int32 | Region (ID) (optional)
-	regionIdN := []int32{int32(123)} // []int32 | Region (ID) (optional)
-	role := []string{"Inner_example"} // []string | Device role (slug) (optional)
-	roleN := []string{"Inner_example"} // []string | Device role (slug) (optional)
-	roleId := []int32{int32(123)} // []int32 | Device role (ID) (optional)
-	roleIdN := []int32{int32(123)} // []int32 | Device role (ID) (optional)
+	region := []string{"Inner_example"} // []string |  (optional)
+	regionN := []string{"Inner_example"} // []string |  (optional)
+	regionId := []string{"Inner_example"} // []string |  (optional)
+	regionIdN := []string{"Inner_example"} // []string |  (optional)
 	site := []string{"Inner_example"} // []string | Site name (slug) (optional)
 	siteN := []string{"Inner_example"} // []string | Site name (slug) (optional)
-	siteGroup := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	siteGroupN := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	siteGroupId := []int32{int32(123)} // []int32 | Site group (ID) (optional)
-	siteGroupIdN := []int32{int32(123)} // []int32 | Site group (ID) (optional)
+	siteGroup := []string{"Inner_example"} // []string |  (optional)
+	siteGroupN := []string{"Inner_example"} // []string |  (optional)
+	siteGroupId := []string{"Inner_example"} // []string |  (optional)
+	siteGroupIdN := []string{"Inner_example"} // []string |  (optional)
 	siteId := []int32{int32(123)} // []int32 | Site (ID) (optional)
 	siteIdN := []int32{int32(123)} // []int32 | Site (ID) (optional)
 	tag := []string{"Inner_example"} // []string |  (optional)
@@ -25901,7 +25917,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimPowerPortsList(context.Background()).AllocatedDraw(allocatedDraw).AllocatedDrawEmpty(allocatedDrawEmpty).AllocatedDrawGt(allocatedDrawGt).AllocatedDrawGte(allocatedDrawGte).AllocatedDrawLt(allocatedDrawLt).AllocatedDrawLte(allocatedDrawLte).AllocatedDrawN(allocatedDrawN).CableEnd(cableEnd).CableEndN(cableEndN).CableId(cableId).CableIdN(cableIdN).Cabled(cabled).Connected(connected).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).MarkConnected(markConnected).MaximumDraw(maximumDraw).MaximumDrawEmpty(maximumDrawEmpty).MaximumDrawGt(maximumDrawGt).MaximumDrawGte(maximumDrawGte).MaximumDrawLt(maximumDrawLt).MaximumDrawLte(maximumDrawLte).MaximumDrawN(maximumDrawN).ModifiedByRequest(modifiedByRequest).ModuleId(moduleId).ModuleIdN(moduleIdN).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Occupied(occupied).Offset(offset).Ordering(ordering).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Role(role).RoleN(roleN).RoleId(roleId).RoleIdN(roleIdN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Tag(tag).TagN(tagN).Type_(type_).TypeN(typeN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimPowerPortsList(context.Background()).AllocatedDraw(allocatedDraw).AllocatedDrawEmpty(allocatedDrawEmpty).AllocatedDrawGt(allocatedDrawGt).AllocatedDrawGte(allocatedDrawGte).AllocatedDrawLt(allocatedDrawLt).AllocatedDrawLte(allocatedDrawLte).AllocatedDrawN(allocatedDrawN).CableEnd(cableEnd).CableEndN(cableEndN).CableId(cableId).CableIdN(cableIdN).Cabled(cabled).Connected(connected).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceRole(deviceRole).DeviceRoleN(deviceRoleN).DeviceRoleId(deviceRoleId).DeviceRoleIdN(deviceRoleIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).MarkConnected(markConnected).MaximumDraw(maximumDraw).MaximumDrawEmpty(maximumDrawEmpty).MaximumDrawGt(maximumDrawGt).MaximumDrawGte(maximumDrawGte).MaximumDrawLt(maximumDrawLt).MaximumDrawLte(maximumDrawLte).MaximumDrawN(maximumDrawN).ModifiedByRequest(modifiedByRequest).ModuleId(moduleId).ModuleIdN(moduleIdN).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Occupied(occupied).Offset(offset).Ordering(ordering).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Tag(tag).TagN(tagN).Type_(type_).TypeN(typeN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimPowerPortsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -25958,6 +25974,10 @@ Name | Type | Description  | Notes
  **deviceN** | **[]string** | Device (name) | 
  **deviceId** | **[]int32** | Device (ID) | 
  **deviceIdN** | **[]int32** | Device (ID) | 
+ **deviceRole** | **[]string** | Device role (slug) | 
+ **deviceRoleN** | **[]string** | Device role (slug) | 
+ **deviceRoleId** | **[]int32** | Device role (ID) | 
+ **deviceRoleIdN** | **[]int32** | Device role (ID) | 
  **deviceType** | **[]string** | Device type (model) | 
  **deviceTypeN** | **[]string** | Device type (model) | 
  **deviceTypeId** | **[]int32** | Device type (ID) | 
@@ -26022,20 +26042,16 @@ Name | Type | Description  | Notes
  **rackN** | **[]string** | Rack (name) | 
  **rackId** | **[]int32** | Rack (ID) | 
  **rackIdN** | **[]int32** | Rack (ID) | 
- **region** | **[]int32** | Region (slug) | 
- **regionN** | **[]int32** | Region (slug) | 
- **regionId** | **[]int32** | Region (ID) | 
- **regionIdN** | **[]int32** | Region (ID) | 
- **role** | **[]string** | Device role (slug) | 
- **roleN** | **[]string** | Device role (slug) | 
- **roleId** | **[]int32** | Device role (ID) | 
- **roleIdN** | **[]int32** | Device role (ID) | 
+ **region** | **[]string** |  | 
+ **regionN** | **[]string** |  | 
+ **regionId** | **[]string** |  | 
+ **regionIdN** | **[]string** |  | 
  **site** | **[]string** | Site name (slug) | 
  **siteN** | **[]string** | Site name (slug) | 
- **siteGroup** | **[]int32** | Site group (slug) | 
- **siteGroupN** | **[]int32** | Site group (slug) | 
- **siteGroupId** | **[]int32** | Site group (ID) | 
- **siteGroupIdN** | **[]int32** | Site group (ID) | 
+ **siteGroup** | **[]string** |  | 
+ **siteGroupN** | **[]string** |  | 
+ **siteGroupId** | **[]string** |  | 
+ **siteGroupIdN** | **[]string** |  | 
  **siteId** | **[]int32** | Site (ID) | 
  **siteIdN** | **[]int32** | Site (ID) | 
  **tag** | **[]string** |  | 
@@ -26736,36 +26752,36 @@ func main() {
 	lastUpdatedLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	lastUpdatedN := []time.Time{time.Now()} // []time.Time |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
-	location := []int32{int32(123)} // []int32 | Location (slug) (optional)
-	locationN := []int32{int32(123)} // []int32 | Location (slug) (optional)
-	locationId := []int32{int32(123)} // []int32 | Location (ID) (optional)
-	locationIdN := []int32{int32(123)} // []int32 | Location (ID) (optional)
+	location := []string{"Inner_example"} // []string |  (optional)
+	locationN := []string{"Inner_example"} // []string |  (optional)
+	locationId := []string{"Inner_example"} // []string |  (optional)
+	locationIdN := []string{"Inner_example"} // []string |  (optional)
 	modifiedByRequest := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	ordering := "ordering_example" // string | Which field to use when ordering the results. (optional)
 	q := "q_example" // string | Search (optional)
 	rackId := []int32{int32(123)} // []int32 | Rack (ID) (optional)
 	rackIdN := []int32{int32(123)} // []int32 | Rack (ID) (optional)
-	region := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionN := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionId := []int32{int32(123)} // []int32 | Region (ID) (optional)
-	regionIdN := []int32{int32(123)} // []int32 | Region (ID) (optional)
+	region := []string{"Inner_example"} // []string |  (optional)
+	regionN := []string{"Inner_example"} // []string |  (optional)
+	regionId := []string{"Inner_example"} // []string |  (optional)
+	regionIdN := []string{"Inner_example"} // []string |  (optional)
 	site := []string{"Inner_example"} // []string | Site (slug) (optional)
 	siteN := []string{"Inner_example"} // []string | Site (slug) (optional)
-	siteGroup := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	siteGroupN := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	siteGroupId := []int32{int32(123)} // []int32 | Site group (ID) (optional)
-	siteGroupIdN := []int32{int32(123)} // []int32 | Site group (ID) (optional)
+	siteGroup := []string{"Inner_example"} // []string |  (optional)
+	siteGroupN := []string{"Inner_example"} // []string |  (optional)
+	siteGroupId := []string{"Inner_example"} // []string |  (optional)
+	siteGroupIdN := []string{"Inner_example"} // []string |  (optional)
 	siteId := []int32{int32(123)} // []int32 | Site (ID) (optional)
 	siteIdN := []int32{int32(123)} // []int32 | Site (ID) (optional)
 	tag := []string{"Inner_example"} // []string |  (optional)
 	tagN := []string{"Inner_example"} // []string |  (optional)
 	tenant := []string{"Inner_example"} // []string | Tenant (slug) (optional)
 	tenantN := []string{"Inner_example"} // []string | Tenant (slug) (optional)
-	tenantGroup := []int32{int32(123)} // []int32 | Tenant Group (slug) (optional)
-	tenantGroupN := []int32{int32(123)} // []int32 | Tenant Group (slug) (optional)
-	tenantGroupId := []int32{int32(123)} // []int32 | Tenant Group (ID) (optional)
-	tenantGroupIdN := []int32{int32(123)} // []int32 | Tenant Group (ID) (optional)
+	tenantGroup := []string{"Inner_example"} // []string |  (optional)
+	tenantGroupN := []string{"Inner_example"} // []string |  (optional)
+	tenantGroupId := []string{"Inner_example"} // []string |  (optional)
+	tenantGroupIdN := []string{"Inner_example"} // []string |  (optional)
 	tenantId := []*int32{int32(123)} // []*int32 | Tenant (ID) (optional)
 	tenantIdN := []*int32{int32(123)} // []*int32 | Tenant (ID) (optional)
 	unit := float32(8.14) // float32 |  (optional)
@@ -26832,36 +26848,36 @@ Name | Type | Description  | Notes
  **lastUpdatedLte** | [**[]time.Time**](time.Time.md) |  | 
  **lastUpdatedN** | [**[]time.Time**](time.Time.md) |  | 
  **limit** | **int32** | Number of results to return per page. | 
- **location** | **[]int32** | Location (slug) | 
- **locationN** | **[]int32** | Location (slug) | 
- **locationId** | **[]int32** | Location (ID) | 
- **locationIdN** | **[]int32** | Location (ID) | 
+ **location** | **[]string** |  | 
+ **locationN** | **[]string** |  | 
+ **locationId** | **[]string** |  | 
+ **locationIdN** | **[]string** |  | 
  **modifiedByRequest** | **string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **ordering** | **string** | Which field to use when ordering the results. | 
  **q** | **string** | Search | 
  **rackId** | **[]int32** | Rack (ID) | 
  **rackIdN** | **[]int32** | Rack (ID) | 
- **region** | **[]int32** | Region (slug) | 
- **regionN** | **[]int32** | Region (slug) | 
- **regionId** | **[]int32** | Region (ID) | 
- **regionIdN** | **[]int32** | Region (ID) | 
+ **region** | **[]string** |  | 
+ **regionN** | **[]string** |  | 
+ **regionId** | **[]string** |  | 
+ **regionIdN** | **[]string** |  | 
  **site** | **[]string** | Site (slug) | 
  **siteN** | **[]string** | Site (slug) | 
- **siteGroup** | **[]int32** | Site group (slug) | 
- **siteGroupN** | **[]int32** | Site group (slug) | 
- **siteGroupId** | **[]int32** | Site group (ID) | 
- **siteGroupIdN** | **[]int32** | Site group (ID) | 
+ **siteGroup** | **[]string** |  | 
+ **siteGroupN** | **[]string** |  | 
+ **siteGroupId** | **[]string** |  | 
+ **siteGroupIdN** | **[]string** |  | 
  **siteId** | **[]int32** | Site (ID) | 
  **siteIdN** | **[]int32** | Site (ID) | 
  **tag** | **[]string** |  | 
  **tagN** | **[]string** |  | 
  **tenant** | **[]string** | Tenant (slug) | 
  **tenantN** | **[]string** | Tenant (slug) | 
- **tenantGroup** | **[]int32** | Tenant Group (slug) | 
- **tenantGroupN** | **[]int32** | Tenant Group (slug) | 
- **tenantGroupId** | **[]int32** | Tenant Group (ID) | 
- **tenantGroupIdN** | **[]int32** | Tenant Group (ID) | 
+ **tenantGroup** | **[]string** |  | 
+ **tenantGroupN** | **[]string** |  | 
+ **tenantGroupId** | **[]string** |  | 
+ **tenantGroupIdN** | **[]string** |  | 
  **tenantId** | **[]int32** | Tenant (ID) | 
  **tenantIdN** | **[]int32** | Tenant (ID) | 
  **unit** | **float32** |  | 
@@ -28319,8 +28335,8 @@ func main() {
 	assetTagNisw := []string{"Inner_example"} // []string |  (optional)
 	contact := []int32{int32(123)} // []int32 | Contact (optional)
 	contactN := []int32{int32(123)} // []int32 | Contact (optional)
-	contactGroup := []int32{int32(123)} // []int32 | Contact group (optional)
-	contactGroupN := []int32{int32(123)} // []int32 | Contact group (optional)
+	contactGroup := []string{"Inner_example"} // []string |  (optional)
+	contactGroupN := []string{"Inner_example"} // []string |  (optional)
 	contactRole := []int32{int32(123)} // []int32 | Contact Role (optional)
 	contactRoleN := []int32{int32(123)} // []int32 | Contact Role (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -28369,10 +28385,10 @@ func main() {
 	lastUpdatedLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	lastUpdatedN := []time.Time{time.Now()} // []time.Time |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
-	location := []int32{int32(123)} // []int32 | Location (slug) (optional)
-	locationN := []int32{int32(123)} // []int32 | Location (slug) (optional)
-	locationId := []int32{int32(123)} // []int32 | Location (ID) (optional)
-	locationIdN := []int32{int32(123)} // []int32 | Location (ID) (optional)
+	location := []string{"Inner_example"} // []string |  (optional)
+	locationN := []string{"Inner_example"} // []string |  (optional)
+	locationId := []string{"Inner_example"} // []string |  (optional)
+	locationIdN := []string{"Inner_example"} // []string |  (optional)
 	maxWeight := []int32{int32(123)} // []int32 |  (optional)
 	maxWeightEmpty := true // bool |  (optional)
 	maxWeightGt := []int32{int32(123)} // []int32 |  (optional)
@@ -28418,10 +28434,10 @@ func main() {
 	outerWidthLte := []int32{int32(123)} // []int32 |  (optional)
 	outerWidthN := []int32{int32(123)} // []int32 |  (optional)
 	q := "q_example" // string | Search (optional)
-	region := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionN := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionId := []int32{int32(123)} // []int32 | Region (ID) (optional)
-	regionIdN := []int32{int32(123)} // []int32 | Region (ID) (optional)
+	region := []string{"Inner_example"} // []string |  (optional)
+	regionN := []string{"Inner_example"} // []string |  (optional)
+	regionId := []string{"Inner_example"} // []string |  (optional)
+	regionIdN := []string{"Inner_example"} // []string |  (optional)
 	role := []string{"Inner_example"} // []string | Role (slug) (optional)
 	roleN := []string{"Inner_example"} // []string | Role (slug) (optional)
 	roleId := []*int32{int32(123)} // []*int32 | Role (ID) (optional)
@@ -28439,10 +28455,10 @@ func main() {
 	serialNisw := []string{"Inner_example"} // []string |  (optional)
 	site := []string{"Inner_example"} // []string | Site (slug) (optional)
 	siteN := []string{"Inner_example"} // []string | Site (slug) (optional)
-	siteGroup := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	siteGroupN := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	siteGroupId := []int32{int32(123)} // []int32 | Site group (ID) (optional)
-	siteGroupIdN := []int32{int32(123)} // []int32 | Site group (ID) (optional)
+	siteGroup := []string{"Inner_example"} // []string |  (optional)
+	siteGroupN := []string{"Inner_example"} // []string |  (optional)
+	siteGroupId := []string{"Inner_example"} // []string |  (optional)
+	siteGroupIdN := []string{"Inner_example"} // []string |  (optional)
 	siteId := []int32{int32(123)} // []int32 | Site (ID) (optional)
 	siteIdN := []int32{int32(123)} // []int32 | Site (ID) (optional)
 	startingUnit := []int32{int32(123)} // []int32 |  (optional)
@@ -28458,10 +28474,10 @@ func main() {
 	tagN := []string{"Inner_example"} // []string |  (optional)
 	tenant := []string{"Inner_example"} // []string | Tenant (slug) (optional)
 	tenantN := []string{"Inner_example"} // []string | Tenant (slug) (optional)
-	tenantGroup := []int32{int32(123)} // []int32 | Tenant Group (slug) (optional)
-	tenantGroupN := []int32{int32(123)} // []int32 | Tenant Group (slug) (optional)
-	tenantGroupId := []int32{int32(123)} // []int32 | Tenant Group (ID) (optional)
-	tenantGroupIdN := []int32{int32(123)} // []int32 | Tenant Group (ID) (optional)
+	tenantGroup := []string{"Inner_example"} // []string |  (optional)
+	tenantGroupN := []string{"Inner_example"} // []string |  (optional)
+	tenantGroupId := []string{"Inner_example"} // []string |  (optional)
+	tenantGroupIdN := []string{"Inner_example"} // []string |  (optional)
 	tenantId := []*int32{int32(123)} // []*int32 | Tenant (ID) (optional)
 	tenantIdN := []*int32{int32(123)} // []*int32 | Tenant (ID) (optional)
 	type_ := []string{"Inner_example"} // []string |  (optional)
@@ -28522,8 +28538,8 @@ Name | Type | Description  | Notes
  **assetTagNisw** | **[]string** |  | 
  **contact** | **[]int32** | Contact | 
  **contactN** | **[]int32** | Contact | 
- **contactGroup** | **[]int32** | Contact group | 
- **contactGroupN** | **[]int32** | Contact group | 
+ **contactGroup** | **[]string** |  | 
+ **contactGroupN** | **[]string** |  | 
  **contactRole** | **[]int32** | Contact Role | 
  **contactRoleN** | **[]int32** | Contact Role | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
@@ -28572,10 +28588,10 @@ Name | Type | Description  | Notes
  **lastUpdatedLte** | [**[]time.Time**](time.Time.md) |  | 
  **lastUpdatedN** | [**[]time.Time**](time.Time.md) |  | 
  **limit** | **int32** | Number of results to return per page. | 
- **location** | **[]int32** | Location (slug) | 
- **locationN** | **[]int32** | Location (slug) | 
- **locationId** | **[]int32** | Location (ID) | 
- **locationIdN** | **[]int32** | Location (ID) | 
+ **location** | **[]string** |  | 
+ **locationN** | **[]string** |  | 
+ **locationId** | **[]string** |  | 
+ **locationIdN** | **[]string** |  | 
  **maxWeight** | **[]int32** |  | 
  **maxWeightEmpty** | **bool** |  | 
  **maxWeightGt** | **[]int32** |  | 
@@ -28621,10 +28637,10 @@ Name | Type | Description  | Notes
  **outerWidthLte** | **[]int32** |  | 
  **outerWidthN** | **[]int32** |  | 
  **q** | **string** | Search | 
- **region** | **[]int32** | Region (slug) | 
- **regionN** | **[]int32** | Region (slug) | 
- **regionId** | **[]int32** | Region (ID) | 
- **regionIdN** | **[]int32** | Region (ID) | 
+ **region** | **[]string** |  | 
+ **regionN** | **[]string** |  | 
+ **regionId** | **[]string** |  | 
+ **regionIdN** | **[]string** |  | 
  **role** | **[]string** | Role (slug) | 
  **roleN** | **[]string** | Role (slug) | 
  **roleId** | **[]int32** | Role (ID) | 
@@ -28642,10 +28658,10 @@ Name | Type | Description  | Notes
  **serialNisw** | **[]string** |  | 
  **site** | **[]string** | Site (slug) | 
  **siteN** | **[]string** | Site (slug) | 
- **siteGroup** | **[]int32** | Site group (slug) | 
- **siteGroupN** | **[]int32** | Site group (slug) | 
- **siteGroupId** | **[]int32** | Site group (ID) | 
- **siteGroupIdN** | **[]int32** | Site group (ID) | 
+ **siteGroup** | **[]string** |  | 
+ **siteGroupN** | **[]string** |  | 
+ **siteGroupId** | **[]string** |  | 
+ **siteGroupIdN** | **[]string** |  | 
  **siteId** | **[]int32** | Site (ID) | 
  **siteIdN** | **[]int32** | Site (ID) | 
  **startingUnit** | **[]int32** |  | 
@@ -28661,10 +28677,10 @@ Name | Type | Description  | Notes
  **tagN** | **[]string** |  | 
  **tenant** | **[]string** | Tenant (slug) | 
  **tenantN** | **[]string** | Tenant (slug) | 
- **tenantGroup** | **[]int32** | Tenant Group (slug) | 
- **tenantGroupN** | **[]int32** | Tenant Group (slug) | 
- **tenantGroupId** | **[]int32** | Tenant Group (ID) | 
- **tenantGroupIdN** | **[]int32** | Tenant Group (ID) | 
+ **tenantGroup** | **[]string** |  | 
+ **tenantGroupN** | **[]string** |  | 
+ **tenantGroupId** | **[]string** |  | 
+ **tenantGroupIdN** | **[]string** |  | 
  **tenantId** | **[]int32** | Tenant (ID) | 
  **tenantIdN** | **[]int32** | Tenant (ID) | 
  **type_** | **[]string** |  | 
@@ -30040,7 +30056,7 @@ Name | Type | Description  | Notes
 
 ## DcimRearPortsList
 
-> PaginatedRearPortList DcimRearPortsList(ctx).CableEnd(cableEnd).CableEndN(cableEndN).CableId(cableId).CableIdN(cableIdN).Cabled(cabled).Color(color).ColorEmpty(colorEmpty).ColorIc(colorIc).ColorIe(colorIe).ColorIew(colorIew).ColorIsw(colorIsw).ColorN(colorN).ColorNic(colorNic).ColorNie(colorNie).ColorNiew(colorNiew).ColorNisw(colorNisw).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).MarkConnected(markConnected).ModifiedByRequest(modifiedByRequest).ModuleId(moduleId).ModuleIdN(moduleIdN).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Occupied(occupied).Offset(offset).Ordering(ordering).Positions(positions).PositionsEmpty(positionsEmpty).PositionsGt(positionsGt).PositionsGte(positionsGte).PositionsLt(positionsLt).PositionsLte(positionsLte).PositionsN(positionsN).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Role(role).RoleN(roleN).RoleId(roleId).RoleIdN(roleIdN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Tag(tag).TagN(tagN).Type_(type_).TypeN(typeN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
+> PaginatedRearPortList DcimRearPortsList(ctx).CableEnd(cableEnd).CableEndN(cableEndN).CableId(cableId).CableIdN(cableIdN).Cabled(cabled).Color(color).ColorEmpty(colorEmpty).ColorIc(colorIc).ColorIe(colorIe).ColorIew(colorIew).ColorIsw(colorIsw).ColorN(colorN).ColorNic(colorNic).ColorNie(colorNie).ColorNiew(colorNiew).ColorNisw(colorNisw).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceRole(deviceRole).DeviceRoleN(deviceRoleN).DeviceRoleId(deviceRoleId).DeviceRoleIdN(deviceRoleIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).MarkConnected(markConnected).ModifiedByRequest(modifiedByRequest).ModuleId(moduleId).ModuleIdN(moduleIdN).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Occupied(occupied).Offset(offset).Ordering(ordering).Positions(positions).PositionsEmpty(positionsEmpty).PositionsGt(positionsGt).PositionsGte(positionsGte).PositionsLt(positionsLt).PositionsLte(positionsLte).PositionsN(positionsN).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Tag(tag).TagN(tagN).Type_(type_).TypeN(typeN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
 
 
 
@@ -30099,6 +30115,10 @@ func main() {
 	deviceN := []*string{"Inner_example"} // []*string | Device (name) (optional)
 	deviceId := []int32{int32(123)} // []int32 | Device (ID) (optional)
 	deviceIdN := []int32{int32(123)} // []int32 | Device (ID) (optional)
+	deviceRole := []string{"Inner_example"} // []string | Device role (slug) (optional)
+	deviceRoleN := []string{"Inner_example"} // []string | Device role (slug) (optional)
+	deviceRoleId := []int32{int32(123)} // []int32 | Device role (ID) (optional)
+	deviceRoleIdN := []int32{int32(123)} // []int32 | Device role (ID) (optional)
 	deviceType := []string{"Inner_example"} // []string | Device type (model) (optional)
 	deviceTypeN := []string{"Inner_example"} // []string | Device type (model) (optional)
 	deviceTypeId := []int32{int32(123)} // []int32 | Device type (ID) (optional)
@@ -30163,20 +30183,16 @@ func main() {
 	rackN := []string{"Inner_example"} // []string | Rack (name) (optional)
 	rackId := []int32{int32(123)} // []int32 | Rack (ID) (optional)
 	rackIdN := []int32{int32(123)} // []int32 | Rack (ID) (optional)
-	region := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionN := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionId := []int32{int32(123)} // []int32 | Region (ID) (optional)
-	regionIdN := []int32{int32(123)} // []int32 | Region (ID) (optional)
-	role := []string{"Inner_example"} // []string | Device role (slug) (optional)
-	roleN := []string{"Inner_example"} // []string | Device role (slug) (optional)
-	roleId := []int32{int32(123)} // []int32 | Device role (ID) (optional)
-	roleIdN := []int32{int32(123)} // []int32 | Device role (ID) (optional)
+	region := []string{"Inner_example"} // []string |  (optional)
+	regionN := []string{"Inner_example"} // []string |  (optional)
+	regionId := []string{"Inner_example"} // []string |  (optional)
+	regionIdN := []string{"Inner_example"} // []string |  (optional)
 	site := []string{"Inner_example"} // []string | Site name (slug) (optional)
 	siteN := []string{"Inner_example"} // []string | Site name (slug) (optional)
-	siteGroup := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	siteGroupN := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	siteGroupId := []int32{int32(123)} // []int32 | Site group (ID) (optional)
-	siteGroupIdN := []int32{int32(123)} // []int32 | Site group (ID) (optional)
+	siteGroup := []string{"Inner_example"} // []string |  (optional)
+	siteGroupN := []string{"Inner_example"} // []string |  (optional)
+	siteGroupId := []string{"Inner_example"} // []string |  (optional)
+	siteGroupIdN := []string{"Inner_example"} // []string |  (optional)
 	siteId := []int32{int32(123)} // []int32 | Site (ID) (optional)
 	siteIdN := []int32{int32(123)} // []int32 | Site (ID) (optional)
 	tag := []string{"Inner_example"} // []string |  (optional)
@@ -30191,7 +30207,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimRearPortsList(context.Background()).CableEnd(cableEnd).CableEndN(cableEndN).CableId(cableId).CableIdN(cableIdN).Cabled(cabled).Color(color).ColorEmpty(colorEmpty).ColorIc(colorIc).ColorIe(colorIe).ColorIew(colorIew).ColorIsw(colorIsw).ColorN(colorN).ColorNic(colorNic).ColorNie(colorNie).ColorNiew(colorNiew).ColorNisw(colorNisw).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).MarkConnected(markConnected).ModifiedByRequest(modifiedByRequest).ModuleId(moduleId).ModuleIdN(moduleIdN).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Occupied(occupied).Offset(offset).Ordering(ordering).Positions(positions).PositionsEmpty(positionsEmpty).PositionsGt(positionsGt).PositionsGte(positionsGte).PositionsLt(positionsLt).PositionsLte(positionsLte).PositionsN(positionsN).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Role(role).RoleN(roleN).RoleId(roleId).RoleIdN(roleIdN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Tag(tag).TagN(tagN).Type_(type_).TypeN(typeN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimRearPortsList(context.Background()).CableEnd(cableEnd).CableEndN(cableEndN).CableId(cableId).CableIdN(cableIdN).Cabled(cabled).Color(color).ColorEmpty(colorEmpty).ColorIc(colorIc).ColorIe(colorIe).ColorIew(colorIew).ColorIsw(colorIsw).ColorN(colorN).ColorNic(colorNic).ColorNie(colorNie).ColorNiew(colorNiew).ColorNisw(colorNisw).Created(created).CreatedEmpty(createdEmpty).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CreatedByRequest(createdByRequest).Description(description).DescriptionEmpty(descriptionEmpty).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNisw(descriptionNisw).Device(device).DeviceN(deviceN).DeviceId(deviceId).DeviceIdN(deviceIdN).DeviceRole(deviceRole).DeviceRoleN(deviceRoleN).DeviceRoleId(deviceRoleId).DeviceRoleIdN(deviceRoleIdN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Id(id).IdEmpty(idEmpty).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Label(label).LabelEmpty(labelEmpty).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNisw(labelNisw).LastUpdated(lastUpdated).LastUpdatedEmpty(lastUpdatedEmpty).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).MarkConnected(markConnected).ModifiedByRequest(modifiedByRequest).ModuleId(moduleId).ModuleIdN(moduleIdN).Name(name).NameEmpty(nameEmpty).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNisw(nameNisw).Occupied(occupied).Offset(offset).Ordering(ordering).Positions(positions).PositionsEmpty(positionsEmpty).PositionsGt(positionsGt).PositionsGte(positionsGte).PositionsLt(positionsLt).PositionsLte(positionsLte).PositionsN(positionsN).Q(q).Rack(rack).RackN(rackN).RackId(rackId).RackIdN(rackIdN).Region(region).RegionN(regionN).RegionId(regionId).RegionIdN(regionIdN).Site(site).SiteN(siteN).SiteGroup(siteGroup).SiteGroupN(siteGroupN).SiteGroupId(siteGroupId).SiteGroupIdN(siteGroupIdN).SiteId(siteId).SiteIdN(siteIdN).Tag(tag).TagN(tagN).Type_(type_).TypeN(typeN).UpdatedByRequest(updatedByRequest).VirtualChassis(virtualChassis).VirtualChassisN(virtualChassisN).VirtualChassisId(virtualChassisId).VirtualChassisIdN(virtualChassisIdN).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimRearPortsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -30251,6 +30267,10 @@ Name | Type | Description  | Notes
  **deviceN** | **[]string** | Device (name) | 
  **deviceId** | **[]int32** | Device (ID) | 
  **deviceIdN** | **[]int32** | Device (ID) | 
+ **deviceRole** | **[]string** | Device role (slug) | 
+ **deviceRoleN** | **[]string** | Device role (slug) | 
+ **deviceRoleId** | **[]int32** | Device role (ID) | 
+ **deviceRoleIdN** | **[]int32** | Device role (ID) | 
  **deviceType** | **[]string** | Device type (model) | 
  **deviceTypeN** | **[]string** | Device type (model) | 
  **deviceTypeId** | **[]int32** | Device type (ID) | 
@@ -30315,20 +30335,16 @@ Name | Type | Description  | Notes
  **rackN** | **[]string** | Rack (name) | 
  **rackId** | **[]int32** | Rack (ID) | 
  **rackIdN** | **[]int32** | Rack (ID) | 
- **region** | **[]int32** | Region (slug) | 
- **regionN** | **[]int32** | Region (slug) | 
- **regionId** | **[]int32** | Region (ID) | 
- **regionIdN** | **[]int32** | Region (ID) | 
- **role** | **[]string** | Device role (slug) | 
- **roleN** | **[]string** | Device role (slug) | 
- **roleId** | **[]int32** | Device role (ID) | 
- **roleIdN** | **[]int32** | Device role (ID) | 
+ **region** | **[]string** |  | 
+ **regionN** | **[]string** |  | 
+ **regionId** | **[]string** |  | 
+ **regionIdN** | **[]string** |  | 
  **site** | **[]string** | Site name (slug) | 
  **siteN** | **[]string** | Site name (slug) | 
- **siteGroup** | **[]int32** | Site group (slug) | 
- **siteGroupN** | **[]int32** | Site group (slug) | 
- **siteGroupId** | **[]int32** | Site group (ID) | 
- **siteGroupIdN** | **[]int32** | Site group (ID) | 
+ **siteGroup** | **[]string** |  | 
+ **siteGroupN** | **[]string** |  | 
+ **siteGroupId** | **[]string** |  | 
+ **siteGroupIdN** | **[]string** |  | 
  **siteId** | **[]int32** | Site (ID) | 
  **siteIdN** | **[]int32** | Site (ID) | 
  **tag** | **[]string** |  | 
@@ -30995,14 +31011,14 @@ import (
 )
 
 func main() {
-	ancestor := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	ancestorN := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	ancestorId := []int32{int32(123)} // []int32 | Region (ID) (optional)
-	ancestorIdN := []int32{int32(123)} // []int32 | Region (ID) (optional)
+	ancestor := []string{"Inner_example"} // []string |  (optional)
+	ancestorN := []string{"Inner_example"} // []string |  (optional)
+	ancestorId := []string{"Inner_example"} // []string |  (optional)
+	ancestorIdN := []string{"Inner_example"} // []string |  (optional)
 	contact := []int32{int32(123)} // []int32 | Contact (optional)
 	contactN := []int32{int32(123)} // []int32 | Contact (optional)
-	contactGroup := []int32{int32(123)} // []int32 | Contact group (optional)
-	contactGroupN := []int32{int32(123)} // []int32 | Contact group (optional)
+	contactGroup := []string{"Inner_example"} // []string |  (optional)
+	contactGroupN := []string{"Inner_example"} // []string |  (optional)
 	contactRole := []int32{int32(123)} // []int32 | Contact Role (optional)
 	contactRoleN := []int32{int32(123)} // []int32 | Contact Role (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -31096,14 +31112,14 @@ Other parameters are passed through a pointer to a apiDcimRegionsListRequest str
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ancestor** | **[]int32** | Region (slug) | 
- **ancestorN** | **[]int32** | Region (slug) | 
- **ancestorId** | **[]int32** | Region (ID) | 
- **ancestorIdN** | **[]int32** | Region (ID) | 
+ **ancestor** | **[]string** |  | 
+ **ancestorN** | **[]string** |  | 
+ **ancestorId** | **[]string** |  | 
+ **ancestorIdN** | **[]string** |  | 
  **contact** | **[]int32** | Contact | 
  **contactN** | **[]int32** | Contact | 
- **contactGroup** | **[]int32** | Contact group | 
- **contactGroupN** | **[]int32** | Contact group | 
+ **contactGroup** | **[]string** |  | 
+ **contactGroupN** | **[]string** |  | 
  **contactRole** | **[]int32** | Contact Role | 
  **contactRoleN** | **[]int32** | Contact Role | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
@@ -31758,14 +31774,14 @@ import (
 )
 
 func main() {
-	ancestor := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	ancestorN := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	ancestorId := []int32{int32(123)} // []int32 | Site group (ID) (optional)
-	ancestorIdN := []int32{int32(123)} // []int32 | Site group (ID) (optional)
+	ancestor := []string{"Inner_example"} // []string |  (optional)
+	ancestorN := []string{"Inner_example"} // []string |  (optional)
+	ancestorId := []string{"Inner_example"} // []string |  (optional)
+	ancestorIdN := []string{"Inner_example"} // []string |  (optional)
 	contact := []int32{int32(123)} // []int32 | Contact (optional)
 	contactN := []int32{int32(123)} // []int32 | Contact (optional)
-	contactGroup := []int32{int32(123)} // []int32 | Contact group (optional)
-	contactGroupN := []int32{int32(123)} // []int32 | Contact group (optional)
+	contactGroup := []string{"Inner_example"} // []string |  (optional)
+	contactGroupN := []string{"Inner_example"} // []string |  (optional)
 	contactRole := []int32{int32(123)} // []int32 | Contact Role (optional)
 	contactRoleN := []int32{int32(123)} // []int32 | Contact Role (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -31859,14 +31875,14 @@ Other parameters are passed through a pointer to a apiDcimSiteGroupsListRequest 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ancestor** | **[]int32** | Site group (slug) | 
- **ancestorN** | **[]int32** | Site group (slug) | 
- **ancestorId** | **[]int32** | Site group (ID) | 
- **ancestorIdN** | **[]int32** | Site group (ID) | 
+ **ancestor** | **[]string** |  | 
+ **ancestorN** | **[]string** |  | 
+ **ancestorId** | **[]string** |  | 
+ **ancestorIdN** | **[]string** |  | 
  **contact** | **[]int32** | Contact | 
  **contactN** | **[]int32** | Contact | 
- **contactGroup** | **[]int32** | Contact group | 
- **contactGroupN** | **[]int32** | Contact group | 
+ **contactGroup** | **[]string** |  | 
+ **contactGroupN** | **[]string** |  | 
  **contactRole** | **[]int32** | Contact Role | 
  **contactRoleN** | **[]int32** | Contact Role | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
@@ -32527,8 +32543,8 @@ func main() {
 	asnIdN := []int32{int32(123)} // []int32 | AS (ID) (optional)
 	contact := []int32{int32(123)} // []int32 | Contact (optional)
 	contactN := []int32{int32(123)} // []int32 | Contact (optional)
-	contactGroup := []int32{int32(123)} // []int32 | Contact group (optional)
-	contactGroupN := []int32{int32(123)} // []int32 | Contact group (optional)
+	contactGroup := []string{"Inner_example"} // []string |  (optional)
+	contactGroupN := []string{"Inner_example"} // []string |  (optional)
 	contactRole := []int32{int32(123)} // []int32 | Contact Role (optional)
 	contactRoleN := []int32{int32(123)} // []int32 | Contact Role (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -32561,10 +32577,10 @@ func main() {
 	facilityNie := []string{"Inner_example"} // []string |  (optional)
 	facilityNiew := []string{"Inner_example"} // []string |  (optional)
 	facilityNisw := []string{"Inner_example"} // []string |  (optional)
-	group := []int32{int32(123)} // []int32 | Group (slug) (optional)
-	groupN := []int32{int32(123)} // []int32 | Group (slug) (optional)
-	groupId := []int32{int32(123)} // []int32 | Group (ID) (optional)
-	groupIdN := []int32{int32(123)} // []int32 | Group (ID) (optional)
+	group := []string{"Inner_example"} // []string |  (optional)
+	groupN := []string{"Inner_example"} // []string |  (optional)
+	groupId := []string{"Inner_example"} // []string |  (optional)
+	groupIdN := []string{"Inner_example"} // []string |  (optional)
 	id := []int32{int32(123)} // []int32 |  (optional)
 	idEmpty := true // bool |  (optional)
 	idGt := []int32{int32(123)} // []int32 |  (optional)
@@ -32609,10 +32625,10 @@ func main() {
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	ordering := "ordering_example" // string | Which field to use when ordering the results. (optional)
 	q := "q_example" // string | Search (optional)
-	region := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionN := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionId := []int32{int32(123)} // []int32 | Region (ID) (optional)
-	regionIdN := []int32{int32(123)} // []int32 | Region (ID) (optional)
+	region := []string{"Inner_example"} // []string |  (optional)
+	regionN := []string{"Inner_example"} // []string |  (optional)
+	regionId := []string{"Inner_example"} // []string |  (optional)
+	regionIdN := []string{"Inner_example"} // []string |  (optional)
 	slug := []string{"Inner_example"} // []string |  (optional)
 	slugEmpty := true // bool |  (optional)
 	slugIc := []string{"Inner_example"} // []string |  (optional)
@@ -32630,10 +32646,10 @@ func main() {
 	tagN := []string{"Inner_example"} // []string |  (optional)
 	tenant := []string{"Inner_example"} // []string | Tenant (slug) (optional)
 	tenantN := []string{"Inner_example"} // []string | Tenant (slug) (optional)
-	tenantGroup := []int32{int32(123)} // []int32 | Tenant Group (slug) (optional)
-	tenantGroupN := []int32{int32(123)} // []int32 | Tenant Group (slug) (optional)
-	tenantGroupId := []int32{int32(123)} // []int32 | Tenant Group (ID) (optional)
-	tenantGroupIdN := []int32{int32(123)} // []int32 | Tenant Group (ID) (optional)
+	tenantGroup := []string{"Inner_example"} // []string |  (optional)
+	tenantGroupN := []string{"Inner_example"} // []string |  (optional)
+	tenantGroupId := []string{"Inner_example"} // []string |  (optional)
+	tenantGroupIdN := []string{"Inner_example"} // []string |  (optional)
 	tenantId := []*int32{int32(123)} // []*int32 | Tenant (ID) (optional)
 	tenantIdN := []*int32{int32(123)} // []*int32 | Tenant (ID) (optional)
 	timeZone := []string{"Inner_example"} // []string |  (optional)
@@ -32677,8 +32693,8 @@ Name | Type | Description  | Notes
  **asnIdN** | **[]int32** | AS (ID) | 
  **contact** | **[]int32** | Contact | 
  **contactN** | **[]int32** | Contact | 
- **contactGroup** | **[]int32** | Contact group | 
- **contactGroupN** | **[]int32** | Contact group | 
+ **contactGroup** | **[]string** |  | 
+ **contactGroupN** | **[]string** |  | 
  **contactRole** | **[]int32** | Contact Role | 
  **contactRoleN** | **[]int32** | Contact Role | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
@@ -32711,10 +32727,10 @@ Name | Type | Description  | Notes
  **facilityNie** | **[]string** |  | 
  **facilityNiew** | **[]string** |  | 
  **facilityNisw** | **[]string** |  | 
- **group** | **[]int32** | Group (slug) | 
- **groupN** | **[]int32** | Group (slug) | 
- **groupId** | **[]int32** | Group (ID) | 
- **groupIdN** | **[]int32** | Group (ID) | 
+ **group** | **[]string** |  | 
+ **groupN** | **[]string** |  | 
+ **groupId** | **[]string** |  | 
+ **groupIdN** | **[]string** |  | 
  **id** | **[]int32** |  | 
  **idEmpty** | **bool** |  | 
  **idGt** | **[]int32** |  | 
@@ -32759,10 +32775,10 @@ Name | Type | Description  | Notes
  **offset** | **int32** | The initial index from which to return the results. | 
  **ordering** | **string** | Which field to use when ordering the results. | 
  **q** | **string** | Search | 
- **region** | **[]int32** | Region (slug) | 
- **regionN** | **[]int32** | Region (slug) | 
- **regionId** | **[]int32** | Region (ID) | 
- **regionIdN** | **[]int32** | Region (ID) | 
+ **region** | **[]string** |  | 
+ **regionN** | **[]string** |  | 
+ **regionId** | **[]string** |  | 
+ **regionIdN** | **[]string** |  | 
  **slug** | **[]string** |  | 
  **slugEmpty** | **bool** |  | 
  **slugIc** | **[]string** |  | 
@@ -32780,10 +32796,10 @@ Name | Type | Description  | Notes
  **tagN** | **[]string** |  | 
  **tenant** | **[]string** | Tenant (slug) | 
  **tenantN** | **[]string** | Tenant (slug) | 
- **tenantGroup** | **[]int32** | Tenant Group (slug) | 
- **tenantGroupN** | **[]int32** | Tenant Group (slug) | 
- **tenantGroupId** | **[]int32** | Tenant Group (ID) | 
- **tenantGroupIdN** | **[]int32** | Tenant Group (ID) | 
+ **tenantGroup** | **[]string** |  | 
+ **tenantGroupN** | **[]string** |  | 
+ **tenantGroupId** | **[]string** |  | 
+ **tenantGroupIdN** | **[]string** |  | 
  **tenantId** | **[]int32** | Tenant (ID) | 
  **tenantIdN** | **[]int32** | Tenant (ID) | 
  **timeZone** | **[]string** |  | 
@@ -33453,16 +33469,16 @@ func main() {
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	ordering := "ordering_example" // string | Which field to use when ordering the results. (optional)
 	q := "q_example" // string | Search (optional)
-	region := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionN := []int32{int32(123)} // []int32 | Region (slug) (optional)
-	regionId := []int32{int32(123)} // []int32 | Region (ID) (optional)
-	regionIdN := []int32{int32(123)} // []int32 | Region (ID) (optional)
+	region := []string{"Inner_example"} // []string |  (optional)
+	regionN := []string{"Inner_example"} // []string |  (optional)
+	regionId := []string{"Inner_example"} // []string |  (optional)
+	regionIdN := []string{"Inner_example"} // []string |  (optional)
 	site := []string{"Inner_example"} // []string | Site name (slug) (optional)
 	siteN := []string{"Inner_example"} // []string | Site name (slug) (optional)
-	siteGroup := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	siteGroupN := []int32{int32(123)} // []int32 | Site group (slug) (optional)
-	siteGroupId := []int32{int32(123)} // []int32 | Site group (ID) (optional)
-	siteGroupIdN := []int32{int32(123)} // []int32 | Site group (ID) (optional)
+	siteGroup := []string{"Inner_example"} // []string |  (optional)
+	siteGroupN := []string{"Inner_example"} // []string |  (optional)
+	siteGroupId := []string{"Inner_example"} // []string |  (optional)
+	siteGroupIdN := []string{"Inner_example"} // []string |  (optional)
 	siteId := []int32{int32(123)} // []int32 | Site (ID) (optional)
 	siteIdN := []int32{int32(123)} // []int32 | Site (ID) (optional)
 	tag := []string{"Inner_example"} // []string |  (optional)
@@ -33567,16 +33583,16 @@ Name | Type | Description  | Notes
  **offset** | **int32** | The initial index from which to return the results. | 
  **ordering** | **string** | Which field to use when ordering the results. | 
  **q** | **string** | Search | 
- **region** | **[]int32** | Region (slug) | 
- **regionN** | **[]int32** | Region (slug) | 
- **regionId** | **[]int32** | Region (ID) | 
- **regionIdN** | **[]int32** | Region (ID) | 
+ **region** | **[]string** |  | 
+ **regionN** | **[]string** |  | 
+ **regionId** | **[]string** |  | 
+ **regionIdN** | **[]string** |  | 
  **site** | **[]string** | Site name (slug) | 
  **siteN** | **[]string** | Site name (slug) | 
- **siteGroup** | **[]int32** | Site group (slug) | 
- **siteGroupN** | **[]int32** | Site group (slug) | 
- **siteGroupId** | **[]int32** | Site group (ID) | 
- **siteGroupIdN** | **[]int32** | Site group (ID) | 
+ **siteGroup** | **[]string** |  | 
+ **siteGroupN** | **[]string** |  | 
+ **siteGroupId** | **[]string** |  | 
+ **siteGroupIdN** | **[]string** |  | 
  **siteId** | **[]int32** | Site (ID) | 
  **siteIdN** | **[]int32** | Site (ID) | 
  **tag** | **[]string** |  | 
@@ -34244,10 +34260,10 @@ func main() {
 	tagN := []string{"Inner_example"} // []string |  (optional)
 	tenant := []string{"Inner_example"} // []string | Tenant (slug) (optional)
 	tenantN := []string{"Inner_example"} // []string | Tenant (slug) (optional)
-	tenantGroup := []int32{int32(123)} // []int32 | Tenant Group (slug) (optional)
-	tenantGroupN := []int32{int32(123)} // []int32 | Tenant Group (slug) (optional)
-	tenantGroupId := []int32{int32(123)} // []int32 | Tenant Group (ID) (optional)
-	tenantGroupIdN := []int32{int32(123)} // []int32 | Tenant Group (ID) (optional)
+	tenantGroup := []string{"Inner_example"} // []string |  (optional)
+	tenantGroupN := []string{"Inner_example"} // []string |  (optional)
+	tenantGroupId := []string{"Inner_example"} // []string |  (optional)
+	tenantGroupIdN := []string{"Inner_example"} // []string |  (optional)
 	tenantId := []*int32{int32(123)} // []*int32 | Tenant (ID) (optional)
 	tenantIdN := []*int32{int32(123)} // []*int32 | Tenant (ID) (optional)
 	updatedByRequest := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string |  (optional)
@@ -34348,10 +34364,10 @@ Name | Type | Description  | Notes
  **tagN** | **[]string** |  | 
  **tenant** | **[]string** | Tenant (slug) | 
  **tenantN** | **[]string** | Tenant (slug) | 
- **tenantGroup** | **[]int32** | Tenant Group (slug) | 
- **tenantGroupN** | **[]int32** | Tenant Group (slug) | 
- **tenantGroupId** | **[]int32** | Tenant Group (ID) | 
- **tenantGroupIdN** | **[]int32** | Tenant Group (ID) | 
+ **tenantGroup** | **[]string** |  | 
+ **tenantGroupN** | **[]string** |  | 
+ **tenantGroupId** | **[]string** |  | 
+ **tenantGroupIdN** | **[]string** |  | 
  **tenantId** | **[]int32** | Tenant (ID) | 
  **tenantIdN** | **[]int32** | Tenant (ID) | 
  **updatedByRequest** | **string** |  | 

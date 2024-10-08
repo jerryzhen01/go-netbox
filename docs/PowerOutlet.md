@@ -19,9 +19,9 @@ Name | Type | Description | Notes
 **Cable** | [**NullableCable**](Cable.md) |  | [readonly] 
 **CableEnd** | **string** |  | [readonly] 
 **LinkPeers** | **[]interface{}** |  | [readonly] 
-**LinkPeersType** | **string** | Return the type of the peer link terminations, or None. | [readonly] 
+**LinkPeersType** | **NullableString** | Return the type of the peer link terminations, or None. | [readonly] 
 **ConnectedEndpoints** | **[]interface{}** |  | [readonly] 
-**ConnectedEndpointsType** | **string** |  | [readonly] 
+**ConnectedEndpointsType** | **NullableString** |  | [readonly] 
 **ConnectedEndpointsReachable** | **bool** |  | [readonly] 
 **Tags** | Pointer to [**[]NestedTag**](NestedTag.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
@@ -33,7 +33,7 @@ Name | Type | Description | Notes
 
 ### NewPowerOutlet
 
-`func NewPowerOutlet(id int32, url string, display string, device Device, name string, cable NullableCable, cableEnd string, linkPeers []interface{}, linkPeersType string, connectedEndpoints []interface{}, connectedEndpointsType string, connectedEndpointsReachable bool, created NullableTime, lastUpdated NullableTime, occupied bool, ) *PowerOutlet`
+`func NewPowerOutlet(id int32, url string, display string, device Device, name string, cable NullableCable, cableEnd string, linkPeers []interface{}, linkPeersType NullableString, connectedEndpoints []interface{}, connectedEndpointsType NullableString, connectedEndpointsReachable bool, created NullableTime, lastUpdated NullableTime, occupied bool, ) *PowerOutlet`
 
 NewPowerOutlet instantiates a new PowerOutlet object
 This constructor will assign default values to properties that have it defined,
@@ -453,6 +453,16 @@ and a boolean to check if the value has been set.
 SetLinkPeersType sets LinkPeersType field to given value.
 
 
+### SetLinkPeersTypeNil
+
+`func (o *PowerOutlet) SetLinkPeersTypeNil(b bool)`
+
+ SetLinkPeersTypeNil sets the value for LinkPeersType to be an explicit nil
+
+### UnsetLinkPeersType
+`func (o *PowerOutlet) UnsetLinkPeersType()`
+
+UnsetLinkPeersType ensures that no value is present for LinkPeersType, not even an explicit nil
 ### GetConnectedEndpoints
 
 `func (o *PowerOutlet) GetConnectedEndpoints() []interface{}`
@@ -473,6 +483,16 @@ and a boolean to check if the value has been set.
 SetConnectedEndpoints sets ConnectedEndpoints field to given value.
 
 
+### SetConnectedEndpointsNil
+
+`func (o *PowerOutlet) SetConnectedEndpointsNil(b bool)`
+
+ SetConnectedEndpointsNil sets the value for ConnectedEndpoints to be an explicit nil
+
+### UnsetConnectedEndpoints
+`func (o *PowerOutlet) UnsetConnectedEndpoints()`
+
+UnsetConnectedEndpoints ensures that no value is present for ConnectedEndpoints, not even an explicit nil
 ### GetConnectedEndpointsType
 
 `func (o *PowerOutlet) GetConnectedEndpointsType() string`
@@ -493,6 +513,16 @@ and a boolean to check if the value has been set.
 SetConnectedEndpointsType sets ConnectedEndpointsType field to given value.
 
 
+### SetConnectedEndpointsTypeNil
+
+`func (o *PowerOutlet) SetConnectedEndpointsTypeNil(b bool)`
+
+ SetConnectedEndpointsTypeNil sets the value for ConnectedEndpointsType to be an explicit nil
+
+### UnsetConnectedEndpointsType
+`func (o *PowerOutlet) UnsetConnectedEndpointsType()`
+
+UnsetConnectedEndpointsType ensures that no value is present for ConnectedEndpointsType, not even an explicit nil
 ### GetConnectedEndpointsReachable
 
 `func (o *PowerOutlet) GetConnectedEndpointsReachable() bool`
