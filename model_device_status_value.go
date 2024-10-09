@@ -27,6 +27,8 @@ const (
 	DEVICESTATUSVALUE_FAILED          DeviceStatusValue = "failed"
 	DEVICESTATUSVALUE_INVENTORY       DeviceStatusValue = "inventory"
 	DEVICESTATUSVALUE_DECOMMISSIONING DeviceStatusValue = "decommissioning"
+	DEVICESTATUSVALUE_INSPECTING      DeviceStatusValue = "inspecting"
+	DEVICESTATUSVALUE_RACKED          DeviceStatusValue = "racked"
 )
 
 // All allowed values of DeviceStatusValue enum
@@ -38,6 +40,8 @@ var AllowedDeviceStatusValueEnumValues = []DeviceStatusValue{
 	"failed",
 	"inventory",
 	"decommissioning",
+	"inspecting",
+	"racked",
 }
 
 func (v *DeviceStatusValue) UnmarshalJSON(src []byte) error {

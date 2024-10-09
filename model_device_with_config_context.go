@@ -41,17 +41,17 @@ type DeviceWithConfigContext struct {
 	// GPS coordinate in decimal format (xx.yyyyyy)
 	Latitude NullableFloat64 `json:"latitude,omitempty"`
 	// GPS coordinate in decimal format (xx.yyyyyy)
-	Longitude      NullableFloat64        `json:"longitude,omitempty"`
-	ParentDevice   NullableNestedDevice   `json:"parent_device"`
-	Status         *DeviceStatus          `json:"status,omitempty"`
-	Airflow        *DeviceAirflow         `json:"airflow,omitempty"`
-	PrimaryIp      NullableIPAddress      `json:"primary_ip"`
-	PrimaryIp4     NullableIPAddress      `json:"primary_ip4,omitempty"`
-	PrimaryIp6     NullableIPAddress      `json:"primary_ip6,omitempty"`
-	OobIp          NullableIPAddress      `json:"oob_ip,omitempty"`
-	Cluster        NullableCluster        `json:"cluster,omitempty"`
-	VirtualChassis NullableVirtualChassis `json:"virtual_chassis,omitempty"`
-	VcPosition     NullableInt32          `json:"vc_position,omitempty"`
+	Longitude      NullableFloat64                `json:"longitude,omitempty"`
+	ParentDevice   NullableNestedDevice           `json:"parent_device"`
+	Status         *DeviceWithConfigContextStatus `json:"status,omitempty"`
+	Airflow        *DeviceAirflow                 `json:"airflow,omitempty"`
+	PrimaryIp      NullableIPAddress              `json:"primary_ip"`
+	PrimaryIp4     NullableIPAddress              `json:"primary_ip4,omitempty"`
+	PrimaryIp6     NullableIPAddress              `json:"primary_ip6,omitempty"`
+	OobIp          NullableIPAddress              `json:"oob_ip,omitempty"`
+	Cluster        NullableCluster                `json:"cluster,omitempty"`
+	VirtualChassis NullableVirtualChassis         `json:"virtual_chassis,omitempty"`
+	VcPosition     NullableInt32                  `json:"vc_position,omitempty"`
 	// Virtual chassis master election priority
 	VcPriority     NullableInt32          `json:"vc_priority,omitempty"`
 	Description    *string                `json:"description,omitempty"`
@@ -729,9 +729,9 @@ func (o *DeviceWithConfigContext) SetParentDevice(v NestedDevice) {
 }
 
 // GetStatus returns the Status field value if set, zero value otherwise.
-func (o *DeviceWithConfigContext) GetStatus() DeviceStatus {
+func (o *DeviceWithConfigContext) GetStatus() DeviceWithConfigContextStatus {
 	if o == nil || IsNil(o.Status) {
-		var ret DeviceStatus
+		var ret DeviceWithConfigContextStatus
 		return ret
 	}
 	return *o.Status
@@ -739,7 +739,7 @@ func (o *DeviceWithConfigContext) GetStatus() DeviceStatus {
 
 // GetStatusOk returns a tuple with the Status field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *DeviceWithConfigContext) GetStatusOk() (*DeviceStatus, bool) {
+func (o *DeviceWithConfigContext) GetStatusOk() (*DeviceWithConfigContextStatus, bool) {
 	if o == nil || IsNil(o.Status) {
 		return nil, false
 	}
@@ -755,8 +755,8 @@ func (o *DeviceWithConfigContext) HasStatus() bool {
 	return false
 }
 
-// SetStatus gets a reference to the given DeviceStatus and assigns it to the Status field.
-func (o *DeviceWithConfigContext) SetStatus(v DeviceStatus) {
+// SetStatus gets a reference to the given DeviceWithConfigContextStatus and assigns it to the Status field.
+func (o *DeviceWithConfigContext) SetStatus(v DeviceWithConfigContextStatus) {
 	o.Status = &v
 }
 

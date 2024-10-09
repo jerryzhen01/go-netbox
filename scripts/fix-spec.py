@@ -49,6 +49,24 @@ if 'components' in data and 'schemas' in data['components']:
                 ]
                 schema['required'] = updated_required
 
+            # Specific fix: Make 'device_type' not required for DcimInterfacesList
+            if name == "Interface" and 'required' in schema:
+                schema['required'] = [
+                    r for r in schema['required']
+                    if r != 'device_type'
+                ]
+     
+            # Specific fix: Add 'inspecting' and 'racked' to the Device status enum
+            if name == "Device" and 'properties' in schema and 'status' in schema['properties']:
+                status = schema['properties']['status']
+                if 'properties' in status and 'value' in status['properties'] and 'enum' in status['properties']['value']:
+                    enum_values = status['properties']['value']['enum']
+                    if 'inspecting' not in enum_values:
+                        enum_values.append('inspecting')
+                    if 'racked' not in enum_values:
+                        enum_values.append('racked')
+
+
 # Save the updated spec file
 with open(SPEC_PATH, 'w') as file:
     yaml.dump(data, file, Dumper=yaml.CDumper, sort_keys=False)

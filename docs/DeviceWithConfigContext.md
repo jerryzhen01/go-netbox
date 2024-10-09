@@ -22,7 +22,7 @@ Name | Type | Description | Notes
 **Latitude** | Pointer to **NullableFloat64** | GPS coordinate in decimal format (xx.yyyyyy) | [optional] 
 **Longitude** | Pointer to **NullableFloat64** | GPS coordinate in decimal format (xx.yyyyyy) | [optional] 
 **ParentDevice** | [**NullableNestedDevice**](NestedDevice.md) |  | [readonly] 
-**Status** | Pointer to [**DeviceStatus**](DeviceStatus.md) |  | [optional] 
+**Status** | Pointer to [**DeviceWithConfigContextStatus**](DeviceWithConfigContextStatus.md) |  | [optional] 
 **Airflow** | Pointer to [**DeviceAirflow**](DeviceAirflow.md) |  | [optional] 
 **PrimaryIp** | [**NullableIPAddress**](IPAddress.md) |  | [readonly] 
 **PrimaryIp4** | Pointer to [**NullableIPAddress**](IPAddress.md) |  | [optional] 
@@ -588,20 +588,20 @@ SetParentDevice sets ParentDevice field to given value.
 UnsetParentDevice ensures that no value is present for ParentDevice, not even an explicit nil
 ### GetStatus
 
-`func (o *DeviceWithConfigContext) GetStatus() DeviceStatus`
+`func (o *DeviceWithConfigContext) GetStatus() DeviceWithConfigContextStatus`
 
 GetStatus returns the Status field if non-nil, zero value otherwise.
 
 ### GetStatusOk
 
-`func (o *DeviceWithConfigContext) GetStatusOk() (*DeviceStatus, bool)`
+`func (o *DeviceWithConfigContext) GetStatusOk() (*DeviceWithConfigContextStatus, bool)`
 
 GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetStatus
 
-`func (o *DeviceWithConfigContext) SetStatus(v DeviceStatus)`
+`func (o *DeviceWithConfigContext) SetStatus(v DeviceWithConfigContextStatus)`
 
 SetStatus sets Status field to given value.
 

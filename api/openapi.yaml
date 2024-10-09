@@ -104940,6 +104940,8 @@ components:
               - failed
               - inventory
               - decommissioning
+              - inspecting
+              - racked
               type: string
               description: '* `offline` - Offline
 
