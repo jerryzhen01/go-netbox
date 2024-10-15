@@ -8,23 +8,23 @@ Name | Type | Description | Notes
 **Url** | **string** |  | [readonly] 
 **Display** | **string** |  | [readonly] 
 **Name** | Pointer to **NullableString** |  | [optional] 
-**DeviceType** | [**DeviceType**](DeviceType.md) |  | 
-**Role** | [**DeviceRole**](DeviceRole.md) |  | 
+**DeviceType** | Pointer to [**DeviceType**](DeviceType.md) |  | [optional] 
+**Role** | Pointer to [**DeviceRole**](DeviceRole.md) |  | [optional] 
 **Tenant** | Pointer to [**NullableTenant**](Tenant.md) |  | [optional] 
 **Platform** | Pointer to [**NullablePlatform**](Platform.md) |  | [optional] 
 **Serial** | Pointer to **string** | Chassis serial number, assigned by the manufacturer | [optional] 
 **AssetTag** | Pointer to **NullableString** | A unique tag used to identify this device | [optional] 
-**Site** | [**Site**](Site.md) |  | 
+**Site** | Pointer to [**Site**](Site.md) |  | [optional] 
 **Location** | Pointer to [**NullableLocation**](Location.md) |  | [optional] 
 **Rack** | Pointer to [**NullableRack**](Rack.md) |  | [optional] 
 **Position** | Pointer to **NullableFloat64** |  | [optional] 
 **Face** | Pointer to [**DeviceFace**](DeviceFace.md) |  | [optional] 
 **Latitude** | Pointer to **NullableFloat64** | GPS coordinate in decimal format (xx.yyyyyy) | [optional] 
 **Longitude** | Pointer to **NullableFloat64** | GPS coordinate in decimal format (xx.yyyyyy) | [optional] 
-**ParentDevice** | [**NullableNestedDevice**](NestedDevice.md) |  | [readonly] 
+**ParentDevice** | Pointer to [**NullableNestedDevice**](NestedDevice.md) |  | [optional] [readonly] 
 **Status** | Pointer to [**DeviceStatus**](DeviceStatus.md) |  | [optional] 
 **Airflow** | Pointer to [**DeviceAirflow**](DeviceAirflow.md) |  | [optional] 
-**PrimaryIp** | [**NullableIPAddress**](IPAddress.md) |  | [readonly] 
+**PrimaryIp** | Pointer to [**NullableIPAddress**](IPAddress.md) |  | [optional] [readonly] 
 **PrimaryIp4** | Pointer to [**NullableIPAddress**](IPAddress.md) |  | [optional] 
 **PrimaryIp6** | Pointer to [**NullableIPAddress**](IPAddress.md) |  | [optional] 
 **OobIp** | Pointer to [**NullableIPAddress**](IPAddress.md) |  | [optional] 
@@ -38,8 +38,8 @@ Name | Type | Description | Notes
 **LocalContextData** | Pointer to **interface{}** | Local config context data takes precedence over source contexts in the final rendered config context | [optional] 
 **Tags** | Pointer to [**[]NestedTag**](NestedTag.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Created** | **NullableTime** |  | [readonly] 
-**LastUpdated** | **NullableTime** |  | [readonly] 
+**Created** | Pointer to **NullableTime** |  | [optional] [readonly] 
+**LastUpdated** | Pointer to **NullableTime** |  | [optional] [readonly] 
 **ConsolePortCount** | Pointer to **int32** |  | [optional] [readonly] 
 **ConsoleServerPortCount** | Pointer to **int32** |  | [optional] [readonly] 
 **PowerPortCount** | Pointer to **int32** |  | [optional] [readonly] 
@@ -55,7 +55,7 @@ Name | Type | Description | Notes
 
 ### NewDevice
 
-`func NewDevice(id int32, url string, display string, deviceType DeviceType, role DeviceRole, site Site, parentDevice NullableNestedDevice, primaryIp NullableIPAddress, created NullableTime, lastUpdated NullableTime, ) *Device`
+`func NewDevice(id int32, url string, display string, ) *Device`
 
 NewDevice instantiates a new Device object
 This constructor will assign default values to properties that have it defined,
@@ -184,6 +184,11 @@ and a boolean to check if the value has been set.
 
 SetDeviceType sets DeviceType field to given value.
 
+### HasDeviceType
+
+`func (o *Device) HasDeviceType() bool`
+
+HasDeviceType returns a boolean if a field has been set.
 
 ### GetRole
 
@@ -204,6 +209,11 @@ and a boolean to check if the value has been set.
 
 SetRole sets Role field to given value.
 
+### HasRole
+
+`func (o *Device) HasRole() bool`
+
+HasRole returns a boolean if a field has been set.
 
 ### GetTenant
 
@@ -354,6 +364,11 @@ and a boolean to check if the value has been set.
 
 SetSite sets Site field to given value.
 
+### HasSite
+
+`func (o *Device) HasSite() bool`
+
+HasSite returns a boolean if a field has been set.
 
 ### GetLocation
 
@@ -574,6 +589,11 @@ and a boolean to check if the value has been set.
 
 SetParentDevice sets ParentDevice field to given value.
 
+### HasParentDevice
+
+`func (o *Device) HasParentDevice() bool`
+
+HasParentDevice returns a boolean if a field has been set.
 
 ### SetParentDeviceNil
 
@@ -654,6 +674,11 @@ and a boolean to check if the value has been set.
 
 SetPrimaryIp sets PrimaryIp field to given value.
 
+### HasPrimaryIp
+
+`func (o *Device) HasPrimaryIp() bool`
+
+HasPrimaryIp returns a boolean if a field has been set.
 
 ### SetPrimaryIpNil
 
@@ -1099,6 +1124,11 @@ and a boolean to check if the value has been set.
 
 SetCreated sets Created field to given value.
 
+### HasCreated
+
+`func (o *Device) HasCreated() bool`
+
+HasCreated returns a boolean if a field has been set.
 
 ### SetCreatedNil
 
@@ -1129,6 +1159,11 @@ and a boolean to check if the value has been set.
 
 SetLastUpdated sets LastUpdated field to given value.
 
+### HasLastUpdated
+
+`func (o *Device) HasLastUpdated() bool`
+
+HasLastUpdated returns a boolean if a field has been set.
 
 ### SetLastUpdatedNil
 

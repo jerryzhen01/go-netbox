@@ -26,7 +26,7 @@ type DeviceWithConfigContext struct {
 	Display    string           `json:"display"`
 	Name       NullableString   `json:"name,omitempty"`
 	DeviceType DeviceType       `json:"device_type"`
-	Role       DeviceRole       `json:"role"`
+	Role       *DeviceRole      `json:"role,omitempty"`
 	Tenant     NullableTenant   `json:"tenant,omitempty"`
 	Platform   NullablePlatform `json:"platform,omitempty"`
 	// Chassis serial number, assigned by the manufacturer
@@ -41,17 +41,17 @@ type DeviceWithConfigContext struct {
 	// GPS coordinate in decimal format (xx.yyyyyy)
 	Latitude NullableFloat64 `json:"latitude,omitempty"`
 	// GPS coordinate in decimal format (xx.yyyyyy)
-	Longitude      NullableFloat64                `json:"longitude,omitempty"`
-	ParentDevice   NullableNestedDevice           `json:"parent_device"`
-	Status         *DeviceWithConfigContextStatus `json:"status,omitempty"`
-	Airflow        *DeviceAirflow                 `json:"airflow,omitempty"`
-	PrimaryIp      NullableIPAddress              `json:"primary_ip"`
-	PrimaryIp4     NullableIPAddress              `json:"primary_ip4,omitempty"`
-	PrimaryIp6     NullableIPAddress              `json:"primary_ip6,omitempty"`
-	OobIp          NullableIPAddress              `json:"oob_ip,omitempty"`
-	Cluster        NullableCluster                `json:"cluster,omitempty"`
-	VirtualChassis NullableVirtualChassis         `json:"virtual_chassis,omitempty"`
-	VcPosition     NullableInt32                  `json:"vc_position,omitempty"`
+	Longitude      NullableFloat64        `json:"longitude,omitempty"`
+	ParentDevice   NullableNestedDevice   `json:"parent_device,omitempty"`
+	Status         *DeviceStatus          `json:"status,omitempty"`
+	Airflow        *DeviceAirflow         `json:"airflow,omitempty"`
+	PrimaryIp      NullableIPAddress      `json:"primary_ip"`
+	PrimaryIp4     NullableIPAddress      `json:"primary_ip4,omitempty"`
+	PrimaryIp6     NullableIPAddress      `json:"primary_ip6,omitempty"`
+	OobIp          NullableIPAddress      `json:"oob_ip,omitempty"`
+	Cluster        NullableCluster        `json:"cluster,omitempty"`
+	VirtualChassis NullableVirtualChassis `json:"virtual_chassis,omitempty"`
+	VcPosition     NullableInt32          `json:"vc_position,omitempty"`
 	// Virtual chassis master election priority
 	VcPriority     NullableInt32          `json:"vc_priority,omitempty"`
 	Description    *string                `json:"description,omitempty"`
@@ -83,15 +83,13 @@ type _DeviceWithConfigContext DeviceWithConfigContext
 // This constructor will assign default values to properties that have it defined,
 // and makes sure properties required by API are set, but the set of arguments
 // will change when the set of required properties is changed
-func NewDeviceWithConfigContext(id int32, url string, display string, deviceType DeviceType, role DeviceRole, site Site, parentDevice NullableNestedDevice, primaryIp NullableIPAddress, configContext interface{}, created NullableTime, lastUpdated NullableTime) *DeviceWithConfigContext {
+func NewDeviceWithConfigContext(id int32, url string, display string, deviceType DeviceType, site Site, primaryIp NullableIPAddress, configContext interface{}, created NullableTime, lastUpdated NullableTime) *DeviceWithConfigContext {
 	this := DeviceWithConfigContext{}
 	this.Id = id
 	this.Url = url
 	this.Display = display
 	this.DeviceType = deviceType
-	this.Role = role
 	this.Site = site
-	this.ParentDevice = parentDevice
 	this.PrimaryIp = primaryIp
 	this.ConfigContext = configContext
 	this.Created = created
@@ -246,28 +244,36 @@ func (o *DeviceWithConfigContext) SetDeviceType(v DeviceType) {
 	o.DeviceType = v
 }
 
-// GetRole returns the Role field value
+// GetRole returns the Role field value if set, zero value otherwise.
 func (o *DeviceWithConfigContext) GetRole() DeviceRole {
-	if o == nil {
+	if o == nil || IsNil(o.Role) {
 		var ret DeviceRole
 		return ret
 	}
-
-	return o.Role
+	return *o.Role
 }
 
-// GetRoleOk returns a tuple with the Role field value
+// GetRoleOk returns a tuple with the Role field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *DeviceWithConfigContext) GetRoleOk() (*DeviceRole, bool) {
-	if o == nil {
+	if o == nil || IsNil(o.Role) {
 		return nil, false
 	}
-	return &o.Role, true
+	return o.Role, true
 }
 
-// SetRole sets field value
+// HasRole returns a boolean if a field has been set.
+func (o *DeviceWithConfigContext) HasRole() bool {
+	if o != nil && !IsNil(o.Role) {
+		return true
+	}
+
+	return false
+}
+
+// SetRole gets a reference to the given DeviceRole and assigns it to the Role field.
 func (o *DeviceWithConfigContext) SetRole(v DeviceRole) {
-	o.Role = v
+	o.Role = &v
 }
 
 // GetTenant returns the Tenant field value if set, zero value otherwise (both if not set or set to explicit null).
@@ -702,18 +708,16 @@ func (o *DeviceWithConfigContext) UnsetLongitude() {
 	o.Longitude.Unset()
 }
 
-// GetParentDevice returns the ParentDevice field value
-// If the value is explicit nil, the zero value for NestedDevice will be returned
+// GetParentDevice returns the ParentDevice field value if set, zero value otherwise (both if not set or set to explicit null).
 func (o *DeviceWithConfigContext) GetParentDevice() NestedDevice {
-	if o == nil || o.ParentDevice.Get() == nil {
+	if o == nil || IsNil(o.ParentDevice.Get()) {
 		var ret NestedDevice
 		return ret
 	}
-
 	return *o.ParentDevice.Get()
 }
 
-// GetParentDeviceOk returns a tuple with the ParentDevice field value
+// GetParentDeviceOk returns a tuple with the ParentDevice field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 // NOTE: If the value is an explicit nil, `nil, true` will be returned
 func (o *DeviceWithConfigContext) GetParentDeviceOk() (*NestedDevice, bool) {
@@ -723,15 +727,34 @@ func (o *DeviceWithConfigContext) GetParentDeviceOk() (*NestedDevice, bool) {
 	return o.ParentDevice.Get(), o.ParentDevice.IsSet()
 }
 
-// SetParentDevice sets field value
+// HasParentDevice returns a boolean if a field has been set.
+func (o *DeviceWithConfigContext) HasParentDevice() bool {
+	if o != nil && o.ParentDevice.IsSet() {
+		return true
+	}
+
+	return false
+}
+
+// SetParentDevice gets a reference to the given NullableNestedDevice and assigns it to the ParentDevice field.
 func (o *DeviceWithConfigContext) SetParentDevice(v NestedDevice) {
 	o.ParentDevice.Set(&v)
 }
 
+// SetParentDeviceNil sets the value for ParentDevice to be an explicit nil
+func (o *DeviceWithConfigContext) SetParentDeviceNil() {
+	o.ParentDevice.Set(nil)
+}
+
+// UnsetParentDevice ensures that no value is present for ParentDevice, not even an explicit nil
+func (o *DeviceWithConfigContext) UnsetParentDevice() {
+	o.ParentDevice.Unset()
+}
+
 // GetStatus returns the Status field value if set, zero value otherwise.
-func (o *DeviceWithConfigContext) GetStatus() DeviceWithConfigContextStatus {
+func (o *DeviceWithConfigContext) GetStatus() DeviceStatus {
 	if o == nil || IsNil(o.Status) {
-		var ret DeviceWithConfigContextStatus
+		var ret DeviceStatus
 		return ret
 	}
 	return *o.Status
@@ -739,7 +762,7 @@ func (o *DeviceWithConfigContext) GetStatus() DeviceWithConfigContextStatus {
 
 // GetStatusOk returns a tuple with the Status field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *DeviceWithConfigContext) GetStatusOk() (*DeviceWithConfigContextStatus, bool) {
+func (o *DeviceWithConfigContext) GetStatusOk() (*DeviceStatus, bool) {
 	if o == nil || IsNil(o.Status) {
 		return nil, false
 	}
@@ -755,8 +778,8 @@ func (o *DeviceWithConfigContext) HasStatus() bool {
 	return false
 }
 
-// SetStatus gets a reference to the given DeviceWithConfigContextStatus and assigns it to the Status field.
-func (o *DeviceWithConfigContext) SetStatus(v DeviceWithConfigContextStatus) {
+// SetStatus gets a reference to the given DeviceStatus and assigns it to the Status field.
+func (o *DeviceWithConfigContext) SetStatus(v DeviceStatus) {
 	o.Status = &v
 }
 
@@ -1738,7 +1761,9 @@ func (o DeviceWithConfigContext) ToMap() (map[string]interface{}, error) {
 		toSerialize["name"] = o.Name.Get()
 	}
 	toSerialize["device_type"] = o.DeviceType
-	toSerialize["role"] = o.Role
+	if !IsNil(o.Role) {
+		toSerialize["role"] = o.Role
+	}
 	if o.Tenant.IsSet() {
 		toSerialize["tenant"] = o.Tenant.Get()
 	}
@@ -1770,7 +1795,9 @@ func (o DeviceWithConfigContext) ToMap() (map[string]interface{}, error) {
 	if o.Longitude.IsSet() {
 		toSerialize["longitude"] = o.Longitude.Get()
 	}
-	toSerialize["parent_device"] = o.ParentDevice.Get()
+	if o.ParentDevice.IsSet() {
+		toSerialize["parent_device"] = o.ParentDevice.Get()
+	}
 	if !IsNil(o.Status) {
 		toSerialize["status"] = o.Status
 	}
@@ -1869,9 +1896,7 @@ func (o *DeviceWithConfigContext) UnmarshalJSON(data []byte) (err error) {
 		"url",
 		"display",
 		"device_type",
-		"role",
 		"site",
-		"parent_device",
 		"primary_ip",
 		"config_context",
 		"created",

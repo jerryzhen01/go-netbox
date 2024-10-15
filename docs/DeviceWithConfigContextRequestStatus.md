@@ -1,4 +1,4 @@
-# DeviceStatusValue
+# DeviceWithConfigContextRequestStatus
 
 ## Enum
 
@@ -16,18 +16,6 @@
 * `INVENTORY` (value: `"inventory"`)
 
 * `DECOMMISSIONING` (value: `"decommissioning"`)
-
-* `RACKED` (value: `"racked"`)
-
-* `VALIDATING` (value: `"validating"`)
-
-* `INSPECTING` (value: `"inspecting"`)
-
-* `ARCHIVE` (value: `"archive"`)
-
-* `AVAILABLE` (value: `"available"`)
-
-* `PROVISIONING` (value: `"provisioning"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

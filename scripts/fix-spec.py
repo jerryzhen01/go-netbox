@@ -4,12 +4,20 @@ import yaml
 
 SPEC_PATH = 'api/openapi.yaml'
 
-
 # Load the spec file
 with open(SPEC_PATH, 'r') as file:
     data = yaml.load(file, Loader=yaml.CLoader)
 
-# Traverse schemas
+new_status_values = [
+    "racked", "validating", "inspecting", "archive", "available", "provisioning"
+]
+new_status_labels = [
+    "Racked", "Validating", "Inspecting", "Archive", "Available", "Provisioning"
+]
+objects_to_modify = [
+    "Device", "DeviceWithConfigContext", "DeviceWithConfigContextRequest", "WritableDeviceWithConfigContextRequest"
+] 
+
 if 'components' in data and 'schemas' in data['components']:
     for name, schema in data['components']['schemas'].items():
         if 'properties' in schema:
@@ -41,7 +49,10 @@ if 'components' in data and 'schemas' in data['components']:
                     if 'nullable' in schema['properties'][ntype]:
                         schema['properties'][ntype].pop('nullable')
 
-            # Make *_count fields not required
+            ################################################################################
+            # ignore the required fields. (this is for fixing API Spec and actual data schema mismatch issues)
+            ################################################################################
+            # Make all *_count fields not required
             if 'required' in schema:
                 updated_required = [
                     r for r in schema['required']
@@ -49,23 +60,39 @@ if 'components' in data and 'schemas' in data['components']:
                 ]
                 schema['required'] = updated_required
 
-            # Specific fix: Make 'device_type' not required for DcimInterfacesList
-            if name == "Interface" and 'required' in schema:
+
+            # Specific fix for 'Device'
+            if name == "Device" and 'required' in schema:
                 schema['required'] = [
                     r for r in schema['required']
-                    if r != 'device_type'
+                    if r != 'device_type' and r != 'site' and r != 'role' and r != 'parent_device' and r != 'primary_ip' and r != 'created' and r != 'last_updated'
                 ]
-     
+   
+            # Specific fix for 'DeviceWithConfigContext'
+            # if name == "Device" or name == "DeviceWithConfigContext" and 'required' in schema:
+            if name == "DeviceWithConfigContext" and 'required' in schema:
+                schema['required'] = [
+                    r for r in schema['required']
+                    if r != 'role' and r != 'parent_device'
+                ]
+                
+            ################################################################################
+            # add custom field values.
+            ################################################################################
+
             # Specific fix: Add 'inspecting' and 'racked' to the Device status enum
-            if name == "Device" and 'properties' in schema and 'status' in schema['properties']:
+            if name in objects_to_modify and 'properties' in schema and 'status' in schema['properties']:
                 status = schema['properties']['status']
                 if 'properties' in status and 'value' in status['properties'] and 'enum' in status['properties']['value']:
-                    enum_values = status['properties']['value']['enum']
-                    if 'inspecting' not in enum_values:
-                        enum_values.append('inspecting')
-                    if 'racked' not in enum_values:
-                        enum_values.append('racked')
+                    for new_value in new_status_values:
+                        if new_value not in status['properties']['value']['enum']:
+                            status['properties']['value']['enum'].append(new_value)
 
+                if 'properties' in status and 'label' in status['properties'] and 'enum' in status['properties']['label']:
+                    for new_label in new_status_labels:
+                        if new_label not in status['properties']['label']['enum']:
+                            status['properties']['label']['enum'].append(new_label)
+                    
 
 # Save the updated spec file
 with open(SPEC_PATH, 'w') as file:

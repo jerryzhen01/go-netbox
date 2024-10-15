@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **Display** | **string** |  | [readonly] 
 **Name** | Pointer to **NullableString** |  | [optional] 
 **DeviceType** | [**DeviceType**](DeviceType.md) |  | 
-**Role** | [**DeviceRole**](DeviceRole.md) |  | 
+**Role** | Pointer to [**DeviceRole**](DeviceRole.md) |  | [optional] 
 **Tenant** | Pointer to [**NullableTenant**](Tenant.md) |  | [optional] 
 **Platform** | Pointer to [**NullablePlatform**](Platform.md) |  | [optional] 
 **Serial** | Pointer to **string** | Chassis serial number, assigned by the manufacturer | [optional] 
@@ -21,8 +21,8 @@ Name | Type | Description | Notes
 **Face** | Pointer to [**DeviceFace**](DeviceFace.md) |  | [optional] 
 **Latitude** | Pointer to **NullableFloat64** | GPS coordinate in decimal format (xx.yyyyyy) | [optional] 
 **Longitude** | Pointer to **NullableFloat64** | GPS coordinate in decimal format (xx.yyyyyy) | [optional] 
-**ParentDevice** | [**NullableNestedDevice**](NestedDevice.md) |  | [readonly] 
-**Status** | Pointer to [**DeviceWithConfigContextStatus**](DeviceWithConfigContextStatus.md) |  | [optional] 
+**ParentDevice** | Pointer to [**NullableNestedDevice**](NestedDevice.md) |  | [optional] [readonly] 
+**Status** | Pointer to [**DeviceStatus**](DeviceStatus.md) |  | [optional] 
 **Airflow** | Pointer to [**DeviceAirflow**](DeviceAirflow.md) |  | [optional] 
 **PrimaryIp** | [**NullableIPAddress**](IPAddress.md) |  | [readonly] 
 **PrimaryIp4** | Pointer to [**NullableIPAddress**](IPAddress.md) |  | [optional] 
@@ -56,7 +56,7 @@ Name | Type | Description | Notes
 
 ### NewDeviceWithConfigContext
 
-`func NewDeviceWithConfigContext(id int32, url string, display string, deviceType DeviceType, role DeviceRole, site Site, parentDevice NullableNestedDevice, primaryIp NullableIPAddress, configContext interface{}, created NullableTime, lastUpdated NullableTime, ) *DeviceWithConfigContext`
+`func NewDeviceWithConfigContext(id int32, url string, display string, deviceType DeviceType, site Site, primaryIp NullableIPAddress, configContext interface{}, created NullableTime, lastUpdated NullableTime, ) *DeviceWithConfigContext`
 
 NewDeviceWithConfigContext instantiates a new DeviceWithConfigContext object
 This constructor will assign default values to properties that have it defined,
@@ -205,6 +205,11 @@ and a boolean to check if the value has been set.
 
 SetRole sets Role field to given value.
 
+### HasRole
+
+`func (o *DeviceWithConfigContext) HasRole() bool`
+
+HasRole returns a boolean if a field has been set.
 
 ### GetTenant
 
@@ -575,6 +580,11 @@ and a boolean to check if the value has been set.
 
 SetParentDevice sets ParentDevice field to given value.
 
+### HasParentDevice
+
+`func (o *DeviceWithConfigContext) HasParentDevice() bool`
+
+HasParentDevice returns a boolean if a field has been set.
 
 ### SetParentDeviceNil
 
@@ -588,20 +598,20 @@ SetParentDevice sets ParentDevice field to given value.
 UnsetParentDevice ensures that no value is present for ParentDevice, not even an explicit nil
 ### GetStatus
 
-`func (o *DeviceWithConfigContext) GetStatus() DeviceWithConfigContextStatus`
+`func (o *DeviceWithConfigContext) GetStatus() DeviceStatus`
 
 GetStatus returns the Status field if non-nil, zero value otherwise.
 
 ### GetStatusOk
 
-`func (o *DeviceWithConfigContext) GetStatusOk() (*DeviceWithConfigContextStatus, bool)`
+`func (o *DeviceWithConfigContext) GetStatusOk() (*DeviceStatus, bool)`
 
 GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetStatus
 
-`func (o *DeviceWithConfigContext) SetStatus(v DeviceWithConfigContextStatus)`
+`func (o *DeviceWithConfigContext) SetStatus(v DeviceStatus)`
 
 SetStatus sets Status field to given value.
 

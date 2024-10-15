@@ -104940,8 +104940,12 @@ components:
               - failed
               - inventory
               - decommissioning
-              - inspecting
               - racked
+              - validating
+              - inspecting
+              - archive
+              - available
+              - provisioning
               type: string
               description: '* `offline` - Offline
 
@@ -104967,6 +104971,12 @@ components:
               - Failed
               - Inventory
               - Decommissioning
+              - Racked
+              - Validating
+              - Inspecting
+              - Archive
+              - Available
+              - Provisioning
         airflow:
           type: object
           properties:
@@ -105102,15 +105112,8 @@ components:
           type: integer
           readOnly: true
       required:
-      - created
-      - device_type
       - display
       - id
-      - last_updated
-      - parent_device
-      - primary_ip
-      - role
-      - site
       - url
     DeviceBay:
       type: object
@@ -105529,6 +105532,12 @@ components:
               - failed
               - inventory
               - decommissioning
+              - racked
+              - validating
+              - inspecting
+              - archive
+              - available
+              - provisioning
               type: string
               description: '* `offline` - Offline
 
@@ -105554,6 +105563,12 @@ components:
               - Failed
               - Inventory
               - Decommissioning
+              - Racked
+              - Validating
+              - Inspecting
+              - Archive
+              - Available
+              - Provisioning
         airflow:
           type: object
           properties:
@@ -105698,9 +105713,7 @@ components:
       - display
       - id
       - last_updated
-      - parent_device
       - primary_ip
-      - role
       - site
       - url
     DeviceWithConfigContextRequest:

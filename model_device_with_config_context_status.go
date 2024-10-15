@@ -19,8 +19,8 @@ var _ MappedNullable = &DeviceWithConfigContextStatus{}
 
 // DeviceWithConfigContextStatus struct for DeviceWithConfigContextStatus
 type DeviceWithConfigContextStatus struct {
-	Value *DeviceWithConfigContextStatusValue `json:"value,omitempty"`
-	Label *DeviceStatusLabel `json:"label,omitempty"`
+	Value                *DeviceWithConfigContextStatusValue `json:"value,omitempty"`
+	Label                *DeviceStatusLabel                  `json:"label,omitempty"`
 	AdditionalProperties map[string]interface{}
 }
 
@@ -108,7 +108,7 @@ func (o *DeviceWithConfigContextStatus) SetLabel(v DeviceStatusLabel) {
 }
 
 func (o DeviceWithConfigContextStatus) MarshalJSON() ([]byte, error) {
-	toSerialize,err := o.ToMap()
+	toSerialize, err := o.ToMap()
 	if err != nil {
 		return []byte{}, err
 	}
@@ -188,5 +188,3 @@ func (v *NullableDeviceWithConfigContextStatus) UnmarshalJSON(src []byte) error 
 	v.isSet = true
 	return json.Unmarshal(src, &v.value)
 }
-
-

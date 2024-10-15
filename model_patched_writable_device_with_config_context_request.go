@@ -36,15 +36,15 @@ type PatchedWritableDeviceWithConfigContextRequest struct {
 	// GPS coordinate in decimal format (xx.yyyyyy)
 	Latitude NullableFloat64 `json:"latitude,omitempty"`
 	// GPS coordinate in decimal format (xx.yyyyyy)
-	Longitude      NullableFloat64                     `json:"longitude,omitempty"`
-	Status         *DeviceWithConfigContextStatusValue `json:"status,omitempty"`
-	Airflow        *DeviceAirflowValue                 `json:"airflow,omitempty"`
-	PrimaryIp4     NullableIPAddressRequest            `json:"primary_ip4,omitempty"`
-	PrimaryIp6     NullableIPAddressRequest            `json:"primary_ip6,omitempty"`
-	OobIp          NullableIPAddressRequest            `json:"oob_ip,omitempty"`
-	Cluster        NullableClusterRequest              `json:"cluster,omitempty"`
-	VirtualChassis NullableVirtualChassisRequest       `json:"virtual_chassis,omitempty"`
-	VcPosition     NullableInt32                       `json:"vc_position,omitempty"`
+	Longitude      NullableFloat64                       `json:"longitude,omitempty"`
+	Status         *DeviceWithConfigContextRequestStatus `json:"status,omitempty"`
+	Airflow        *DeviceAirflowValue                   `json:"airflow,omitempty"`
+	PrimaryIp4     NullableIPAddressRequest              `json:"primary_ip4,omitempty"`
+	PrimaryIp6     NullableIPAddressRequest              `json:"primary_ip6,omitempty"`
+	OobIp          NullableIPAddressRequest              `json:"oob_ip,omitempty"`
+	Cluster        NullableClusterRequest                `json:"cluster,omitempty"`
+	VirtualChassis NullableVirtualChassisRequest         `json:"virtual_chassis,omitempty"`
+	VcPosition     NullableInt32                         `json:"vc_position,omitempty"`
 	// Virtual chassis master election priority
 	VcPriority     NullableInt32                 `json:"vc_priority,omitempty"`
 	Description    *string                       `json:"description,omitempty"`
@@ -624,9 +624,9 @@ func (o *PatchedWritableDeviceWithConfigContextRequest) UnsetLongitude() {
 }
 
 // GetStatus returns the Status field value if set, zero value otherwise.
-func (o *PatchedWritableDeviceWithConfigContextRequest) GetStatus() DeviceWithConfigContextStatusValue {
+func (o *PatchedWritableDeviceWithConfigContextRequest) GetStatus() DeviceWithConfigContextRequestStatus {
 	if o == nil || IsNil(o.Status) {
-		var ret DeviceWithConfigContextStatusValue
+		var ret DeviceWithConfigContextRequestStatus
 		return ret
 	}
 	return *o.Status
@@ -634,7 +634,7 @@ func (o *PatchedWritableDeviceWithConfigContextRequest) GetStatus() DeviceWithCo
 
 // GetStatusOk returns a tuple with the Status field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *PatchedWritableDeviceWithConfigContextRequest) GetStatusOk() (*DeviceWithConfigContextStatusValue, bool) {
+func (o *PatchedWritableDeviceWithConfigContextRequest) GetStatusOk() (*DeviceWithConfigContextRequestStatus, bool) {
 	if o == nil || IsNil(o.Status) {
 		return nil, false
 	}
@@ -650,8 +650,8 @@ func (o *PatchedWritableDeviceWithConfigContextRequest) HasStatus() bool {
 	return false
 }
 
-// SetStatus gets a reference to the given DeviceWithConfigContextStatusValue and assigns it to the Status field.
-func (o *PatchedWritableDeviceWithConfigContextRequest) SetStatus(v DeviceWithConfigContextStatusValue) {
+// SetStatus gets a reference to the given DeviceWithConfigContextRequestStatus and assigns it to the Status field.
+func (o *PatchedWritableDeviceWithConfigContextRequest) SetStatus(v DeviceWithConfigContextRequestStatus) {
 	o.Status = &v
 }
 

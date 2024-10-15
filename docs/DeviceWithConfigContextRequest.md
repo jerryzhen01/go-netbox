@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 **Face** | Pointer to [**DeviceFaceValue**](DeviceFaceValue.md) |  | [optional] 
 **Latitude** | Pointer to **NullableFloat64** | GPS coordinate in decimal format (xx.yyyyyy) | [optional] 
 **Longitude** | Pointer to **NullableFloat64** | GPS coordinate in decimal format (xx.yyyyyy) | [optional] 
-**Status** | Pointer to [**DeviceWithConfigContextStatusValue**](DeviceWithConfigContextStatusValue.md) |  | [optional] 
+**Status** | Pointer to [**DeviceWithConfigContextRequestStatus**](DeviceWithConfigContextRequestStatus.md) |  | [optional] 
 **Airflow** | Pointer to [**DeviceAirflowValue**](DeviceAirflowValue.md) |  | [optional] 
 **PrimaryIp4** | Pointer to [**NullableIPAddressRequest**](IPAddressRequest.md) |  | [optional] 
 **PrimaryIp6** | Pointer to [**NullableIPAddressRequest**](IPAddressRequest.md) |  | [optional] 
@@ -480,20 +480,20 @@ HasLongitude returns a boolean if a field has been set.
 UnsetLongitude ensures that no value is present for Longitude, not even an explicit nil
 ### GetStatus
 
-`func (o *DeviceWithConfigContextRequest) GetStatus() DeviceWithConfigContextStatusValue`
+`func (o *DeviceWithConfigContextRequest) GetStatus() DeviceWithConfigContextRequestStatus`
 
 GetStatus returns the Status field if non-nil, zero value otherwise.
 
 ### GetStatusOk
 
-`func (o *DeviceWithConfigContextRequest) GetStatusOk() (*DeviceWithConfigContextStatusValue, bool)`
+`func (o *DeviceWithConfigContextRequest) GetStatusOk() (*DeviceWithConfigContextRequestStatus, bool)`
 
 GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetStatus
 
-`func (o *DeviceWithConfigContextRequest) SetStatus(v DeviceWithConfigContextStatusValue)`
+`func (o *DeviceWithConfigContextRequest) SetStatus(v DeviceWithConfigContextRequestStatus)`
 
 SetStatus sets Status field to given value.
 

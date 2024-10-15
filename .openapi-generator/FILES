@@ -145,8 +145,7 @@ docs/DeviceType.md
 docs/DeviceTypeRequest.md
 docs/DeviceWithConfigContext.md
 docs/DeviceWithConfigContextRequest.md
-docs/DeviceWithConfigContextStatus.md
-docs/DeviceWithConfigContextStatusValue.md
+docs/DeviceWithConfigContextRequestStatus.md
 docs/Encryption.md
 docs/End.md
 docs/End1.md
@@ -933,8 +932,7 @@ model_device_type.go
 model_device_type_request.go
 model_device_with_config_context.go
 model_device_with_config_context_request.go
-model_device_with_config_context_status.go
-model_device_with_config_context_status_value.go
+model_device_with_config_context_request_status.go
 model_encryption.go
 model_end.go
 model_end_1.go
